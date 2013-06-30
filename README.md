@@ -26,7 +26,9 @@ Features
 Authors
 -------
 
-- [@rickbenettibr][6]
+- [@rickbenettibr][5]
+- [@rzamana][6]
+- [@rafaelfunchal][7]
 
 
 Versions
@@ -40,3 +42,5 @@ Versions
 [3]: http://jquerypicture.com/
 [4]: https://github.com/Abban/Responsable-Grid-System
 [5]: http://twitter.com/rickbenettibr
+[6]: http://twitter.com/rzamana
+[7]: http://twitter.com/rafaelfunchal
