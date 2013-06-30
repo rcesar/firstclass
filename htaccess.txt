@@ -1,0 +1,10 @@
+AddType text/x-component .htc
+
+############################################
+## Font Support                           ##
+############################################
+AddType font/ttf .ttf
+AddType font/eot .eot
+AddType font/otf .otf
+AddType font/woff .woff
+AddType font/svg .svg

@@ -1,0 +1,364 @@
+// ===[ Site Variables ]===
+
+// Grid options
+@gutter-width: 40px; // Your gutter width
+@columns: 12; // The amount of columns you want
+@max-width: 1008px; // Set a maximum width of the site
+
+// Half the gutter for borders, margin, padding etc
+@gutter: @gutter-width*0.5;
+
+/**
+ * Baseline
+ * Common settings for this:
+ *** 100% for 16px font and 24px baseline.
+ *** 75% for 12px font and 18px baseline.
+ */
+@baseline: 100%;
+
+// ===[ Colors ]===
+
+// Grayscale
+@black-10:                 darken(#fff, 10%);
+@black-20:                 darken(#fff, 20%);
+@black-30:                 darken(#fff, 30%);
+@black-40:                 darken(#fff, 40%);
+@black-50:                 darken(#fff, 50%);
+@black-60:                 darken(#fff, 60%);
+@black-70:                 darken(#fff, 70%);
+@black-80:                 darken(#fff, 80%);
+@black-90:                 darken(#fff, 90%);
+
+// Brand colors
+@brand-primary:           #428bca;
+@brand-success:           #5cb85c;
+@brand-warning:           #f0ad4e;
+@brand-danger:            #d9534f;
+@brand-info:              #5bc0de;
+
+// Default Colors
+@white: #fff;
+@black: #000;
+
+// Accent colors
+@blue:  		#008afd;
+@green:  		#92c847;
+@red:  		#ff1e00;
+@yellow:  		#ffa800;
+@orange:  	#ff6600;
+@pink:  		#fc00ff;
+@purple:  		#7200ff;
+
+// Brand colors - Client colors
+@brand-first-color:      #9e205e; // lilás
+@alpha-brand-first-color:      fadeout(#9e205e, 70%); // lilás transparente
+@brand-second-color:     #e1b6b2; // rosa claro
+@alpha-brand-second-color:     fadeout(#e1b6b2, 70%); // rosa transparente
+@brand-third-color:      #91a5a5; // cinza
+@alpha-brand-third-color:      fadeout(#91a5a5, 70%); // cinza transparente
+
+// Font variables
+@body-color: @black-50;
+@heading-color: @black-70;
+
+// Link colors
+@link: @blue;
+@link-hover: @green;
+
+// Select colors
+@select: @blue;
+@select-color: @white;
+
+// Typography
+@family-base:  	Arial, Helvetica, sans-serif;
+@family-awesome:      	"FontAwesome";
+@family-serif:       		Georgia, "Times New Roman", Times, serif;
+@family-monospace:   	Monaco, Menlo, Consolas, "Courier New", monospace;
+
+// Default Font Families
+@body-family: "Open Sans Semi Bold", Arial, Helvetica, Sans-Serif;
+@heading-family: "Open Sans Light", Arial, Helvetica, Sans-Serif;
+
+// Default sizes
+@size-base:         12px;
+@size-large:         @size-base + 4; // ~16px
+@size-medium:     @size-base + 2; // ~14px
+@size-mini:          @size-base - 2; // ~10px
+
+// Forms
+@color-placeholder: lighten(@body-color, 25%);
+
+
+// ===[ Mixins: vendor prefixes ]===
+// Box sizing
+.box-sizing(@box-model) {
+  -webkit-box-sizing: @box-model; // Safari <= 5
+     -moz-box-sizing: @box-model; // Firefox <= 19
+          box-sizing: @box-model;
+}
+// border-radius
+.border-radius(@radius: 5px) {
+  border-radius: @radius;
+}
+
+// Drop shadows
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+          box-shadow: @shadow;
+}
+
+// Backface visibility
+// Prevent browsers from flickering when using CSS 3D transforms.
+// Default value is `visible`, but can be changed to `hidden
+// See git pull https://github.com/dannykeane/bootstrap.git backface-visibility for examples
+.backface-visibility(@visibility){
+  -webkit-backface-visibility: @visibility;
+     -moz-backface-visibility: @visibility;
+          backface-visibility: @visibility;
+}
+
+// User select
+// For selecting text on the page
+.user-select(@select) {
+  -webkit-user-select: @select;
+     -moz-user-select: @select;
+      -ms-user-select: @select;
+       -o-user-select: @select;
+          user-select: @select;
+}
+
+// Opacity
+.opacity(@opacity) {
+  opacity: @opacity;
+  @opacity-ie: @opacity * 100;
+  filter: ~"alpha(opacity=@{opacity-ie})"; // IE8
+}
+
+// Placeholder text
+.placeholder(@color: @input-color-placeholder) {
+  &:-moz-placeholder            { color: @color; } // Firefox 4-18
+  &::-moz-placeholder           { color: @color; } // Firefox 19+
+  &:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: @color; } // Safari and Chrome
+}
+
+// Resize anything
+.resizable(@direction) {
+  resize: @direction; // Options: horizontal, vertical, both
+  overflow: auto; // Safari fix
+}
+
+// Optional hyphenation
+.hyphens(@mode: auto) {
+  word-wrap: break-word;
+  -webkit-hyphens: @mode;
+     -moz-hyphens: @mode;
+      -ms-hyphens: @mode;
+       -o-hyphens: @mode;
+          hyphens: @mode;
+}
+
+#gradient {
+	.horizontal-transparent(@endColor: #333) {
+		background-color: @endColor;
+		background-image: -moz-linear-gradient(left, transparent, rgba(0,0,0,0.3)); // FF 3.6+
+		background-image: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(rgba(0,0,0,0.3))); // Safari 4+, Chrome 2+
+		background-image: -webkit-linear-gradient(left, transparent, rgba(0,0,0,0.3)); // Safari 5.1+, Chrome 10+
+		background-image: -o-linear-gradient(left, transparent, rgba(0,0,0,0.3)); // Opera 11.10
+		background-image: linear-gradient(to right, transparent, rgba(0,0,0,0.3)); // Standard, IE10
+		background-repeat: repeat-x;
+	}
+	.vertical-transparent(@endColor: #333) {
+		background-color: @endColor;
+		background-image: -moz-linear-gradient(top, transparent, rgba(0,0,0,0.3)); // FF 3.6+
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0,0,0,0.3))); // Safari 4+, Chrome 2+
+		background-image: -webkit-linear-gradient(top, transparent, rgba(0,0,0,0.3)); // Safari 5.1+, Chrome 10+
+		background-image: -o-linear-gradient(top, transparent, rgba(0,0,0,0.3)); // Opera 11.10
+		background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.3)); // Standard, IE10
+		background-repeat: repeat-x;
+	}
+	.horizontal(@startColor: #555, @endColor: #333) {
+		background-color: @endColor;
+		background-image: -moz-linear-gradient(left, @startColor, @endColor); // FF 3.6+
+		background-image: -webkit-gradient(linear, 0 0, 100% 0, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+		background-image: -webkit-linear-gradient(left, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+		background-image: -o-linear-gradient(left, @startColor, @endColor); // Opera 11.10
+		background-image: linear-gradient(to right, @startColor, @endColor); // Standard, IE10
+		background-repeat: repeat-x;
+	}
+	.vertical(@startColor: #555, @endColor: #333) {
+		background-color: @endColor;
+		background-image: -moz-linear-gradient(top, @startColor, @endColor); // FF 3.6+
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+		background-image: -webkit-linear-gradient(top, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+		background-image: -o-linear-gradient(top, @startColor, @endColor); // Opera 11.10
+		background-image: linear-gradient(to bottom, @startColor, @endColor); // Standard, IE10
+		background-repeat: repeat-x;
+	}
+	.directional(@startColor: #555, @endColor: #333, @deg: 45deg) {
+		background-color: @endColor;
+		background-repeat: repeat-x;
+		background-image: -moz-linear-gradient(@deg, @startColor, @endColor); // FF 3.6+
+		background-image: -webkit-linear-gradient(@deg, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+		background-image: -o-linear-gradient(@deg, @startColor, @endColor); // Opera 11.10
+		background-image: linear-gradient(@deg, @startColor, @endColor); // Standard, IE10
+	}
+	.horizontal-three-colors(@startColor: #00b3ee, @midColor: #7a43b6, @colorStop: 50%, @endColor: #c3325f) {
+		background-color: mix(@midColor, @endColor, 80%);
+		background-image: -webkit-gradient(left, linear, 0 0, 0 100%, from(@startColor), color-stop(@colorStop, @midColor), to(@endColor));
+		background-image: -webkit-linear-gradient(left, @startColor, @midColor @colorStop, @endColor);
+		background-image: -moz-linear-gradient(left, @startColor, @midColor @colorStop, @endColor);
+		background-image: -o-linear-gradient(left, @startColor, @midColor @colorStop, @endColor);
+		background-image: linear-gradient(to right, @startColor, @midColor @colorStop, @endColor);
+		background-repeat: no-repeat;
+	}
+	.vertical-three-colors(@startColor: #00b3ee, @midColor: #7a43b6, @colorStop: 50%, @endColor: #c3325f) {
+		background-color: mix(@midColor, @endColor, 80%);
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), color-stop(@colorStop, @midColor), to(@endColor));
+		background-image: -webkit-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+		background-image: -moz-linear-gradient(top, @startColor, @midColor @colorStop, @endColor);
+		background-image: -o-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+		background-image: linear-gradient(@startColor, @midColor @colorStop, @endColor);
+		background-repeat: no-repeat;
+	}
+	.radial(@innerColor: #555, @outerColor: #333) {
+		background-color: @outerColor;
+		background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(@innerColor), to(@outerColor));
+		background-image: -webkit-radial-gradient(circle, @innerColor, @outerColor);
+		background-image: -moz-radial-gradient(circle, @innerColor, @outerColor);
+		background-image: -o-radial-gradient(circle, @innerColor, @outerColor);
+		background-repeat: no-repeat;
+	}
+	.striped(@color: #555, @angle: 45deg) {
+		background-color: @color;
+		background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.15)), color-stop(.75, rgba(255,255,255,.15)), color-stop(.75, transparent), to(transparent));
+		background-image: -webkit-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+		background-image: -moz-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+		background-image: -o-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+		background-image: linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+	}
+}
+
+// Buttons
+.btn {
+	display: block;
+	font-size: @baseline;
+	font-weight: normal;
+	letter-spacing: -1px;
+	line-height: 1;
+	margin-bottom: 5px;
+	padding: 5px 12px;
+	text-align: center;
+	text-decoration: none;
+	&:hover,
+	&:active {
+		text-decoration: none;
+	}
+	&.btn-primary {
+		background-color: @brand-primary;
+		color: @white;
+	}
+	&.btn-success {
+		background-color: @brand-success;
+		color: @white;
+	}
+	&.btn-error {
+		background-color: @brand-warning;
+		color: @white;
+	}
+	&.btn-danger {
+		background-color: @brand-danger;
+		color: @white;
+	}
+	&.btn-info {
+		background-color: @brand-info;
+		color: @white;
+	}
+	&.btn-rounded {
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		-ms-border-radius: 7px;
+		border-radius: 7px;
+	}
+	&.btn-flat {
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-ms-border-radius: 2px;
+		border-radius: 2px;
+	}
+	&.btn-wide {
+		font-size: @baseline - 20%;
+		font-weight: 500;
+		padding: 5px 30px;
+	}
+	&.btn-large {
+		font-size: @baseline * 2;
+		font-weight: bold;
+		padding: 15px 30px;
+	}
+	&.btn-medium {
+		font-size: @baseline;
+	}
+	&.btn-small {
+		font-size: @baseline - 40%;
+		padding: 3px 5px;
+	}
+	&.btn-horz-gradient {
+		&.btn-primary {
+			#gradient > .horizontal-transparent(@brand-primary);
+		}
+		&.btn-success {
+			#gradient > .horizontal-transparent(@brand-success);
+		}
+		&.btn-error {
+			#gradient > .horizontal-transparent(@brand-warning);
+		}
+		&.btn-danger {
+			#gradient > .horizontal-transparent(@brand-danger);
+		}
+		&.btn-info {
+			#gradient > .horizontal-transparent(@brand-info);
+		}
+	}
+	&.btn-vert-gradient {
+		&.btn-primary {
+			#gradient > .vertical-transparent(@brand-primary);
+		}
+		&.btn-success {
+			#gradient > .vertical-transparent(@brand-success);
+		}
+		&.btn-error {
+			#gradient > .vertical-transparent(@brand-warning);
+		}
+		&.btn-danger {
+			#gradient > .vertical-transparent(@brand-danger);
+		}
+		&.btn-info {
+			#gradient > .vertical-transparent(@brand-info);
+		}
+	}
+}
+
+// Center-align a block level element
+.center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Sizing shortcuts
+.size(@height, @width) {
+  height: @height;
+  width: @width;
+}
+.square(@size) {
+  .size(@size, @size);
+}
+
+// Text overflow
+// Requires inline-block or block for proper styling
+.text-truncate() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
