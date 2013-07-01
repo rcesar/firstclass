@@ -1,16 +1,31 @@
 /**
- * firstClass
- *
- * Setting up a responsive grid based on Semantic GS
- *
+ * firstClass -> Stylesheet
  * @author Rick Benetti -> http://wdsign.com.br
- * @version 0.1
+ * @version 0.2
  */
 
-// ===[ Import firstClass normalize baseline and grid] ===
-@import "firstclass.less";
 @import "normalize.less";
-@import "fonts.less";
-@import "baseline.less";
-@import "grid.less";
+@import "start.less";
+@import "mixins.less";
+// Typography Styles
+@import "typography/fonts.less";
+@import "typography/type.less";
+// Items Styles
+@import "items/buttons.less";
+@import "items/forms.less";
+@import "items/tables.less";
+@import "items/grid.less";
+// Features Styles
+@import "features/box.less";
+@import "features/alert.less";
+@import "features/notification.less";
+@import "features/images.less";
+// Javascript Styles
+@import "javascript/modal.less";
+@import "javascript/tabs.less";
+@import "javascript/dropdown.less";
+@import "javascript/tooltip.less";
+@import "javascript/collapse.less";
+@import "javascript/slider.less";
+// Custom Styles
 @import "custom.less";

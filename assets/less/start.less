@@ -1,0 +1,121 @@
+// ===[ Site Variables ]===
+
+// Grid options
+@gutter-width: 40px; // Your gutter width
+@columns: 12; // The amount of columns you want
+@max-width: 1008px; // Set a maximum width of the site
+
+// Half the gutter for borders, margin, padding etc
+@gutter: @gutter-width*0.5;
+
+/**
+ * Baseline
+ * Common settings for this:
+ *** 100% for 16px font and 24px baseline.
+ *** 75% for 12px font and 18px baseline.
+ */
+@baseline: 100%;
+
+// ===[ Colors ]===
+
+// Grayscale
+@black-10:                 darken(#fff, 10%);
+@black-20:                 darken(#fff, 20%);
+@black-30:                 darken(#fff, 30%);
+@black-40:                 darken(#fff, 40%);
+@black-50:                 darken(#fff, 50%);
+@black-60:                 darken(#fff, 60%);
+@black-70:                 darken(#fff, 70%);
+@black-80:                 darken(#fff, 80%);
+@black-90:                 darken(#fff, 90%);
+
+// Brand colors
+@brand-primary:           #428bca;
+@brand-success:           #5cb85c;
+@brand-warning:           #f0ad4e;
+@brand-danger:            #d9534f;
+@brand-info:              #5bc0de;
+
+// Default Colors
+@white: #fff;
+@black: #000;
+
+// Accent colors
+@blue:  		#008afd;
+@green:  		#92c847;
+@red:  		#ff1e00;
+@yellow:  		#ffa800;
+@orange:  	#ff6600;
+@pink:  		#fc00ff;
+@purple:  		#7200ff;
+
+// Brand colors - Client colors
+@brand-first-color:      #9e205e; // lilás
+@alpha-brand-first-color:      fadeout(#9e205e, 70%); // lilás transparente
+@brand-second-color:     #e1b6b2; // rosa claro
+@alpha-brand-second-color:     fadeout(#e1b6b2, 70%); // rosa transparente
+@brand-third-color:      #91a5a5; // cinza
+@alpha-brand-third-color:      fadeout(#91a5a5, 70%); // cinza transparente
+
+// Font variables
+@body-color: @black-50;
+@heading-color: @black-70;
+
+// Link colors
+@link: @blue;
+@link-hover: @green;
+
+// Select colors
+@select: @blue;
+@select-color: @white;
+
+// Forms
+@color-placeholder: lighten(@body-color, 25%);
+
+
+// ===[ Set-up ]===
+html { font-size: 100.01%; }
+body {
+	font-size: @baseline;
+	color: @body-color;
+	line-height: 1.5em;
+	font-family: @body-family;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+
+	-moz-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+	-ms-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+
+	-webkit-text-stroke: 1px transparent;
+	-moz-text-stroke: 1px transparent;
+	-ms-text-stroke: 1px transparent;
+	text-stroke: 1px transparent;
+	
+	text-rendering: optimizeLegibility;
+}
+
+// ===[ Selection Colors ]===
+::selection {
+	background: @select;
+	color: @select-color;
+}
+::-moz-selection {
+	background: @select;
+	color: @select-color;
+}
+img::selection {
+	background: transparent;
+}
+img::-moz-selection {
+	background: transparent;
+}
+body {
+	-webkit-tap-highlight-color: @select;
+}

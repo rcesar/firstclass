@@ -1,0 +1,113 @@
+// ===[ Typography ]===
+
+
+// Font-Size format
+@size-base:         12px;
+@size-large:    @size-base + 4; // ~16px
+@size-medium:   @size-base + 2; // ~14px
+@size-mini:     @size-base - 2; // ~10px
+
+
+// Font-Family format
+@family-base:  	    Arial, Helvetica, sans-serif;
+@family-awesome:    "FontAwesome";
+@family-serif:      Georgia, "Times New Roman", Times, serif;
+@family-monospace:  Monaco, Menlo, Consolas, "Courier New", monospace;
+@family-heading:    "Bebas Neue";
+@body-family: @family-base;
+@head-family: @family-heading;
+
+// ===[ Links ]===
+a {
+	color:@link;
+	&:hover, &:focus {
+		color: @link-hover;
+	}
+	// Optional transition
+	-webkit-transition:all .2s linear;
+	-moz-transition:all .2s linear;
+	-o-transition:all .2s linear;
+	transition:all .2s linear;
+}
+
+// ===[ Headings ]===
+h1,h2,h3,h4,h5,h6 {
+	margin-top:0;
+	font-family: @head-family;
+	color: @heading-color;
+}
+h1 {
+	font-size: 3em;
+	line-height: 1;
+	padding-top: 0.53em;
+	margin-bottom: 0.5em;
+}
+h2 {
+	font-size: 2em;
+	padding-top: 0.25em;
+	margin-bottom: 0.5em;
+}
+h3 {
+	font-size: 1.5em;
+	line-height: 1;
+	padding-top: 0.35em;
+	margin-bottom: 0.65em;
+}
+h4 {
+	font-size: 1.2em;
+	line-height: 1.25;
+	padding-top: 0.45em;
+	margin-bottom: 0.8em;
+}
+h5 {
+	font-size: 1em;
+	font-weight: bold;
+	padding-top: 0.6em;
+	margin-bottom: 0.9em;
+}
+h6 {
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+// ===[ Lists ]===
+ul,ol,dl {
+	margin:0;
+	margin-bottom: 1.5em;
+}
+
+// ===[ Other elements ]===
+p { margin: 0 0 0.5em; }
+blockquote {
+	font-style: italic;
+	margin: 0 5em 0.5em;
+}
+mark {
+	background: @select;
+	color: @select-color;
+	line-height: 1.5;
+}
+del { color:@black-30; }
+code,
+kbd,
+pre,
+samp {
+	font-family: @family-monospace;
+	line-height: 1.5;
+	margin: 0 0 0.5em;
+}
+ins,
+small { line-height: 1.5; }
+kbd,
+samp { line-height: 1.4; }
+hr {
+	background: @black-50;
+	border: none;
+	color: @black-50;
+	clear: both;
+	float: none;
+	height: 1px;
+	margin: 1.4em 0;
+	width: 100%;
+}
