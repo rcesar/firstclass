@@ -170,3 +170,39 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+// Background Gradient - Horizontal and Vertical
+.h-gradient {
+	&.primary {
+		#gradient > .horizontal-transparent(@brand-primary);
+	}
+	&.success {
+		#gradient > .horizontal-transparent(@brand-success);
+	}
+	&.error {
+		#gradient > .horizontal-transparent(@brand-warning);
+	}
+	&.danger {
+		#gradient > .horizontal-transparent(@brand-danger);
+	}
+	&.info {
+		#gradient > .horizontal-transparent(@brand-info);
+	}
+}
+.v-gradient {
+	&.primary {
+		#gradient > .vertical-transparent(@brand-primary);
+	}
+	&.success {
+		#gradient > .vertical-transparent(@brand-success);
+	}
+	&.error {
+		#gradient > .vertical-transparent(@brand-warning);
+	}
+	&.danger {
+		#gradient > .vertical-transparent(@brand-danger);
+	}
+	&.info {
+		#gradient > .vertical-transparent(@brand-info);
+	}
+}

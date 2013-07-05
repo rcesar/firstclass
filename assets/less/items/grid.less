@@ -16,7 +16,7 @@
 @correction: 0.5 / @max-width * 100 * 1%; // NOTE: Check this in IE
 
 /* The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack */
-.clearfix(){
+.clearfix {
 	&:before,
 	&:after{
 	    content:"";
@@ -28,10 +28,10 @@
 }
 
 /* Ensure grid columns are set to border-boxes. This is essential */
-.border-box(){
-	-webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box; 
-	box-sizing: border-box;
+.border-box(@box: border-box){
+	-webkit-box-sizing: @box;
+	-moz-box-sizing: @box;
+	box-sizing: @box;
 }
 
 /* Our row container */
