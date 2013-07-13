@@ -75,7 +75,7 @@
     //background:#ccc;	
     .clearfix();
     .column(12, 0);
-    div {
+    div div {
         background: @green;
         height: 3em;
         margin-bottom: 1.5em;
@@ -87,7 +87,8 @@
     .double,
     .triple,
     .quadruple,
-    .quintuple {
+    .quintuple {	
+        .clearfix();
         div:last-child {
             background:@black-20;
         }

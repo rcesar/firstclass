@@ -13,8 +13,7 @@
         <div class="limit">
         
         <aside class="sidebar">
-            <h1 class="logo">WDSIGN » firstClass</h1>
-            
+            <img class="logo" src="assets/images/logo.png" title="WDSIGN » firstClass">            
             <ul class="main-nav">
                 <li class="dropdown nav-item"><a href="#scaffolding" title="Scaffolding" class="nav-link">Scaffolding</a>
                     <ul class="submenu">

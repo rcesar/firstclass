@@ -1,5 +1,11 @@
 <section id="type">
     <h1>Heading 1</h1>
+    
+    <h2>Subtitle &mdash; h2</h2>
+    <h3>Subtitle &mdash; h3</h3>
+    <h4>Subtitle &mdash; h4</h4>
+    <h5>Subtitle &mdash; h5</h5>
+    <h6>Subtitle &mdash; h6</h6>
     <p>
         Here, it must needs be said, that accidents like this have in more than one case occurred to ships in violent storms. The magnetic energy, as developed in the mariner's needle, is, as all know, essentially one with the electricity beheld in heaven; hence it is not to be much marvelled at, that such things should be.
     </p>
@@ -13,12 +19,10 @@
             </body>
         </html>
     </code></pre>
-    
-    <h2>Subtitle &mdash; h2</h2>
-    <h3>Subtitle &mdash; h3</h3>
-    <h4>Subtitle &mdash; h4</h4>
-    <h5>Subtitle &mdash; h5</h5>
-    <h6>Subtitle &mdash; h6</h6>
+    <address>
+        Street ABC, 456<br/>
+        Los Angeles, EUA
+    </address>
     <blockquote cite="http://abandon.ie">
         <p>
             I was very fond of Powell; he was thoroughly a man in every respect; a polished southern gentleman; a staunch and true friend; and it was with a feeling of the deepest grief that I finally gave up my crude endeavors at resuscitation.
@@ -27,104 +31,59 @@
     <hr />
     
     <h2>List Types</h2>
+    <h3>Ordered list</h3>
 
-    <div id="lists">
-        <div>
-            <h3>Ordered list</h3>
-
+    <ol>
+        <li>List item</li>
+        <li>List item</li>
+        <li>
+            List item
             <ol>
-                <li>List item</li>
-                <li>List item</li>
+                <li>List item level 2</li>
                 <li>
-                    List item
+                    List item level 2
                     <ol>
-                        <li>List item level 2</li>
-                        <li>
-                            List item level 2
-                            <ol>
-                                <li>List item level 3</li>
-                                <li>List item level 3</li>
-                            </ol>
-                        </li>
+                        <li>List item level 3</li>
+                        <li>List item level 3</li>
                     </ol>
                 </li>
             </ol>
-        </div>
+        </li>
+    </ol>
+    <hr />
+    
+    <h3>Unordered list</h3>
 
-        <div>
-            <h3>Unordered list</h3>
-
+    <ul>
+        <li>List item 01</li>
+        <li>List item 02</li>
+        <li>
+            List item 03
             <ul>
-                <li>List item 01</li>
-                <li>List item 02</li>
+                <li>List item level 2</li>
                 <li>
-                    List item 03
+                    List item level 2
                     <ul>
-                        <li>List item level 2</li>
-                        <li>
-                            List item level 2
-                            <ul>
-                                <li>List item level 3</li>
-                                <li>List item level 3</li>
-                            </ul>
-                        </li>
+                        <li>List item level 3</li>
+                        <li>List item level 3</li>
                     </ul>
                 </li>
             </ul>
-        </div>
+        </li>
+    </ul>
+    <hr />
 
-        <div>
-            <h3>Definition List</h3>
+    <h3>Definition List</h3>
 
-            <dl>
-                <dt>Definition list title</dt>
-                <dd>Definition list data</dd>
-                <dt>Definition list title</dt>
-                <dd>Definition list data</dd>
-                <dt>Definition list title</dt>
-                <dd>Definition list data</dd>
-            </dl>
-        </div>
-    </div>
-
-    <div>
-        <h2>Other markup code</h2>
-        <div>
-            <p>
-                <a href="">hyperlink</a>
-                <br> <abbr title="title">abbreviation</abbr>
-                <br> <acronym>acronym (A)</acronym>
-                <br> <b>offset text typically styled in bold</b>
-                <br>
-                <cite>cited title of a work</cite>
-                <br>
-                <code>code fragment</code>
-                <br><del>deleted text</del>
-                <br><dfn title="title">defining instance</dfn>
-                <br><em>emphatic stress</em>
-                <br><i>offset text typically styled in italic</i>
-                <br><ins>inserted text</ins>
-                <br></p>
-        </div>
-
-        <div>
-            <p>
-                <kbd>user input</kbd>
-                <br>
-                <mark>marked (highlighted) text</mark>
-                <br>
-                <samp>sample output</samp>
-                <br>
-                <small>small print</small>
-                <br><strong>strong importance</strong>
-                <br><sup>superscript</sup> <sub>subscript</sub>
-                <br>
-                <var>variable or placeholder text</var>
-            </p>
-            <address>contact information</address>
-            <pre>preformatted text</pre>
-        </div>
-    </div>
+    <dl>
+        <dt>Definition list title</dt>
+        <dd>Definition list data</dd>
+        <dt>Definition list title</dt>
+        <dd>Definition list data</dd>
+        <dt>Definition list title</dt>
+        <dd>Definition list data</dd>
+    </dl>
+    
 </section>
 
 <section id="forms">
@@ -316,7 +275,7 @@
 
 </section>
 
-<section i="grid" class="container">
+<section i="grid">
     
     <h2>Grid usable sample</h2>
 
