@@ -8,36 +8,67 @@
 
 </head>
 <body>
-    <?php require('template/header.php'); ?>
     
     <div id="main-content">
         <div class="limit">
         
-            <section class="container" role="main">
-                <h1>firstClass</h1>
-                <p>This our project to help you create a better sites, think in simplicity, clean style.</p>
+        <aside class="sidebar">
+            <h1 class="logo">WDSIGN » firstClass</h1>
+            
+            <ul class="main-nav">
+                <li class="dropdown nav-item"><a href="#scaffolding" title="Scaffolding" class="nav-link">Scaffolding</a>
+                    <ul class="submenu">
+                        <li class="sub-item"><a href="#grid" class="nav-link">Grid</a></li>
+                        <li class="sub-item"><a href="#box" class="nav-link">Box</a></li>
+                        <li class="sub-item"><a href="#tables" class="nav-link">Tables</a></li>
+                        <li class="sub-item"><a href="#forms" class="nav-link">Forms</a></li>
+                        <li class="sub-item"><a href="#typography" class="nav-link">Typography</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown nav-item"><a href="#components" title="Components" class="nav-link">Components</a>
+                    <ul class="submenu">
+                        <li class="sub-item"><a href="#buttons" class="nav-link">buttons</a></li>
+                        <li class="sub-item"><a href="#icons" class="nav-link">Icons</a></li>
+                        <li class="sub-item"><a href="#labels" class="nav-link">Labels</a></li>
+                        <li class="sub-item"><a href="#images" class="nav-link">Images</a></li>
+                        <li class="sub-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                        <li class="sub-item"><a href="#breadcrumb" class="nav-link">Breadcrumb</a></li>
+                        <li class="sub-item"><a href="#lists" class="nav-link">Lists</a></li>
+                        <li class="sub-item"><a href="#navigation" class="nav-link">Navigation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown nav-item"><a href="#features" title="Features" class="nav-link">Features</a>
+                    <ul class="submenu">
+                        <li class="sub-item"><a href="#modal" class="nav-link">Modal</a></li>
+                        <li class="sub-item"><a href="#collapse" class="nav-link">Collapse</a></li>
+                        <li class="sub-item"><a href="#carousel" class="nav-link">Carousel</a></li>
+                        <li class="sub-item"><a href="#slider" class="nav-link">Slider</a></li>
+                        <li class="sub-item"><a href="#tooltip" class="nav-link">Tooltip</a></li>
+                        <li class="sub-item"><a href="#notification" class="nav-link">Notification</a></li>
+                        <li class="sub-item"><a href="#tabs" class="nav-link">Tabs</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        
+            
+            
+            <section class="container">
+                <blockquote class="txt-blink">
+                    A clean framework to help Web Designer create a better sites.
+                </blockquote>
+                
+                <?php include('scaffolding.php'); ?>
+                <hr />
+                <?php include('components.php'); ?>
+                <hr />
+                <?php include('features.php'); ?>
+                
+                
             </section>
-            <aside class="sidebar">
-                <h2>Features</h2>
-                <p>To help you create a more responsive sites and simple to mantain we select a sort of jquery plugins and add effects to give you a power to create the best sites.</p>
-                <ul>
-                    <li><a href="javascript.html#feature-name" aria-label="Feature Name">Feature Name</a></li>
-                    <li><a href="javascript.html#feature-name" aria-label="Feature Name">Feature Name</a></li>
-                    <li><a href="javascript.html#feature-name" aria-label="Feature Name">Feature Name</a></li>
-                    <li><a href="javascript.html#feature-name" aria-label="Feature Name">Feature Name</a></li>
-                    <li><a href="javascript.html#feature-name" aria-label="Feature Name">Feature Name</a></li>
-                    <li><a href="javascript.html#feature-name" aria-label="Feature Name">Feature Name</a></li>
-                    <li><a href="javascript.html#feature-name" aria-label="Feature Name">Feature Name</a></li>
-                    <li><a href="javascript.html#feature-name" aria-label="Feature Name">Feature Name</a></li>
-                    <li><a href="javascript.html#feature-name" aria-label="Feature Name">Feature Name</a></li>
-                    <li><a href="javascript.html#feature-name" aria-label="Feature Name">Feature Name</a></li>
-                </ul>
-            </aside>
         
         </div>
     </div>
-    
-    <?php require('template/footer.php'); ?>
     <?php require('template/foot.php'); ?>
 </body>
 </html>
