@@ -129,110 +129,97 @@
     
     <ul class="gallery">
         <li class="gallery-item">
-            <figcaption class="responsive" data-media440="media/gallery/gallery-01.jpg" data-media680="media/gallery/gallery-01.jpg" data-media760="media/gallery/gallery-01.jpg" data-media980="media/gallery/gallery-01.jpg">
+            <figcaption>
                 <a href="#" class="gallery-link" title="Image Gallery">
-                    <img src="media/gallery/gallery-01.jpg" alt="" class="gallery-img">
-                    <noscript><img src="media/gallery/gallery-01.jpg" alt=""></noscript>
+                    <img src="media/thumb-220.png" alt="" class="gallery-img">
                     <figcaption>Image Title</figcaption>
                 </a>
             </figcaption>
         </li>
         <li class="gallery-item">
-            <figcaption class="responsive" data-media440="media/gallery/gallery-01.jpg" data-media680="media/gallery/gallery-01.jpg" data-media760="media/gallery/gallery-01.jpg" data-media980="media/gallery/gallery-01.jpg">
+            <figcaption>
                 <a href="#" class="gallery-link" title="Image Gallery">
-                    <img src="media/gallery/gallery-01.jpg" alt="" class="gallery-img">
-                    <noscript><img src="media/gallery/gallery-01.jpg" alt=""></noscript>
+                    <img src="media/thumb-220.png" alt="" class="gallery-img">
                     <figcaption>Image Title</figcaption>
                 </a>
             </figcaption>
         </li>
         <li class="gallery-item">
-            <figcaption class="responsive" data-media440="media/gallery/gallery-01.jpg" data-media680="media/gallery/gallery-01.jpg" data-media760="media/gallery/gallery-01.jpg" data-media980="media/gallery/gallery-01.jpg"><a href="#" class="gallery-link" title="Image Gallery">
-                    <img src="media/gallery/gallery-01.jpg" alt="" class="gallery-img">
-                    <noscript><img src="media/gallery/gallery-01.jpg" alt=""></noscript>
+            <figcaption><a href="#" class="gallery-link" title="Image Gallery">
+                    <img src="media/thumb-220.png" alt="" class="gallery-img">
                     <figcaption>Image Title</figcaption>
                 </a></figcaption>
         </li>
         <li class="gallery-item">
-            <figcaption class="responsive" data-media440="media/gallery/gallery-01.jpg" data-media680="media/gallery/gallery-01.jpg" data-media760="media/gallery/gallery-01.jpg" data-media980="media/gallery/gallery-01.jpg">
+            <figcaption>
                 <a href="#" class="gallery-link" title="Image Gallery">
-                    <img src="media/gallery/gallery-01.jpg" alt="" class="gallery-img">
-                    <noscript><img src="media/gallery/gallery-01.jpg" alt=""></noscript>
+                    <img src="media/thumb-220.png" alt="" class="gallery-img">
                     <figcaption>Image Title</figcaption>
                 </a>
             </figcaption>
         </li>
         <li class="gallery-item">
-            <figcaption class="responsive" data-media440="media/gallery/gallery-01.jpg" data-media680="media/gallery/gallery-01.jpg" data-media760="media/gallery/gallery-01.jpg" data-media980="media/gallery/gallery-01.jpg">
+            <figcaption>
                 <a href="#" class="gallery-link" title="Image Gallery">
-                    <img src="media/gallery/gallery-01.jpg" alt="" class="gallery-img">
-                    <noscript><img src="media/gallery/gallery-01.jpg" alt=""></noscript>
+                    <img src="media/thumb-220.png" alt="" class="gallery-img">
                     <figcaption>Image Title</figcaption>
                 </a>
             </figcaption>
         </li>
         <li class="gallery-item">
-            <figcaption class="responsive" data-media440="media/gallery/gallery-01.jpg" data-media680="media/gallery/gallery-01.jpg" data-media760="media/gallery/gallery-01.jpg" data-media980="media/gallery/gallery-01.jpg"><a href="#" class="gallery-link" title="Image Gallery">
-                    <img src="media/gallery/gallery-01.jpg" alt="" class="gallery-img">
-                    <noscript><img src="media/gallery/gallery-01.jpg" alt=""></noscript>
+            <figcaption><a href="#" class="gallery-link" title="Image Gallery">
+                    <img src="media/thumb-220.png" alt="" class="gallery-img">
                     <figcaption>Image Title</figcaption>
                 </a></figcaption>
         </li>
         <li class="gallery-item">
-            <figcaption class="responsive" data-media440="media/gallery/gallery-01.jpg" data-media680="media/gallery/gallery-01.jpg" data-media760="media/gallery/gallery-01.jpg" data-media980="media/gallery/gallery-01.jpg"><a href="#" class="gallery-link" title="Image Gallery">
-                    <img src="media/gallery/gallery-01.jpg" alt="" class="gallery-img">
-                    <noscript><img src="media/gallery/gallery-01.jpg" alt=""></noscript>
+            <figcaption><a href="#" class="gallery-link" title="Image Gallery">
+                    <img src="media/thumb-220.png" alt="" class="gallery-img">
                     <figcaption>Image Title</figcaption>
                 </a></figcaption>
         </li>
         <li class="gallery-item">
-            <figcaption class="responsive" data-media440="media/gallery/gallery-01.jpg" data-media680="media/gallery/gallery-01.jpg" data-media760="media/gallery/gallery-01.jpg" data-media980="media/gallery/gallery-01.jpg">
+            <figcaption>
                 <a href="#" class="gallery-link" title="Image Gallery">
-                    <img src="media/gallery/gallery-01.jpg" alt="" class="gallery-img">
-                    <noscript><img src="media/gallery/gallery-01.jpg" alt=""></noscript>
+                    <img src="media/thumb-220.png" alt="" class="gallery-img">
                     <figcaption>Image Title</figcaption>
                 </a>
             </figcaption>
         </li>
         <li class="gallery-item">
-            <figcaption class="responsive" data-media440="media/gallery/gallery-01.jpg" data-media680="media/gallery/gallery-01.jpg" data-media760="media/gallery/gallery-01.jpg" data-media980="media/gallery/gallery-01.jpg">
+            <figcaption>
                 <a href="#" class="gallery-link" title="Image Gallery">
-                    <img src="media/gallery/gallery-01.jpg" alt="" class="gallery-img">
-                    <noscript><img src="media/gallery/gallery-01.jpg" alt=""></noscript>
+                    <img src="media/thumb-220.png" alt="" class="gallery-img">
                     <figcaption>Image Title</figcaption>
                 </a>
             </figcaption>
         </li>
         <li class="gallery-item">
-            <figcaption class="responsive" data-media440="media/gallery/gallery-01.jpg" data-media680="media/gallery/gallery-01.jpg" data-media760="media/gallery/gallery-01.jpg" data-media980="media/gallery/gallery-01.jpg">
+            <figcaption>
                 <a href="#" class="gallery-link" title="Image Gallery">
-                    <img src="media/gallery/gallery-01.jpg" alt="" class="gallery-img">
-                    <noscript><img src="media/gallery/gallery-01.jpg" alt=""></noscript>
+                    <img src="media/thumb-220.png" alt="" class="gallery-img">
                     <figcaption>Image Title</figcaption>
                 </a>
             </figcaption>
         </li>
         <li class="gallery-item">
-            <figcaption class="responsive" data-media440="media/gallery/gallery-01.jpg" data-media680="media/gallery/gallery-01.jpg" data-media760="media/gallery/gallery-01.jpg" data-media980="media/gallery/gallery-01.jpg"><a href="#" class="gallery-link" title="Image Gallery">
-                    <img src="media/gallery/gallery-01.jpg" alt="" class="gallery-img">
-                    <noscript><img src="media/gallery/gallery-01.jpg" alt=""></noscript>
+            <figcaption><a href="#" class="gallery-link" title="Image Gallery">
+                    <img src="media/thumb-220.png" alt="" class="gallery-img">
                     <figcaption>Image Title</figcaption>
                 </a></figcaption>
         </li>
         <li class="gallery-item">
-            <figcaption class="responsive" data-media440="media/gallery/gallery-01.jpg" data-media680="media/gallery/gallery-01.jpg" data-media760="media/gallery/gallery-01.jpg" data-media980="media/gallery/gallery-01.jpg">
+            <figcaption>
                 <a href="#" class="gallery-link" title="Image Gallery">
-                    <img src="media/gallery/gallery-01.jpg" alt="" class="gallery-img">
-                    <noscript><img src="media/gallery/gallery-01.jpg" alt=""></noscript>
+                    <img src="media/thumb-220.png" alt="" class="gallery-img">
                     <figcaption>Image Title</figcaption>
                 </a>
             </figcaption>
         </li>
         <li class="gallery-item">
-            <figcaption class="responsive" data-media440="media/gallery/gallery-01.jpg" data-media680="media/gallery/gallery-01.jpg" data-media760="media/gallery/gallery-01.jpg" data-media980="media/gallery/gallery-01.jpg">
+            <figcaption>
                 <a href="#" class="gallery-link" title="Image Gallery">
-                    <img src="media/gallery/gallery-01.jpg" alt="" class="gallery-img">
-                    <noscript><img src="media/gallery/gallery-01.jpg" alt=""></noscript>
+                    <img src="media/thumb-220.png" alt="" class="gallery-img">
                     <figcaption>Image Title</figcaption>
                 </a>
             </figcaption>

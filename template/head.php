@@ -28,3 +28,4 @@
 <meta name="description" content="WDSIGN community work an own HTML/CSS framework, called firstClass by his project manager Rick Benetti">
 
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/libs/prismjs/prism.css">
