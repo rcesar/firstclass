@@ -127,7 +127,7 @@
     
     <h1>Gallery</h1>
     
-    <ul class="gallery">
+    <ul class="gallery count4">
         <li class="gallery-item">
             <figcaption>
                 <a href="#" class="gallery-link" title="Image Gallery">

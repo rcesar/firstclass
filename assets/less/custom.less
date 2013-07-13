@@ -9,6 +9,7 @@ body {
 #main-content {
 	.container {
 		.column(9);
+		padding: 20px;
 		.txt-blink {
 		    background-color: @notification-primary;
 		    color: @black-70;
@@ -19,6 +20,7 @@ body {
 	}
 	.sidebar {
 		.column(3);
+		padding: 20px;
 		>div:last-child {
 			p {
 				margin-bottom:0;
@@ -27,19 +29,25 @@ body {
 				margin-bottom: 1.5em;
 			}
 		}
+		.logo {
+		    float: left;
+		    height: 199px;
+		    margin: 0 0 2em;
+		    width: 229px;
+		}
 	}
-	section {
-		.clearfix();
+	.container section {	
+        .clearfix();
 		border-bottom: solid 1px lighten(@blue, 20%);
+		clear: both;
+		float: left;
 		margin: 0 0 30px;
 		padding: 0 0 30px;
+		width: 100%;
 		&:last-child {
 		    border-bottom: none;
 		    margin-bottom: none;
 		    padding-bottom: none;
-		}
-		>div {
-			.column(12);
 		}
 		// Colors
 		.color-swatch {

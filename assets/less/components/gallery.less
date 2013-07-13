@@ -1,1 +1,21 @@
 // ===[ Gallery Style ]===
+
+.gallery {
+    list-style-type: none;
+    .gallery-item {
+        float: left;
+        margin: 10px 20px 10px 0;
+    }
+    &.count4 {
+        .gallery-item {
+            width: 220px;
+        }
+        .gallery-item:nth-child(4n) {
+            margin-right: 0;
+        }
+        .gallery-item:nth-child(4n + 1) {
+            clear: left;
+            float: left;
+        }
+    }
+}
