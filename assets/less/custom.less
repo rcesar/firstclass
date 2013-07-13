@@ -12,33 +12,51 @@ body {
 		padding-top: 1.5em;
 		//margin-bottom: 2px; // Figure out 2px weirdness with hgroups
 	}
-	nav ul {
-		.clearfix();
-		.row();
+	.main-menu .nav-list {
+		.column(12, 0);
+		float: left;
+		font-weight:bold;
+		list-style-type: none;
 		margin-bottom: 1.5em;
 		text-align: center;
-		font-weight:bold;
-		li {
-			.column(2, 0);
-			a {
-				display:block;
-				background: @link;
-				padding: .75em 0;
-				border-right: 1px solid #fff;
-				color:#fff;
-				text-decoration: none;
-				&:hover, &:focus {
-					background:@link-hover;
-				}
-			}
-		}
 	}
+	.nav-item {
+        .column(2.4, 0);
+        .nav-link {
+            display:block;
+            background: @link;
+            padding: .75em 0;
+            border-right: 1px solid #fff;
+            color:#fff;
+            text-decoration: none;
+            &:hover, &:focus {
+                background:@link-hover;
+            }
+        }
+        &:hover {
+            .submenu {
+                display: block;
+            }
+        }
+    }
+    .submenu {
+        .clearfix();
+        .column(12, 0);
+        border-right: solid 1px transparent;
+        display: none;
+        float: left;
+        list-style-type: none;
+        .nav-link {
+            float: left;
+            width: 100%;
+        }
+    }
 }
 #main-content {
-	>section {
+	.container {
 		.column(8);
 	}
-	>aside {
+	.sidebar {
 		.column(4);
 		>div:last-child {
 			p {
@@ -49,13 +67,27 @@ body {
 			}
 		}
 	}
-	>div {
-		clear:both;
+	section {
+		.clearfix();
+		border-bottom: solid 1px lighten(@blue, 20%);
+		margin: 0 0 30px;
+		padding: 0 0 30px;
+		&:last-child {
+		    border-bottom: none;
+		    margin-bottom: none;
+		    padding-bottom: none;
+		}
 		>div {
 			.column(12);
 		}
-		section {
+		.grid-example {
+		    .clearfix();
+		    .column(12);
+		}
+		.container {
 			//background:#ccc;	
+			.clearfix();
+			.column(12, 0);
 			div {
 				background: @green;
 				height: 3em;
@@ -64,9 +96,6 @@ body {
 				border-top:0;
 				border-bottom:0;
 			}
-		}
-		.container {
-			.clearfix();
 			&.one,
 			&.two,
 			&.three,
@@ -180,6 +209,14 @@ body {
 			}
 		}
 	}
+	.wide-content,
+	.wide-list {
+	    .column(12);
+	}
+	.double-content,
+	.double-list {
+	    .column(6);
+	}
 }
 #footer-content {
 	border-top: solid 1px @black-30;
@@ -195,66 +232,69 @@ body {
  */
 @media screen and (max-width: 750px) {
 	#main-content {
-		>div {
-			>section {
-				.column(12);
-			}
-			>aside {
-				.column(12, 0);
-				>h2 {
-					.column(12);
-					padding-top: 0.25em;
-				    margin-bottom: 0.5em;
-				}
-				div#lists {
-					>div {
-						.column(4);
-					}
-					ul, ol {
-						padding-left: 10%;
-					}
-				}
-				>div:last-child {
-					.column(12, 0);
-					>h2 {
-						.column(12);
-						padding-top: 0.25em;
-					    margin-bottom: 0.5em;
-					}
-					>div {
-						.column(6);
-					}
-				}
-			}
+		.container {
+            .column(12);
 		}
+		.sidebar {
+            .column(12, 0);
+            >h2 {
+                .column(12);
+                padding-top: 0.25em;
+                margin-bottom: 0.5em;
+            }
+            div#lists {
+                >div {
+                    .column(4);
+                }
+                ul, ol {
+                    padding-left: 10%;
+                }
+            }
+            >div:last-child {
+                .column(12, 0);
+                >h2 {
+                    .column(12);
+                    padding-top: 0.25em;
+                    margin-bottom: 0.5em;
+                }
+                >div {
+                    .column(6);
+                }
+            }
+        }
 	}
 }
 @media screen and (max-width: 520px) {
 	#main-content {
-		>div {
-			>aside {
-				div#lists {
-					>div {
-						.column(12);
-					}
-				}
-				>div:last-child {
-					>h2 {
-						.column(12);
-						padding-top: 0.25em;
-					    margin-bottom: 0.5em;
-					}
-					>div {
-						.column(12);
-					}
-					p {
-						margin-bottom:0;
-					}
-					div:last-child p {
-						margin-bottom: 1.5em;
-					}
-				}
-			}
+		.container {
+            .column(12);
 		}
+		.sidebar {
+            .column(12, 0);
+            >h2 {
+                .column(12);
+                padding-top: 0.25em;
+                margin-bottom: 0.5em;
+            }
+            div#lists {
+                >div {
+                    .column(4);
+                }
+                ul, ol {
+                    padding-left: 10%;
+                }
+            }
+            >div:last-child {
+                .column(12, 0);
+                >h2 {
+                    .column(12);
+                    padding-top: 0.25em;
+                    margin-bottom: 0.5em;
+                }
+                >div {
+                    .column(6);
+                }
+            }
+        }
 	}
 }

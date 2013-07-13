@@ -1,0 +1,82 @@
+// ===[ Forms ]===
+
+// ===[ Form Elements ]===
+input,
+select,
+textarea,
+button {
+    font: @size-base @family-base;
+    vertical-align: middle;
+    color: @black-60;
+}
+input,
+select,
+textarea {;
+    border: 1px solid @black-10;
+}
+input,
+textarea {
+    padding: 2px;
+}
+select {
+    padding: 1px;
+    option {
+        padding-right: 10px;
+    }
+    &.multiselect option {
+        border-bottom: 1px solid @black-10;
+        padding: 2px 5px;
+        &:last-child {
+             border-bottom: 0;
+        }
+    }
+}
+textarea {
+    overflow: auto;
+}
+input {
+	&.radio {
+		margin-right: 3px;
+	}
+	&.checkbox {
+		margin-right: 3px;
+	}
+	&.qty {
+		width: 2.5em !important
+	}
+}
+.btn::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+button {
+	.btn {
+        -webkit-border-fit: lines; /* <- Safari & Google Chrome Fix */
+        border: 0;
+        cursor:pointer;
+        margin: 0;
+        nowhitespace: afterproperty;
+        overflow: visible;
+        padding: 0;
+        width: auto;
+    }
+    &.disabled {
+        span { }
+    }
+    &.btn-checktout {
+        span { }
+        &.no-checkout { }
+    }
+}
+
+
+// ===[ Forms List ]===
+.frm-list {
+    border: none;
+    fieldset {
+        border: solid 1px @black-10;
+        legend {
+            font-size: @h3;
+        }
+    }
+}

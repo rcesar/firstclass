@@ -1,9 +1,31 @@
 // ===[ Notificatio Bar ]===
-.notification {
+.notification-full {
     border-bottom: solid 1px @black-10;
     position: fixed;
     top: 0;
     .limit {
         min-height: 32px;
+    }
+}
+.notification {
+    .clearfix();
+    .column(12);
+    padding: 10px 0;
+    &.primary {
+        background-color: @notification-primary;
+    }
+    &.success {
+        background-color: @notification-success;
+    }
+    &.warning {
+        background-color: @notification-warning;
+        color: @white;
+    }
+    &.danger {
+        background-color: @notification-danger;
+        color: @white;
+    }
+    &.info {
+        background-color: @notification-info;
     }
 }
