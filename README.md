@@ -1,7 +1,9 @@
 WDSIGN » firstClass
 =====================================
 [Check out a demo here.](http://firstClass.wdsign.com.br)
+
 A clean framework powered by [LESS][1] based on [Semantic.gs][2], HTML5, CSS3 and jQuery [Picture Responsive][3].
+
 This is a project to community [WDSIGN](https://plus.google.com/u/0/communities/104431911254900556469) and are created to help us when wee ned create a fast and clean sites.
 
 
