@@ -6,8 +6,8 @@ A clean framework powered by [LESS][1] based on [Semantic.gs][2], HTML5, CSS3 an
 
 This is a project to community [WDSIGN](https://plus.google.com/u/0/communities/104431911254900556469) and are created to help us when wee ned create a fast and clean sites.
 
+More information in portuguese at our [wiki page](https://github.com/WDSIGN/firstClass/wiki)
 
-Our idea it's based in our LESSCSS organization:
 
 Scaffolding
 -----------
