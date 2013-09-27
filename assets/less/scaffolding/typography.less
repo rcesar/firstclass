@@ -1,11 +1,21 @@
 // ===[ Typography ]===
 
+// Font-Face
 @import "fonts.less";
+
+/**
+ * Baseline
+ * Common settings for this:
+ *** 100% for 16px font and 24px baseline.
+ *** 75% for 12px font and 18px baseline.
+ */
+@baseline: 100%;
+
 // Font-Size format
-@size-base:         12px;
-@size-large:    @size-base + 4; // ~16px
-@size-medium:   @size-base + 2; // ~14px
-@size-mini:     @size-base - 2; // ~10px
+@size-base:         1;
+.font-size( @target: @fontsize ) {
+    font-size: (@target / @size-base) + 0em;
+}
 
 
 // Font-Family format
@@ -13,7 +23,7 @@
 @family-awesome:    "FontAwesome";
 @family-serif:      Georgia, "Times New Roman", Times, serif;
 @family-monospace:  Monaco, Menlo, Consolas, "Courier New", monospace;
-@family-heading:    "Bebas Neue";
+@family-heading:    "Open Sans Regular";
 
 @body-family: @family-base;
 @head-family: @family-heading;
@@ -33,43 +43,30 @@ a {
 
 // ===[ Headings ]===
 h1,h2,h3,h4,h5,h6 {
-	margin-top:0;
-	font-family: @head-family;
 	color: @heading-color;
+	font-family: @head-family;
+    line-height: 1;
 }
 h1 {
-	font-size: 3em;
-	line-height: 1;
-	padding-top: 0.53em;
-	margin-bottom: 0.5em;
+	.font-size(24);
 }
 h2 {
-	font-size: 2em;
-	padding-top: 0.25em;
-	margin-bottom: 0.5em;
+	.font-size(20);
 }
 h3 {
-	font-size: 1.5em;
-	line-height: 1;
-	padding-top: 0.35em;
-	margin-bottom: 0.65em;
+	.font-size(18);
 }
 h4 {
-	font-size: 1.2em;
-	line-height: 1.25;
-	padding-top: 0.45em;
-	margin-bottom: 0.8em;
+	.font-size(16);
+    font-weight: 700;
 }
 h5 {
-	font-size: 1em;
-	font-weight: bold;
-	padding-top: 0.6em;
-	margin-bottom: 0.9em;
+	.font-size(14);
+    font-weight: 700;
 }
 h6 {
-	font-size: 1em;
-	font-weight: bold;
-	margin-bottom: 0;
+	.font-size(12);
+    font-weight: 700;
 }
 
 // ===[ Lists ]===

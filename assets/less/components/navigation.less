@@ -4,9 +4,13 @@
 // .main-nav
 .main-nav {
     list-style-type: none;
-    &,
-    .dropdown,
+    &.vertical-menu {
+        .nav-item {
+            clear: both;
+        }
+    }
     .nav-item {
+        float: left;
         margin: 0;
         padding: 0;
     }
@@ -16,7 +20,7 @@
         padding-left: 2em;
     }
     .nav-link {
-        color: @brand-primary;
+        color: @default-primary;
         text-decoration: none;
     }
     .dropdown {

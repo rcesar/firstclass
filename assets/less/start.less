@@ -1,21 +1,5 @@
 // ===[ Site Variables ]===
 
-// Grid options
-@gutter-width: 40px; // Your gutter width
-@columns: 12; // The amount of columns you want
-@max-width: 1008px; // Set a maximum width of the site
-
-// Half the gutter for borders, margin, padding etc
-@gutter: @gutter-width*0.5;
-
-/**
- * Baseline
- * Common settings for this:
- *** 100% for 16px font and 24px baseline.
- *** 75% for 12px font and 18px baseline.
- */
-@baseline: 100%;
-
 // ===[ Colors ]===
 
 // Grayscale
@@ -29,12 +13,12 @@
 @black-80:                 darken(#fff, 80%);
 @black-90:                 darken(#fff, 90%);
 
-// Brand colors
-@brand-primary:           #428bca;
-@brand-success:           #5cb85c;
-@brand-warning:           #f0ad4e;
-@brand-danger:            #d9534f;
-@brand-info:              #5bc0de;
+// Default colors
+@default-primary:           #428bca;
+@default-success:           #5cb85c;
+@default-warning:           #f0ad4e;
+@default-danger:            #d9534f;
+@default-info:              #5bc0de;
 
 // Notification Color
 @notification-primary:           #ffed8c;
@@ -42,10 +26,6 @@
 @notification-warning:           #f8c3a8;
 @notification-danger:            #d9534f;
 @notification-info:              #bde6f2;
-
-// Default Colors
-@white: #fff;
-@black: #000;
 
 // Accent colors
 @blue:  		#008afd;
@@ -55,14 +35,14 @@
 @orange:  	#ff6600;
 @pink:  		#fc00ff;
 @purple:  		#7200ff;
+@white:  		#fff;
+@black:  		#fff;
 
 // Brand colors - Client colors
-@brand-first-color:      #9e205e; // lilás
-@alpha-brand-first-color:      fadeout(#9e205e, 70%); // lilás transparente
-@brand-second-color:     #e1b6b2; // rosa claro
-@alpha-brand-second-color:     fadeout(#e1b6b2, 70%); // rosa transparente
-@brand-third-color:      #91a5a5; // cinza
-@alpha-brand-third-color:      fadeout(#91a5a5, 70%); // cinza transparente
+@brand-first:      #008afd; // WDSIGN -> blue
+@brand-second:     #92c847; // WDSIGN -> green
+@brand-third:      #ffa800; // WDSIGN -> yellow
+@brand-fourth:      #4a4a4a; // WDSIGN -> grey
 
 // Font variables
 @body-color: @black-50;
@@ -81,11 +61,10 @@
 
 
 // ===[ Set-up ]===
-html { font-size: 100.01%; }
 body {
 	font-size: @baseline;
 	color: @body-color;
-	line-height: 1.5em;
+	line-height: 1.5;
 	font-family: @body-family;
 	font-weight: normal;
 	margin: 0;
@@ -104,7 +83,7 @@ body {
 	-moz-text-stroke: 1px transparent;
 	-ms-text-stroke: 1px transparent;
 	text-stroke: 1px transparent;
-	
+
 	text-rendering: optimizeLegibility;
 }
 

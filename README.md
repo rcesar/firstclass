@@ -43,19 +43,17 @@ Components
 Features
 --------
 * **Modal**
-    HTML5 and CSS3 are great but our clients not and we need simple and customized solutions (in development).
+    jQuery [Superbox][10]
 * **Collapse**
-    Simple but great idea (in development).
+    jQuery [Collapse][9]
 * **Carousel**
-    Oh carousel to add promotional content or add more effect to some list items (in development).
+    jQuery [OwlCarousel][8]
 * **Slider**
-    We need in much time 2 solutions: Responsive or not responsive but full width (in development).
+    jQuery [OwlCarousel][8]
 * **Tooltip**
-    Help your clients add more customization options to abbreviations and acronyms (in development).
-* **Notification**
-    Alert and help you site visit give messages (in development).
+    jQuery [Tooltipster's][7]
 * **Tabs**
-    In 99% of our jobs we have need tabs (in development).
+    jQuery [HeroTabs][6]
     
 Commons
 -------
@@ -87,6 +85,7 @@ Feel like you've got an idea on how to optimize the code and want to share it? W
 Versions
 --------
 
+- **v0.4** jQuery OWL, jQuery HeroTabs, Collapse, SuperBox .
 - **v0.3** HTML and CSS basic style definition.
 - **v0.2** Add all options to HTML.
 - **v0.1** Start project.
@@ -97,3 +96,8 @@ Versions
 [3]: http://jquerypicture.com/
 [4]: http://twitter.com/rickbenettibr
 [5]: http://twitter.com/rzamana
+[6]: https://github.com/WDSIGN/jquery.herotabs
+[7]: https://github.com/WDSIGN/tooltipster
+[8]: https://github.com/WDSIGN/OwlCarousel
+[9]: https://github.com/WDSIGN/jQuery-Collapse
+[10]:https://github.com/WDSIGN/jquery-superbox

@@ -3,12 +3,13 @@
     border-bottom: solid 1px @black-10;
     position: fixed;
     top: 0;
+    z-index: 999999991; // 999.999.991
     .limit {
         min-height: 32px;
     }
 }
 .notification {
-    .clearfix();
+    &:extend(.clearfix all);
     .column(12);
     margin: 20px 0;
     padding: 5px 10px 10px;

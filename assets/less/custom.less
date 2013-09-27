@@ -4,11 +4,12 @@ body {
 	background: url('../images/bg.png') 0 2px;
 }
 .limit {
-	.row();
+	&:extend(.row all);
 }
 #main-content {
 	.container {
 		.column(9);
+		float: right;
 		padding: 20px;
 		.txt-blink {
 		    background-color: @notification-primary;
@@ -17,10 +18,16 @@ body {
 		    margin: 20px 0;
 		    padding: 5px 10px;
 		}
+		.box {
+			width: 45%;
+		}
 	}
 	.sidebar {
-		.column(3);
+		.column(2.5);
+		float: left;
+		height: 100%;
 		padding: 20px;
+		position: fixed;
 		>div:last-child {
 			p {
 				margin-bottom:0;
@@ -30,98 +37,16 @@ body {
 			}
 		}
 		.logo {
-		    float: left;
+		    display: block;
 		    height: 199px;
-		    margin: 0 0 2em;
+		    margin: 0 auto 2em;
 		    width: 229px;
 		}
-	}
-	.container section {	
-        .clearfix();
-		border-bottom: solid 1px lighten(@blue, 20%);
-		clear: both;
-		float: left;
-		margin: 0 0 30px;
-		padding: 0 0 30px;
-		width: 100%;
-		&:last-child {
-		    border-bottom: none;
-		    margin-bottom: none;
-		    padding-bottom: none;
+		nav {
+			clear: both;
+			display: block;
+			margin: 0 auto;
+			width: 229px;
 		}
-		// Colors
-		.color-swatch {
-			float: left;
-			width: 80px;
-			height: 80px;
-			margin: 5px 2px;
-
-			&.black-10 { background-color: @black-10; }
-			&.black-20 { background-color: @black-20; }
-			&.black-30 { background-color: @black-30; }
-			&.black-40 { background-color: @black-40; }
-			&.black-50 { background-color: @black-50; }
-			&.black-60 { background-color: @black-60; }
-			&.black-70 { background-color: @black-70; }
-			&.black-80 { background-color: @black-80; }
-			&.black-90 { background-color: @black-90; }
-
-			&.brand-primary { background-color: @brand-primary;}
-			&.brand-success { background-color: @brand-success;}
-			&.brand-warning { background-color: @brand-warning;}
-			&.brand-danger  { background-color: @brand-danger;}
-			&.brand-info    { background-color: @brand-info;}
-		}
-		.buttons-block {
-			.clearfix();
-			.column(12, 0);
-			float: left;
-			margin: 5px 2px 20px;
-			p {
-				.clearfix();
-				.column(12, 0);
-				margin-bottom: 0;
-				padding: 0;
-				text-align: left;
-			}
-			a {
-				float: left;
-				margin: 0 10px 0 0;
-			}
-		}
-	}
-	.wide-content,
-	.wide-list {
-	    .column(12);
-	}
-	.double-content,
-	.double-list {
-	    .column(6);
-	}
-}
-
-/**
- * NOTE
- * Don't add breakpoints aimed at device pixel widths,
- * add them where they suit best for your design. 
- */
-@media screen and (max-width: 750px) {
-	#main-content {
-		.container {
-            .column(12);
-		}
-		.sidebar {
-            .column(12, 0);
-        }
-	}
-}
-@media screen and (max-width: 520px) {
-	#main-content {
-		.container {
-            .column(12);
-		}
-		.sidebar {
-            .column(12, 0);
-        }
 	}
 }
