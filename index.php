@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/Thing">
+<html lang="pt-br" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/Thing">
 <head>
 
 	<meta charset="utf-8">
@@ -7,26 +7,15 @@
     <title>WDSIGN » firstClass</title>
 
 </head>
-<body>
+<body class="home">
 
     <div id="main-content">
         <div class="limit">
 
-        <aside class="sidebar">
-            <img class="logo" src="assets/images/logo.png" title="WDSIGN » firstClass">
-            <nav class="menu-vertical">
-                <ul>
-                    <li><a href="http://gplus.to/WDSIGN">Goolge+</a></li>
-                    <li><a href="https://twitter.com/!#/WDSIGNBR">Twitter</a></li>
-                    <li><a href="https://www.facebook.com/wdsignbr">Facebook</a></li>
-                    <li><a href="http://wdsign.com.br">Feed</a></li>
-                </ul>
-            </nav>
-        </aside>
+            <?php include('template/sidebar.php'); ?>
 
 
-
-            <section class="container">
+            <section class="content">
                 <article class="box">
                     <header class="box-title">
                         <p class="el-title"><strong>Apresentação</strong></p>
