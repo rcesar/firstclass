@@ -1,11 +1,11 @@
 WDSIGN » firstClass
 =====================================
-[Visite a página do projeto.](http://firstClass.wdsign.com.br)
-Um freamework simples baseado em [LESS][1] com [Semantic.gs][2], HTML5, CSS3 e jQuery [Picture Responsive][3].
-Este é um projeto que ofereço para comunidade do [WDSIGN](https://plus.google.com/u/0/communities/104431911254900556469) e todos que precisam de um guia para inciar seus projetos de forma prática e rápida.
+[Check out a demo here.](http://firstClass.wdsign.com.br)
+A clean framework powered by [LESS][1] based on [Semantic.gs][2], HTML5, CSS3 and jQuery [Picture Responsive][3].
+This is a project to community [WDSIGN](https://plus.google.com/u/0/communities/104431911254900556469) and are created to help us when wee ned create a fast and clean sites.
 
 
-Organizei e dividi os conjuntos de pré-formatações em 3 grandes grupos:
+Our idea it's based in our LESSCSS organization:
 
 Scaffolding
 -----------

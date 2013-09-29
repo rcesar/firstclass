@@ -14,22 +14,21 @@
                 <ul class="main-nav">
                     <li class="nav-item feature-item"><a href="scaffolding.php" title="Scaffolding" class="nav-link">Scaffolding</a>
                         <ul class="submenu">
-                            <li class="sub-item"><a href="scaffolding.php#grid" class="nav-link">Grid</a></li>
-                            <li class="sub-item"><a href="scaffolding.php#box" class="nav-link">Box</a></li>
-                            <li class="sub-item"><a href="scaffolding.php#tables" class="nav-link">Tables</a></li>
+                            <li class="sub-item"><a href="scaffolding.php#type" class="nav-link">Typography</a></li>
                             <li class="sub-item"><a href="scaffolding.php#forms" class="nav-link">Forms</a></li>
-                            <li class="sub-item"><a href="scaffolding.php#typography" class="nav-link">Typography</a></li>
+                            <li class="sub-item"><a href="scaffolding.php#tables" class="nav-link">Tables</a></li>
+                            <li class="sub-item"><a href="scaffolding.php#box" class="nav-link">Box</a></li>
+                            <li class="sub-item"><a href="scaffolding.php#grid" class="nav-link">Grid</a></li>
                         </ul>
                     </li>
                     <li class="nav-item feature-item"><a href="components.php" title="Components" class="nav-link">Components</a>
                         <ul class="submenu">
-                            <li class="sub-item"><a href="components.php#buttons" class="nav-link">buttons</a></li>
-                            <li class="sub-item"><a href="components.php#icons" class="nav-link">Icons</a></li>
+                            <li class="sub-item"><a href="components.php#colors" class="nav-link">Colors</a></li>
+                            <li class="sub-item"><a href="components.php#buttons" class="nav-link">Buttons</a></li>
+                            <li class="sub-item"><a href="components.php#icons" class="nav-link">WebIcons</a></li>
                             <li class="sub-item"><a href="components.php#labels" class="nav-link">Labels</a></li>
                             <li class="sub-item"><a href="components.php#images" class="nav-link">Images</a></li>
                             <li class="sub-item"><a href="components.php#gallery" class="nav-link">Gallery</a></li>
-                            <li class="sub-item"><a href="components.php#breadcrumb" class="nav-link">Breadcrumb</a></li>
-                            <li class="sub-item"><a href="components.php#lists" class="nav-link">Lists</a></li>
                             <li class="sub-item"><a href="components.php#navigation" class="nav-link">Navigation</a></li>
                         </ul>
                     </li>

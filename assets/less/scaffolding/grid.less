@@ -49,3 +49,25 @@
 .pull(@offset:1, @columns:@columns) {
 	margin-right: 100%*(@offset / @columns);
 }
+.wide-container {
+    .column(12);
+    clear: both;
+    padding: 1%;
+}
+.columns {
+    float: left;
+    margin-right: 1%;
+    &:last-child {
+        float: right;
+        margin-right: 0;
+    }
+    &.half-column {
+        .column(5.9);
+    }
+    &.third-column {
+        .column(3.9);
+    }
+    &.quarter-column {
+        .column(2.9);
+    }
+}

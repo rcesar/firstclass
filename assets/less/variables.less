@@ -1,0 +1,107 @@
+// ===[ Site Variables ]===
+
+// ===[ Colors ]===
+
+// Grayscale
+@black-10:                 darken(#fff, 10%);
+@black-20:                 darken(#fff, 20%);
+@black-30:                 darken(#fff, 30%);
+@black-40:                 darken(#fff, 40%);
+@black-50:                 darken(#fff, 50%);
+@black-60:                 darken(#fff, 60%);
+@black-70:                 darken(#fff, 70%);
+@black-80:                 darken(#fff, 80%);
+@black-90:                 darken(#fff, 90%);
+
+// Default colors
+@default-primary:           #428bca;
+@default-success:           #5cb85c;
+@default-warning:           #f0ad4e;
+@default-danger:            #d9534f;
+@default-info:              #5bc0de;
+
+// Notification Color
+@notification-primary:           #ffed8c;
+@notification-success:           #c9e8c9;
+@notification-warning:           #f8c3a8;
+@notification-danger:            #d9534f;
+@notification-info:              #bde6f2;
+
+// Accent colors
+@blue:  		#008afd;
+@green:  		#92c847;
+@red:  		#ff1e00;
+@yellow:  		#ffa800;
+@orange:  	#ff6600;
+@pink:  		#fc00ff;
+@purple:  		#7200ff;
+@white:  		#fff;
+@black:  		#fff;
+
+// Brand colors - Client colors
+@brand-first:      #008afd; // WDSIGN -> blue
+@brand-second:     #92c847; // WDSIGN -> green
+@brand-third:      #ffa800; // WDSIGN -> yellow
+@brand-fourth:      #4a4a4a; // WDSIGN -> grey
+
+// Font variables
+@body-color: @black-50;
+@heading-color: @black-70;
+
+// Link colors
+@link: @blue;
+@link-hover: @green;
+
+// Select colors
+@select: @blue;
+@select-color: @white;
+
+// Forms
+@color-placeholder: lighten(@body-color, 25%);
+
+
+// ===[ Set-up ]===
+body {
+	font-size: @baseline;
+	color: @body-color;
+	line-height: 1.5;
+	font-family: @body-family;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+
+	-moz-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+	-ms-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+
+	-webkit-text-stroke: 1px transparent;
+	-moz-text-stroke: 1px transparent;
+	-ms-text-stroke: 1px transparent;
+	text-stroke: 1px transparent;
+
+	text-rendering: optimizeLegibility;
+}
+
+// ===[ Selection Colors ]===
+::selection {
+	background: @select;
+	color: @select-color;
+}
+::-moz-selection {
+	background: @select;
+	color: @select-color;
+}
+img::selection {
+	background: transparent;
+}
+img::-moz-selection {
+	background: transparent;
+}
+body {
+	-webkit-tap-highlight-color: @select;
+}

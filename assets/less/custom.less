@@ -7,26 +7,6 @@ body {
 	&:extend(.row all);
 }
 #main-content {
-	.content {
-		.column(9);
-        clear: both;
-		float: right;
-		padding: 20px;
-        section {
-            clear: both;
-        }
-        .banner-title {
-            background-color: @black-40;
-            color: @black-80;
-            float: left;
-            font-size: 4em;
-            line-height: 2;
-            margin: 0 0 2%;
-            padding: 0 0 0 1%;
-            text-align: left;
-            width: 100%;
-        }
-	}
 	.sidebar {
 		.column(2.5);
 		float: left;
@@ -96,6 +76,41 @@ body {
             }
         }
 	}
+	.content {
+		.column(9);
+        clear: both;
+		float: right;
+		padding: 20px;
+        section {
+            clear: both;
+        }
+        .content-title {
+            background-color: @brand-first;
+            color: @white;
+            float: left;
+            font-size: 4em;
+            line-height: 2;
+            margin: 0 0 2%;
+            padding: 0 0 0 1%;
+            text-align: left;
+            width: 100%;
+        }
+        .content-subtitle {
+            background-color: @brand-second;
+            color: @white;
+            float: left;
+            font-size: 2em;
+            line-height: 2;
+            margin: 0 0 2%;
+            padding: 0 0 0 1%;
+            text-align: left;
+            width: 100%;
+        }
+        .box {
+            .column(5);
+            float: left;
+        }
+	}
     .content section {	
         &:extend(.clearfix all);
 		border-bottom: solid 1px lighten(@blue, 20%);
@@ -150,12 +165,44 @@ body {
 			}
 		}
 	}
-	.wide-content,
-	.wide-list {
-	    .column(12);
-	}
-	.double-content,
-	.double-list {
-	    .column(6);
-	}
+    .code-content {
+        .column(7);
+        background: url('../images/bg.png') 0 2px;
+        border: solid 5px @black-20;
+        padding: 0 20px;
+    }
+    address,
+    blockquote {
+        clear: both;
+    }
+    .columns-container {
+        .column(12);
+        clear: both;
+        float: left;
+        margin-bottom: 3%;
+        .header {
+            float: left;
+            margin-bottom: 0.5%;
+            width: 100%;
+        }
+        .columns {
+            background: @black-10;
+            height: 5em;
+        }
+    }
+    .icons-list {
+        .column(12);
+        clear: both;
+        float: left;
+        list-style-type: none;
+        margin-bottom: 2%;
+        li {
+            float: left;
+            margin-right: 1%;
+            a,
+            a:hover {
+                color: transparent;
+            }
+        }
+    }
 }

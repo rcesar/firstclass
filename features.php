@@ -15,11 +15,11 @@
             <?php include('template/sidebar.php'); ?>
 
 
-            <section class="content">
-                <h1 class="banner-title">Features</h1>
+            <main class="content">
+                <h1 class="content-title">Features</h1>
                 <section id="notification">
                     
-                    <h1>Notification</h1>
+                    <h2 class="content-subtitle">Notification</h2>
                     
                     <div class="notification primary">
                         <p>This a simple notification to help your client comunicate their users about something new or remember something.</p>
@@ -51,42 +51,54 @@
                 
                 <section id="modal">
                     
-                    <h2>Modal</h2>
+                    <h2 class="content-subtitle">Modal</h2>
+                    
+                    <p>In development</p>
                     
                 </section>
                 
                 <section id="tabs">
                     
-                    <h2>Tabs</h2>
+                    <h2 class="content-subtitle">Tabs</h2>
+                    
+                    <p>In development</p>
                     
                 </section>
                 
                 <section id="tooltip">
                     
-                    <h2>Tooltip</h2>
+                    <h2 class="content-subtitle">Tooltip</h2>
+                    
+                    <p>In development</p>
                     
                 </section>
                 
                 <section id="collapse">
                     
-                    <h2>Collapse</h2>
+                    <h2 class="content-subtitle">Collapse</h2>
+                    
+                    <p>In development</p>
                     
                 </section>
                 
                 <section id="carousel">
                     
-                    <h2>Carousel</h2>
+                    <h2 class="content-subtitle">Carousel</h2>
+                    
+                    <p>In development</p>
                     
                 </section>
                 
                 <section id="slider">
                     
-                    <h2>Slider</h2>
+                    <h2 class="content-subtitle">Slider</h2>
+                    
+                    <p>In development</p>
                     
                 </section>
                 
 
-            </section>
+            </main>
 
         </div>
     </div>

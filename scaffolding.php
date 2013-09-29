@@ -15,10 +15,11 @@
             <?php include('template/sidebar.php'); ?>
 
 
-            <section class="content">
-                <h1 class="banner-title">Scaffolding</h1>
+            <main class="content">
+                <h1 class="content-title">Scaffolding</h1>
                 <section id="type">
-                    <h1>Heading 1</h1>
+                    <h2 class="content-subtitle">Typograpfy</h2>
+                    <h3>Heading 1</h3>
                     
                     <h2>Subtitle &mdash; h2</h2>
                     <h3>Subtitle &mdash; h3</h3>
@@ -29,15 +30,15 @@
                         Here, it must needs be said, that accidents like this have in more than one case occurred to ships in violent storms. The magnetic energy, as developed in the mariner's needle, is, as all know, essentially one with the electricity beheld in heaven; hence it is not to be much marvelled at, that such things should be.
                     </p>
                     
-                    <pre class="language-markup"><code class="language-html">
-                        <html lang="en">
-                            <head>
-                            </head>
-                            <body>
-                                <p>HTML HERE</p>
-                            </body>
-                        </html>
-                    </code></pre>
+                    <pre class="code-content">
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;HTML HERE&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
                     <address>
                         Street ABC, 456<br/>
                         Los Angeles, EUA
@@ -49,8 +50,8 @@
                     </blockquote>
                     <hr />
                     
-                    <h2>List Types</h2>
-                    <h3>Ordered list</h3>
+                    <h3>List Types</h3>
+                    <p><strong>Ordered List</strong><p>
                 
                     <ol>
                         <li>List item</li>
@@ -71,7 +72,7 @@
                     </ol>
                     <hr />
                     
-                    <h3>Unordered list</h3>
+                    <p><strong>Unordered List</strong></p>
                 
                     <ul>
                         <li>List item 01</li>
@@ -92,7 +93,7 @@
                     </ul>
                     <hr />
                 
-                    <h3>Definition List</h3>
+                    <p><strong>Definition List</strong></p>
                 
                     <dl>
                         <dt>Definition list title</dt>
@@ -107,7 +108,7 @@
                 
                 <section id="forms">
                     
-                    <h2>Forms</h2>
+                    <h2 class="content-subtitle">Forms</h2>
                     
                     <form class="form-container">
                         <fieldset class="wide-content">
@@ -136,7 +137,7 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset class="double-content">
+                        <fieldset class="half-content">
                             <legend>Double Content</legend>
                             <ul class="frm-list wide-list">
                                 <li class="frm-list-item">
@@ -162,7 +163,7 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset class="double-content">
+                        <fieldset class="half-content">
                             <legend>Double Content</legend>
                             <ul class="frm-list wide-list">
                                 <li class="frm-list-item">
@@ -190,7 +191,7 @@
                         </fieldset>
                         <fieldset class="wide-content">
                             <legend>Wide Content</legend>
-                            <ul class="frm-list double-list">
+                            <ul class="frm-list half-list">
                                 <li class="frm-list-item">
                                     <label>Name:</label>
                                     <input type="text" name="name" id="name" class="ipt-wide">
@@ -213,7 +214,7 @@
                                     </textarea>
                                 </li>
                             </ul>
-                            <ul class="frm-list double-list">
+                            <ul class="frm-list half-list">
                                 <li class="frm-list-item">
                                     <label>Name:</label>
                                     <input type="text" name="name" id="name" class="ipt-wide">
@@ -243,7 +244,7 @@
                 
                 <section id="tables">
                     
-                    <h2>Tables</h2>
+                    <h2 class="content-subtitle">Tables</h2>
                     
                     <table class="tbl-classic">
                         <thead>
@@ -288,46 +289,58 @@
                             
                 <section id="box">
                     
-                    <h1>Box</h1>
+                    <h2 class="content-subtitle">Box</h2>
                     
-                    
+                    <article class="box">
+                        <header class="box-title">
+                            <p class="el-title"><strong>Box Title</strong></p>
+                        </header>
+                        <div class="box-content">
+                            <p>Box content</p>
+                        </div>
+                    </article>
                 
                 </section>
                 
                 <section i="grid">
                     
-                    <h2>Grid usable sample</h2>
+                    <h2 class="content-subtitle">Grids</h2>
                 
-                    <div class="double">
-                        <div></div>
-                        <div></div>
+                    <div class="columns-container">
+                        <p>Half Content</p>
+                        <div class="columns half-column"></div>
+                        <div class="columns half-column"></div>
                     </div>
                 
-                    <div class="triple">
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                    <div class="columns-container">
+                        <p>Third Content</p>
+                        <div class="columns third-column"></div>
+                        <div class="columns third-column"></div>
+                        <div class="columns third-column"></div>
                     </div>
                 
-                    <div class="quadruple">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                    <div class="columns-container">
+                        <p>Quarter Content</p>
+                        <div class="columns quarter-column"></div>
+                        <div class="columns quarter-column"></div>
+                        <div class="columns quarter-column"></div>
+                        <div class="columns quarter-column"></div>
                     </div>
                 
-                    <div class="quintuple">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                    <div class="columns-container">
+                        <div class="header">
+                            <p class="el-left">Half Content</p>
+                            <p class="el-right">Quarter Content</p>
+                        </div>
+                        <div class="columns half-column"></div>
+                        <div class="columns quarter-column"></div>
+                        <div class="columns quarter-column"></div>
                     </div>
                     
                 </section>
                 
 
-            </section>
+            </main>
 
         </div>
     </div>
