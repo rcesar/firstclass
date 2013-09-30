@@ -1,0 +1,63 @@
+// ===[ Navigation Style ]===
+
+
+// Main Menu
+.nav-main {
+    clear: both;
+    list-style-type: none;
+    &.horizzontal-menu {
+        .nav-item {
+            float: left;
+        }
+        .nav-sub-item {
+            clear: both;
+            float: left;
+        }
+    }
+    &.vertical-menu {
+        .nav-item,
+        .nav-sub-item {
+            clear: both;
+            float: left;
+        }
+    }
+    .nav-item {
+        margin: 0;
+        padding: 0;
+    }
+    .nav-link {
+        color: @default-primary;
+        text-decoration: none;
+    }
+    .nav-dropdown {
+        position: relative;
+        >.nav-link {
+            color: @black-70;
+        }
+        &:hover {
+            .nav-submenu {
+                display: block;
+            }
+        }
+        .nav-submenu {
+            display: none;
+        }
+    }
+}
+.nav-submenu {
+    left: 0;
+    list-style-type: none;
+    margin: 0 0 1em;
+    padding-left: 1em;
+    position: absolute;
+    top: 100%;
+}
+.nav-sidebar {
+    .column(3);
+    .nav-submenu {
+        display: block;
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+}

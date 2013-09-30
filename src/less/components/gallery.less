@@ -1,0 +1,48 @@
+// ===[ Gallery Style ]===
+
+.gallery {
+    list-style-type: none;
+    .gallery-item {
+        float: left;
+        margin: 10px 20px 10px 0;
+    }
+    .gallery-link {
+        display: block;
+    }
+    &.count2 {
+        .gallery-item {
+            width: 440px;
+        }
+        .gallery-item:nth-child(2n) {
+            margin-right: 0;
+        }
+        .gallery-item:nth-child(2n + 1) {
+            clear: left;
+            float: left;
+        }
+    }
+    &.count4 {
+        .gallery-item {
+            width: 220px;
+        }
+        .gallery-item:nth-child(4n) {
+            margin-right: 0;
+        }
+        .gallery-item:nth-child(4n + 1) {
+            clear: left;
+            float: left;
+        }
+    }
+    &.count6 {
+        .gallery-item {
+            width: 160px;
+        }
+        .gallery-item:nth-child(6n) {
+            margin-right: 0;
+        }
+        .gallery-item:nth-child(6n + 1) {
+            clear: left;
+            float: left;
+        }
+    }
+}
