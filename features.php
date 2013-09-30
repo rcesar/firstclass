@@ -53,7 +53,13 @@
                     
                     <h2 class="content-subtitle">Modal</h2>
                     
-                    <p>In development</p>
+                    <p>Superbox it's a great plugin because you can format how you wanna, saw exemples bellow:</p>
+                    
+                    <p><a href="http://farm4.static.flickr.com/3269/2605397024_73497a6cf5.jpg" rel="superbox[image]">Superbox picture (auto dimensions)</a></p>
+                    
+                    <p><a href="http://farm4.static.flickr.com/3111/2605394848_e11968abaf.jpg" rel="superbox[image][700x]">Superbox picture (defined width)</a></p>
+                    
+                    <p><a href="http://farm4.static.flickr.com/3031/2605388478_b8ae228aab.jpg" rel="superbox[image][x600]">Superbox picture (defined height)</a></p>
                     
                 </section>
                 
@@ -61,7 +67,27 @@
                     
                     <h2 class="content-subtitle">Tabs</h2>
                     
-                    <p>In development</p>
+                    <p>jQuery HeroTabs, its easer to use and apply to your all projects.</p>
+                    <div class="tabs tabs-standard">
+                        <ul class="tab-nav js-nav">
+                            <li class="tab-nav-item js-nav-item"><a href="#tab1">Item 1</a></li>
+                            <li class="tab-nav-item js-nav-item"><a href="#tab2">Item 2</a></li>
+                            <li class="tab-nav-item js-nav-item"><a href="#tab3">Item 3</a></li>
+                        </ul>
+                        <div class="tabs-container">
+                            <div>
+                            <div class="tab-pane js-tab" id="tab1">
+                                <p>content 1</p>
+                            </div>
+                            </div>
+                            <div class="tab-pane js-tab" id="tab2">
+                                <p>content 2</p>
+                            </div>
+                            <div class="tab-pane js-tab" id="tab3">
+                                <p>content 3</p>
+                            </div>
+                        </div>
+                    </div>
                     
                 </section>
                 

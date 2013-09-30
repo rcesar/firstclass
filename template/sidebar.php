@@ -34,13 +34,13 @@
                     </li>
                     <li class="nav-item feature-item"><a href="features.php" title="Features" class="nav-link">Features</a>
                         <ul class="nav-submenu">
+                            <li class="nav-sub-item"><a href="features.php#notification" class="nav-sub-link">Notification</a></li>
                             <li class="nav-sub-item"><a href="features.php#modal" class="nav-sub-link">Modal</a></li>
+                            <li class="nav-sub-item"><a href="features.php#tabs" class="nav-sub-link">Tabs</a></li>
+                            <li class="nav-sub-item"><a href="features.php#tooltip" class="nav-sub-link">Tooltip</a></li>
                             <li class="nav-sub-item"><a href="features.php#collapse" class="nav-sub-link">Collapse</a></li>
                             <li class="nav-sub-item"><a href="features.php#carousel" class="nav-sub-link">Carousel</a></li>
                             <li class="nav-sub-item"><a href="features.php#slider" class="nav-sub-link">Slider</a></li>
-                            <li class="nav-sub-item"><a href="features.php#tooltip" class="nav-sub-link">Tooltip</a></li>
-                            <li class="nav-sub-item"><a href="features.php#notification" class="nav-sub-link">Notification</a></li>
-                            <li class="nav-sub-item"><a href="features.php#tabs" class="nav-sub-link">Tabs</a></li>
                         </ul>
                     </li>
                 </ul>

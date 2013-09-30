@@ -405,7 +405,7 @@
                     <ul class="gallery count4">
                         <li class="gallery-item">
                             <figcaption>
-                                <a href="#" class="gallery-link" title="Image Gallery">
+                                <a href="http://www.flickr.com/photos/christyam/5413945027/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a>
@@ -413,21 +413,22 @@
                         </li>
                         <li class="gallery-item">
                             <figcaption>
-                                <a href="#" class="gallery-link" title="Image Gallery">
+                                <a href="http://www.flickr.com/photos/christyam/9441781825/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a>
                             </figcaption>
                         </li>
                         <li class="gallery-item">
-                            <figcaption><a href="#" class="gallery-link" title="Image Gallery">
+                            <figcaption>
+                                <a href="http://www.flickr.com/photos/christyam/9445855848/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a></figcaption>
                         </li>
                         <li class="gallery-item">
                             <figcaption>
-                                <a href="#" class="gallery-link" title="Image Gallery">
+                                <a href="http://www.flickr.com/photos/christyam/9714577671/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a>
@@ -435,57 +436,29 @@
                         </li>
                         <li class="gallery-item">
                             <figcaption>
-                                <a href="#" class="gallery-link" title="Image Gallery">
+                                <a href="http://www.flickr.com/photos/christyam/9719271192/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a>
                             </figcaption>
                         </li>
                         <li class="gallery-item">
-                            <figcaption><a href="#" class="gallery-link" title="Image Gallery">
-                                    <img src="media/thumb-220.png" alt="" class="gallery-img">
-                                    <figcaption>Image Title</figcaption>
-                                </a></figcaption>
-                        </li>
-                        <li class="gallery-item">
-                            <figcaption><a href="#" class="gallery-link" title="Image Gallery">
+                            <figcaption>
+                                <a href="http://www.flickr.com/photos/christyam/9445913390/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a></figcaption>
                         </li>
                         <li class="gallery-item">
                             <figcaption>
-                                <a href="#" class="gallery-link" title="Image Gallery">
-                                    <img src="media/thumb-220.png" alt="" class="gallery-img">
-                                    <figcaption>Image Title</figcaption>
-                                </a>
-                            </figcaption>
-                        </li>
-                        <li class="gallery-item">
-                            <figcaption>
-                                <a href="#" class="gallery-link" title="Image Gallery">
-                                    <img src="media/thumb-220.png" alt="" class="gallery-img">
-                                    <figcaption>Image Title</figcaption>
-                                </a>
-                            </figcaption>
-                        </li>
-                        <li class="gallery-item">
-                            <figcaption>
-                                <a href="#" class="gallery-link" title="Image Gallery">
-                                    <img src="media/thumb-220.png" alt="" class="gallery-img">
-                                    <figcaption>Image Title</figcaption>
-                                </a>
-                            </figcaption>
-                        </li>
-                        <li class="gallery-item">
-                            <figcaption><a href="#" class="gallery-link" title="Image Gallery">
+                                <a href="http://www.flickr.com/photos/christyam/9443121795/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a></figcaption>
                         </li>
                         <li class="gallery-item">
                             <figcaption>
-                                <a href="#" class="gallery-link" title="Image Gallery">
+                                <a href="http://www.flickr.com/photos/christyam/8620877994/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a>
@@ -493,7 +466,38 @@
                         </li>
                         <li class="gallery-item">
                             <figcaption>
-                                <a href="#" class="gallery-link" title="Image Gallery">
+                                <a href="http://www.flickr.com/photos/christyam/8619775233/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
+                                    <img src="media/thumb-220.png" alt="" class="gallery-img">
+                                    <figcaption>Image Title</figcaption>
+                                </a>
+                            </figcaption>
+                        </li>
+                        <li class="gallery-item">
+                            <figcaption>
+                                <a href="http://www.flickr.com/photos/christyam/8619765071/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
+                                    <img src="media/thumb-220.png" alt="" class="gallery-img">
+                                    <figcaption>Image Title</figcaption>
+                                </a>
+                            </figcaption>
+                        </li>
+                        <li class="gallery-item">
+                            <figcaption>
+                                <a href="http://www.flickr.com/photos/christyam/8619761297/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
+                                    <img src="media/thumb-220.png" alt="" class="gallery-img">
+                                    <figcaption>Image Title</figcaption>
+                                </a></figcaption>
+                        </li>
+                        <li class="gallery-item">
+                            <figcaption>
+                                <a href="http://www.flickr.com/photos/christyam/8619747899/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
+                                    <img src="media/thumb-220.png" alt="" class="gallery-img">
+                                    <figcaption>Image Title</figcaption>
+                                </a>
+                            </figcaption>
+                        </li>
+                        <li class="gallery-item">
+                            <figcaption>
+                                <a href="http://www.flickr.com/photos/christyam/9271493684/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a>
