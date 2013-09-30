@@ -11,36 +11,36 @@
                     <li class="social-item"><a href="https://www.facebook.com/wdsignbr" class="webicon facebook">Facebook</a></li>
                     <li class="social-item"><a href="http://wdsign.com.br" class="webicon wordpress">Feed</a></li>
                 </ul>
-                <ul class="main-nav">
+                <ul class="nav-main nav-sidebar">
                     <li class="nav-item feature-item"><a href="scaffolding.php" title="Scaffolding" class="nav-link">Scaffolding</a>
-                        <ul class="submenu">
-                            <li class="sub-item"><a href="scaffolding.php#type" class="nav-link">Typography</a></li>
-                            <li class="sub-item"><a href="scaffolding.php#forms" class="nav-link">Forms</a></li>
-                            <li class="sub-item"><a href="scaffolding.php#tables" class="nav-link">Tables</a></li>
-                            <li class="sub-item"><a href="scaffolding.php#box" class="nav-link">Box</a></li>
-                            <li class="sub-item"><a href="scaffolding.php#grid" class="nav-link">Grid</a></li>
+                        <ul class="nav-submenu">
+                            <li class="nav-sub-item"><a href="scaffolding.php#type" class="nav-sub-link">Typography</a></li>
+                            <li class="nav-sub-item"><a href="scaffolding.php#forms" class="nav-sub-link">Forms</a></li>
+                            <li class="nav-sub-item"><a href="scaffolding.php#tables" class="nav-sub-link">Tables</a></li>
+                            <li class="nav-sub-item"><a href="scaffolding.php#box" class="nav-sub-link">Box</a></li>
+                            <li class="nav-sub-item"><a href="scaffolding.php#grid" class="nav-sub-link">Grid</a></li>
                         </ul>
                     </li>
                     <li class="nav-item feature-item"><a href="components.php" title="Components" class="nav-link">Components</a>
-                        <ul class="submenu">
-                            <li class="sub-item"><a href="components.php#colors" class="nav-link">Colors</a></li>
-                            <li class="sub-item"><a href="components.php#buttons" class="nav-link">Buttons</a></li>
-                            <li class="sub-item"><a href="components.php#icons" class="nav-link">WebIcons</a></li>
-                            <li class="sub-item"><a href="components.php#labels" class="nav-link">Labels</a></li>
-                            <li class="sub-item"><a href="components.php#images" class="nav-link">Images</a></li>
-                            <li class="sub-item"><a href="components.php#gallery" class="nav-link">Gallery</a></li>
-                            <li class="sub-item"><a href="components.php#navigation" class="nav-link">Navigation</a></li>
+                        <ul class="nav-submenu">
+                            <li class="nav-sub-item"><a href="components.php#colors" class="nav-sub-link">Colors</a></li>
+                            <li class="nav-sub-item"><a href="components.php#buttons" class="nav-sub-link">Buttons</a></li>
+                            <li class="nav-sub-item"><a href="components.php#icons" class="nav-sub-link">WebIcons</a></li>
+                            <li class="nav-sub-item"><a href="components.php#labels" class="nav-sub-link">Labels</a></li>
+                            <li class="nav-sub-item"><a href="components.php#navigation" class="nav-sub-link">Navigation</a></li>
+                            <li class="nav-sub-item"><a href="components.php#images" class="nav-sub-link">Images</a></li>
+                            <li class="nav-sub-item"><a href="components.php#gallery" class="nav-sub-link">Gallery</a></li>
                         </ul>
                     </li>
                     <li class="nav-item feature-item"><a href="features.php" title="Features" class="nav-link">Features</a>
-                        <ul class="submenu">
-                            <li class="sub-item"><a href="features.php#modal" class="nav-link">Modal</a></li>
-                            <li class="sub-item"><a href="features.php#collapse" class="nav-link">Collapse</a></li>
-                            <li class="sub-item"><a href="features.php#carousel" class="nav-link">Carousel</a></li>
-                            <li class="sub-item"><a href="features.php#slider" class="nav-link">Slider</a></li>
-                            <li class="sub-item"><a href="features.php#tooltip" class="nav-link">Tooltip</a></li>
-                            <li class="sub-item"><a href="features.php#notification" class="nav-link">Notification</a></li>
-                            <li class="sub-item"><a href="features.php#tabs" class="nav-link">Tabs</a></li>
+                        <ul class="nav-submenu">
+                            <li class="nav-sub-item"><a href="features.php#modal" class="nav-sub-link">Modal</a></li>
+                            <li class="nav-sub-item"><a href="features.php#collapse" class="nav-sub-link">Collapse</a></li>
+                            <li class="nav-sub-item"><a href="features.php#carousel" class="nav-sub-link">Carousel</a></li>
+                            <li class="nav-sub-item"><a href="features.php#slider" class="nav-sub-link">Slider</a></li>
+                            <li class="nav-sub-item"><a href="features.php#tooltip" class="nav-sub-link">Tooltip</a></li>
+                            <li class="nav-sub-item"><a href="features.php#notification" class="nav-sub-link">Notification</a></li>
+                            <li class="nav-sub-item"><a href="features.php#tabs" class="nav-sub-link">Tabs</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -1,6 +1,15 @@
 ###################
-#.gitignore                #
+#.gitignore       #
 ###################
+
+#################
+# Project Files #
+#################
+/*.zip
+/node_modules
+*~
+.project
+.settings
 
 ###################
 # Compiled source #

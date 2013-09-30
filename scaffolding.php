@@ -111,127 +111,127 @@
                     <h2 class="content-subtitle">Forms</h2>
                     
                     <form class="form-container">
-                        <fieldset class="wide-content">
+                        <fieldset class="wide-container">
                             <legend>Wide Content</legend>
-                            <ul class="frm-list wide-list">
-                                <li class="frm-list-item">
+                            <ul class="form-list">
+                                <li class="form-list-item">
                                     <label>Name:</label>
                                     <input type="text" name="name" id="name" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>E-mail:</label>
                                     <input type="email" name="email" id="email" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>Telphone (BR):</label>
                                     <input type="tel" name="telphone" id="telphone" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>Cellphone (BR 11):</label>
                                     <input type="tel" name="cellphone" id="cellphone" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>Address:</label>
                                     <textarea name="address" id="address" class="text-address">
                                     </textarea>
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset class="half-content">
+                        <fieldset class="columns half-column">
                             <legend>Double Content</legend>
-                            <ul class="frm-list wide-list">
-                                <li class="frm-list-item">
+                            <ul class="form-list">
+                                <li class="form-list-item">
                                     <label>Name:</label>
                                     <input type="text" name="name" id="name" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>E-mail:</label>
                                     <input type="email" name="email" id="email" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>Telphone (BR):</label>
                                     <input type="tel" name="telphone" id="telphone" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>Cellphone (BR 11):</label>
                                     <input type="tel" name="cellphone" id="cellphone" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>Address:</label>
                                     <textarea name="address" id="address" class="text-address">
                                     </textarea>
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset class="half-content">
+                        <fieldset class="columns half-column">
                             <legend>Double Content</legend>
-                            <ul class="frm-list wide-list">
-                                <li class="frm-list-item">
+                            <ul class="frm-list">
+                                <li class="form-list-item">
                                     <label>Name:</label>
                                     <input type="text" name="name" id="name" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>E-mail:</label>
                                     <input type="email" name="email" id="email" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>Telphone (BR):</label>
                                     <input type="tel" name="telphone" id="telphone" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>Cellphone (BR 11):</label>
                                     <input type="tel" name="cellphone" id="cellphone" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>Address:</label>
                                     <textarea name="address" id="address" class="text-address">
                                     </textarea>
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset class="wide-content">
+                        <fieldset class="wide-container">
                             <legend>Wide Content</legend>
-                            <ul class="frm-list half-list">
-                                <li class="frm-list-item">
+                            <ul class="form-list columns half-column">
+                                <li class="form-list-item">
                                     <label>Name:</label>
                                     <input type="text" name="name" id="name" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>E-mail:</label>
                                     <input type="email" name="email" id="email" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>Telphone (BR):</label>
                                     <input type="tel" name="telphone" id="telphone" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>Cellphone (BR 11):</label>
                                     <input type="tel" name="cellphone" id="cellphone" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>Address:</label>
                                     <textarea name="address" id="address" class="text-address">
                                     </textarea>
                                 </li>
                             </ul>
-                            <ul class="frm-list half-list">
-                                <li class="frm-list-item">
+                            <ul class="form-list columns half-column">
+                                <li class="form-list-item">
                                     <label>Name:</label>
                                     <input type="text" name="name" id="name" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>E-mail:</label>
                                     <input type="email" name="email" id="email" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>Telphone (BR):</label>
                                     <input type="tel" name="telphone" id="telphone" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>Cellphone (BR 11):</label>
                                     <input type="tel" name="cellphone" id="cellphone" class="ipt-wide">
                                 </li>
-                                <li class="frm-list-item">
+                                <li class="form-list-item">
                                     <label>Address:</label>
                                     <textarea name="address" id="address" class="text-address">
                                     </textarea>

@@ -357,7 +357,31 @@
                 <section id="labels">
                     <h2 class="content-subtitle">Labels</h2>
                     
-                    <p>In development</p>
+                    <p>Lorem ipsum dolor sit amet, <span class="white-label-info">consectetur</span> adipiscing elit. Curabitur bibendum leo ut nibh placerat interdum. Sed scelerisque nisi non dolor cursus, eget cursus mauris varius. Suspendisse pharetra <span class="white-label-success">lorem aliquet placerat</span> ornare. Sed a dignissim mauris. Aenean non magna <em class="label-dark-warning">lobortis, consectetur enim quis, aliquam sem</em>. Etiam suscipit magna augue, sed volutpat orci semper id. <strong class="label-dark-danger">Etiam feugiat lorem</strong> ut vestibulum interdum. In hac habitasse platea dictumst. Phasellus id ultricies nibh. Nulla convallis metus a tempus pulvinar. Donec augue tortor, ultrices eu varius id, hendrerit quis enim. Maecenas pretium purus ut convallis hendrerit.</p>
+
+                    <p>Pellentesque id risus rutrum erat vestibulum tempor eu at metus. <span class="label-danger">Pellentesque</span> habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque et mattis eros. Vivamus porttitor eu urna ut fringilla. Vestibulum vestibulum aliquam purus vitae luctus. <span class="white-label-warning">Vivamus non dolor hendrerit</span>, aliquam erat a, rhoncus odio. Sed eu ligula a odio luctus pulvinar. <strong class="label-dark-info">Fusce faucibus dui vitae neque</strong> venenatis, sit amet sagittis risus feugiat. In hac habitasse platea dictumst. Duis lacinia, enim et vehicula rutrum, orci eros dignissim felis, non sollicitudin neque dolor et sapien. In imperdiet elit fermentum sodales dapibus. <em class="label-dark-success">Phasellus vel dolor congue, aliquam mauris a</em>, hendrerit felis.</p>
+                    
+                </section>
+                
+                <section id="navigation">
+                    <h2 class="content-subtitle">Navigation</h2>
+                    
+                    <p>All your projects have many a sort of menu's type.</p>
+                    
+                    <ul class="nav-main horizzontal-menu nav-example">
+                        <li class="nav-item nav-item-active"><a href="#" class="nav-link">Active</a></li>
+                        <li class="nav-item nav-dropdown">
+                            <a href="#" class="nav-link">Item</a>
+                            <ul class="nav-submenu">
+                                <li class="nav-sub-item"><a href="" class="nav-sub-link">Sub Item</a></li>
+                                <li class="nav-sub-item"><a href="" class="nav-sub-link">Sub Item</a></li>
+                                <li class="nav-sub-item"><a href="" class="nav-sub-link">Sub Item</a></li>
+                                <li class="nav-sub-item"><a href="" class="nav-sub-link">Sub Item</a></li>
+                                <li class="nav-sub-item"><a href="" class="nav-sub-link">Sub Item</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Item</a></li>
+                    </ul>
                     
                 </section>
                 
@@ -477,13 +501,6 @@
                         </li>
                     </ul>
                 
-                </section>
-                
-                <section id="navigation">
-                    <h2 class="content-subtitle">Navigation</h2>
-                    
-                    <p>In development</p>
-                    
                 </section>
 
             </main>
