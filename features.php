@@ -123,6 +123,14 @@
                     
                 </section>
                 
+                <section id="validation">
+                    
+                    <h2 class="content-subtitle">Validation</h2>
+                    
+                    <p>In development</p>
+                    
+                </section>
+                
 
             </main>
 

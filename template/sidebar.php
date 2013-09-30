@@ -41,6 +41,7 @@
                             <li class="nav-sub-item"><a href="features.php#collapse" class="nav-sub-link">Collapse</a></li>
                             <li class="nav-sub-item"><a href="features.php#carousel" class="nav-sub-link">Carousel</a></li>
                             <li class="nav-sub-item"><a href="features.php#slider" class="nav-sub-link">Slider</a></li>
+                            <li class="nav-sub-item"><a href="features.php#validation" class="nav-sub-link">Validation</a></li>
                         </ul>
                     </li>
                 </ul>
