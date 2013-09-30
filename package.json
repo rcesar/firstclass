@@ -2,7 +2,7 @@
   "name": "firstclass",
   "title": "firstClass",
   "description": "A clean framework powered by LESS based on Semantic.gs, HTML5, CSS3 and jQuery, using Grunt.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "http://firstclass.wdsign.com.br",
   "author": {
     "name": "Rick Benetti",

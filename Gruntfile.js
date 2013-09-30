@@ -45,12 +45,14 @@ module.exports = function(grunt) {
                 },
                 src: [
                     "src/js/modernizr.js",
-                    "src/js/alert.js",
+                    "src/js/jquery.collapse.js",
+                    "src/js/jquery.superbox.js",
+                    "src/js/jquery.herotabs.js",
+                    "src/js/owl.carousel.js",
+                    "src/js/jquery.tooltipster.js",
+                    "src/js/zerovalidate.js",
                     "src/js/dropdown.js",
-                    "src/js/modal.js",
                     "src/js/nav.js",
-                    "src/js/tooltip.js",
-                    "src/js/tab.js",
                     "src/js/core.js",
                       ],
                 dest: "assets/js/firstclass.js"

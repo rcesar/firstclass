@@ -45,17 +45,19 @@ Feel like you've got an idea on how to optimize the code and want to share it? W
 ## Features
 
 * **Modal**
-    in development
+    jQuery [Superbox][20]
 * **Collapse**
-    in development
+    jQuery [Collapse][21]
 * **Carousel**
-    in development
+    jQuery [OwlCarousel][22]
 * **Slider**
-    in development
+    jQuery [OwlCarousel][22]
 * **Tooltip**
-    in development
+    jQuery [Tooltipster's][23]
 * **Tabs**
-    in development
+    jQuery [HeroTabs][24]
+* **Validation**
+    jQuery [ZeroValidate][25]
     
 ## Commons
 
@@ -121,6 +123,7 @@ grunt watch
 
 ## Versions
 
+- **v0.0.5** jQuery OWL, jQuery HeroTabs, Collapse, SuperBox and ZeroValidate.
 - **v0.0.4** Add Grunt and prepare to features.
 - **v0.0.3** HTML and CSS basic style definition.
 - **v0.0.2** Add all options to HTML.
@@ -133,6 +136,15 @@ grunt watch
 [4]: http://twitter.com/rzamana
 [5]: https://github.com/WDSIGN/firstClass/zipball/master
 [6]: https://github.com/wdsign/firstclass/issues?state=open
+
+
+[20]:https://github.com/WDSIGN/jquery-superbox
+[21]: https://github.com/WDSIGN/jQuery-Collapse
+[22]: https://github.com/WDSIGN/OwlCarousel
+[23]: https://github.com/WDSIGN/tooltipster
+[24]: https://github.com/WDSIGN/jquery.herotabs
+[25]: https://github.com/WDSIGN/zerovalidate
+
 [98]: http://nodejs.org/
 [98]: http://gruntjs.com
 [99]: https://plus.google.com/u/0/communities/104431911254900556469
