@@ -1,4 +1,4 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="WDSIGN community work an own HTML/CSS framework, called firstClass by his project manager Rick Benetti">
 
 <!-- Facebook - Open Graph -->
@@ -31,5 +31,4 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/libs/prismjs/prism.css">
+<link rel="stylesheet" href="assets/css/firstclass.min.css">
