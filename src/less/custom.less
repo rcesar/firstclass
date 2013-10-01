@@ -5,14 +5,15 @@ body {
 }
 .limit {
 	&:extend(.row all);
+    padding: 20px;
 }
 #main-content {
 	.sidebar {
-		.column(2.5);
+		.column(3);
 		float: left;
 		height: 100%;
-		padding: 20px;
-		position: fixed;
+		padding: 0;
+        position: relative;
 		>div:last-child {
 			p {
 				margin-bottom:0;
@@ -79,9 +80,8 @@ body {
 	}
 	.content {
 		.column(9);
-        clear: both;
 		float: right;
-		padding: 20px;
+		padding: 0;
         section {
             clear: both;
         }

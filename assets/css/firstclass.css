@@ -2382,14 +2382,17 @@ html {
 .tabs-standard.is-active .tab-nav-current a {
   background-color: #aaa;
 }
+.limit {
+  padding: 20px;
+}
 #main-content .sidebar {
   display: inline;
-  width: 20.833333333333336%;
+  width: 25%;
   padding: 0 0;
   float: left;
   height: 100%;
-  padding: 20px;
-  position: fixed;
+  padding: 0;
+  position: relative;
 }
 #main-content .sidebar > div:last-child p {
   margin-bottom: 0;
@@ -2455,9 +2458,8 @@ html {
   float: left;
   width: 75%;
   padding: 0 0;
-  clear: both;
   float: right;
-  padding: 20px;
+  padding: 0;
 }
 #main-content .content section {
   clear: both;
