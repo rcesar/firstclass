@@ -59,8 +59,8 @@
                             <li class="secondclass">WDSIGN - <a href="view-source:http://wdsign.com.br">http://wdsign.com.br</a></li>
                             <li class="secondclass">Equipe SuperAção - <a href="view-source:http://equipesuperacao.com.br/">http://equipesuperacao.com.br</a></li>
                             <li class="secondclass">Número 1 Suplementos - <a href="view-source:http://numero1suplementos.com.br/">http://numero1suplementos.com.br</a></li>
-                            <li class="secondclass">R2BZ - <a href="view-source:http://r2bz.com.br/">http://r2bz.com.br</a></li>
-                            <li class="firstclass">RickBenetti - <a href="view-source:http://rickbenetti.com.br/">http://rickbenetti.com.br</a></li>
+                            <!--li class="secondclass">R2BZ - <a href="view-source:http://r2bz.com.br/">http://r2bz.com.br</a></li>
+                            <li class="firstclass">RickBenetti - <a href="view-source:http://rickbenetti.com.br/">http://rickbenetti.com.br</a></li-->
                         </ul>
                     </div>
                 </article>
