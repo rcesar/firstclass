@@ -9,7 +9,7 @@
                     <li class="social-item"><a href="http://gplus.to/WDSIGN" class="webicon googleplus">Goolge+</a></li>
                     <li class="social-item"><a href="https://twitter.com/!#/WDSIGNBR" class="webicon twitter">Twitter</a></li>
                     <li class="social-item"><a href="https://www.facebook.com/wdsignbr" class="webicon facebook">Facebook</a></li>
-                    <li class="social-item"><a href="http://wdsign.com.br" class="webicon wordpress">Feed</a></li>
+                    <li class="social-item"><a href="http://wdsign.com.br" class="webicon rss">Feed</a></li>
                 </ul>
                 <ul class="nav-main nav-sidebar">
                     <li class="nav-item feature-item"><a href="scaffolding.php" title="Scaffolding" class="nav-link">Scaffolding</a>
