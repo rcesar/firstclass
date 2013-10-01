@@ -2279,17 +2279,20 @@ html {
 .notification.info {
   background-color: #bde6f2;
 }
+.tabs {
+  display: inline;
+  float: left;
+  width: 75%;
+  padding: 0 0;
+}
 .tab-nav {
   margin: 0;
-}
-.tab-pane {
-  position: relative;
 }
 .tab-nav li {
   margin-bottom: 5px;
 }
-.tabs {
-  width: 600px;
+.tab-pane {
+  position: relative;
 }
 .tabs .tab-info {
   padding: 10px 10px;
