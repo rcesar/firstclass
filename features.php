@@ -68,7 +68,7 @@
                     <h2 class="content-subtitle">Tabs</h2>
                     
                     <p>jQuery HeroTabs, its easer to use and apply to your all projects.</p>
-                    <div class="tabs tabs-standard">
+                    <div class="tabs tabs-standard tabs-example">
                         <ul class="tab-nav js-nav">
                             <li class="tab-nav-item js-nav-item"><a href="#tab1">Item 1</a></li>
                             <li class="tab-nav-item js-nav-item"><a href="#tab2">Item 2</a></li>

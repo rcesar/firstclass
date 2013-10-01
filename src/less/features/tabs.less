@@ -1,32 +1,33 @@
 // ===[ Tabs ]===
 
 // Common tab styles
+.tabs {
+    .column(9);
+}
 .tab-nav {
     margin: 0;
+    li {
+        margin-bottom: 5px;
+    }
 }
 .tab-pane {
     position: relative;
 }
-.tab-nav li {
-    margin-bottom: 5px;
-}
 .tabs {
-    width: 600px;
+    .tab-info {
+        padding: 10px 10px;
+        background-color: #333;
+        background-color: rgba(0, 0, 0, .7);
+        border-radius: 5px;
+        color: #fff;
+        p {
+            margin: 0;
+        }
+        a {
+            color: inherit;
+        }
+    }
 }
-.tabs .tab-info {
-    padding: 10px 10px;
-    background-color: #333;
-    background-color: rgba(0, 0, 0, .7);
-    border-radius: 5px;
-    color: #fff;
-}
-.tabs .tab-info p {
-    margin: 0;
-}
-.tabs .tab-info a {
-    color: inherit;
-}
-
 
 // Tabs horizontal
 .tabs-horiz .tab-info {

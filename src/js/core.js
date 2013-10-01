@@ -1,6 +1,6 @@
 $(function(){
    $.superbox.settings = {
-        boxWidth: "600", // Default width of the box
+        boxWidth: "800", // Default width of the box
         boxHeight: "400", // Default height of the box
         loadTxt: "Aguarde...", // Loading text
         closeTxt: "&times;", // "Close" button text
@@ -9,5 +9,5 @@ $(function(){
     };
    $.superbox();
     
-    $('.tabs-standard').herotabs();
+    $('.tabs-example').herotabs();
 });
