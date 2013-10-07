@@ -143,16 +143,16 @@
                 </header>
                 <article class="box-content">
                     <p>Box content you can put here, saw the box format:</p>
-                    <pre>
-                        <div class="tab-space1">&lt;<em>article</em> <strong>class="<span>box box-flat</span>"</strong>&gt;</div>
-                        <div class="tab-space2">&lt;<em>header</em> <strong>class="<span>box-title</span>"</strong>&gt;</div>
-                        <div class="tab-space3">&lt;<em>h1</em>&gt;Title box&lt;/<em>h1</em>&gt;</div>
-                        <div class="tab-space2">&lt;/<em>header</em>&gt;</div>
-                        <div class="tab-space2">&lt;<em>article</em> <strong>class="<span>box-content</span>"</strong>&gt;</div>
-                        <div class="tab-space3">&lt;box content here&gt;</div>
-                        <div class="tab-space2">&lt;/<em>article</em>&gt;</div>
-                        <div class="tab-space1">&lt;<em>article</em>&gt;</div>
-                    </pre>
+                    <textarea name="code" id="box-content-example" cols="30" rows="10" class="code">
+                        <article class="box box-flat box-modelo columns quarter-column">
+                            <header class="box-title">
+                                <h4>Title box</h4>
+                            </header>
+                            <article class="box-content">
+                                <p>Box content you can put here.</p>                                
+                            </article>
+                        </article>    
+                    </textarea>
                 </article>
             </article>            
         </section>
@@ -531,7 +531,7 @@
             </ul>
             
         </section>
-        <hr class="fash-line"/>
+        <hr class="dash-line"/>
         <section class="content">
             <h3 id="labels">Labels</h3>
             <p>Lorem ipsum dolor sit amet, <span class="label label-clean label-info">consectetur</span> adipiscing elit. Curabitur bibendum leo ut nibh placerat interdum. Sed scelerisque nisi non dolor cursus, eget cursus mauris varius. Suspendisse pharetra <span class="label label-clean label-success">lorem aliquet placerat</span> ornare. Sed a dignissim mauris. Aenean non magna <em class="label label-clean label-warning">lobortis, consectetur enim quis, aliquam sem</em>. Etiam suscipit magna augue, sed volutpat orci semper id. <strong class="label label-clean label-danger">Etiam feugiat lorem</strong> ut vestibulum interdum. In hac habitasse platea dictumst. Phasellus id ultricies nibh. Nulla convallis metus a tempus pulvinar. Donec augue tortor, ultrices eu varius id, hendrerit quis enim. Maecenas pretium purus ut convallis hendrerit.</p>
@@ -547,6 +547,341 @@
                     <p class="label label-clean label-warning">.label.label-clean.label-warning</p>
                     <p class="label label-clean label-danger">.label.label-clean.label-danger</p>
                     <p class="label label-clean label-success">.label.label-clean.label-success</p>
+        </section>
+        <hr class="dash-line"/>
+        <section class="content">
+            <h3 id="navigation">Navigation</h3>
+            <p>Why site navigations can be simple how we imagine? this new markup we bring to help you:</p>
+            
+            <nav role="navigation">
+                <ul class="nav-main nav-horizontal nav-flat nav-bg-third">
+                    <li class="nav-item"><a href="#" class="nav-link">Test</a></li>
+                    <li class="nav-item nav-dropdown nav-item-active"><a href="#" class="nav-link">Test</a>
+                        <ul class="nav-submenu">
+                            <li class="nav-sub-item"><a href="#" class="nav-sub-link">Sub Test</a></li>
+                            <li class="nav-sub-item"><a href="#" class="nav-sub-link">Sub Test</a></li>
+                            <li class="nav-sub-item"><a href="#" class="nav-sub-link">Sub Test</a></li>
+                            <li class="nav-sub-item"><a href="#" class="nav-sub-link">Sub Test</a></li>
+                            <li class="nav-sub-item"><a href="#" class="nav-sub-link">Sub Test</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Test</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Test</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Test</a></li>
+                </ul>
+            </nav>
+            <textarea name="code-nav-example" id="box-content-nav-horizontal" cols="30" rows="10" class="code code-nav-example">
+                <nav role="navigation">
+                    <ul class="nav-main nav-horizontal">
+                        <li class="nav-item"><a href="#" class="nav-link">Test</a></li>
+                        <li class="nav-item nav-dropdown nav-item-active"><a href="#" class="nav-link">Test</a>
+                            <ul class="nav-submenu">
+                                <li class="nav-sub-item"><a href="#" class="nav-sub-link">Sub Test</a></li>
+                                <li class="nav-sub-item"><a href="#" class="nav-sub-link">Sub Test</a></li>
+                                <li class="nav-sub-item"><a href="#" class="nav-sub-link">Sub Test</a></li>
+                                <li class="nav-sub-item"><a href="#" class="nav-sub-link">Sub Test</a></li>
+                                <li class="nav-sub-item"><a href="#" class="nav-sub-link">Sub Test</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Test</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Test</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Test</a></li>
+                    </ul>
+                </nav>
+            </textarea>
+        </section>
+        <hr class="dash-line" />
+        <section class="content">
+            <h3 id="images">Images</h3>
+                <figure class="responsive" title="A Half Brained Idea">
+                    <img src="http://placehold.it/1008x360">
+                    <figcaption>Check out the responsive images</figcaption>
+                </figure>
+
+                    <div class="container-example row">
+                        <figure class="fig-left">
+                            <img src="http://placehold.it/400x260">
+                            <figcaption class="txt-center">Texto Central</figcaption>
+                        </figure>
+                        <p>Barnaby The Bear's my name, never call me Jack or James, I will sing my way to fame, Barnaby the Bear's my name. Birds taught me to sing, when they took me to their king, first I had to fly, in the sky so high so high, so high so high so high, so - if you want to sing this way, think of what you'd like to say, add a tune and you will see, just how easy it can be. Treacle pudding, fish and chips, fizzy drinks and liquorice, flowers, rivers, sand and sea, snowflakes and the stars are free. La la la la la, la la la la la la la, la la la la la la la, la la la la la la la la la la la la la, so - Barnaby The Bear's my name, never call me Jack or James, I will sing my way to fame, Barnaby the Bear's my name.</p>
+
+                        <p>Children of the sun, see your time has just begun, searching for your ways, through adventures every day. Every day and night, with the condor in flight, with all your friends in tow, you search for the Cities of Gold. Ah-ah-ah-ah-ah... wishing for The Cities of Gold. Ah-ah-ah-ah-ah... some day we will find The Cities of Gold. Do-do-do-do ah-ah-ah, do-do-do-do, Cities of Gold. Do-do-do-do, Cities of Gold. Ah-ah-ah-ah-ah... some day we will find The Cities of Gold.</p>
+                    </div>
+
+                    <div class="container-example row">
+                        <figure class="fig-right">
+                            <img src="http://placehold.it/400x260">
+                            <figcaption class="txt-left">Texto à Esquerda</figcaption>
+                        </figure>
+                        <p>Barnaby The Bear's my name, never call me Jack or James, I will sing my way to fame, Barnaby the Bear's my name. Birds taught me to sing, when they took me to their king, first I had to fly, in the sky so high so high, so high so high so high, so - if you want to sing this way, think of what you'd like to say, add a tune and you will see, just how easy it can be. Treacle pudding, fish and chips, fizzy drinks and liquorice, flowers, rivers, sand and sea, snowflakes and the stars are free. La la la la la, la la la la la la la, la la la la la la la, la la la la la la la la la la la la la, so - Barnaby The Bear's my name, never call me Jack or James, I will sing my way to fame, Barnaby the Bear's my name.</p>
+
+                        <p>Children of the sun, see your time has just begun, searching for your ways, through adventures every day. Every day and night, with the condor in flight, with all your friends in tow, you search for the Cities of Gold. Ah-ah-ah-ah-ah... wishing for The Cities of Gold. Ah-ah-ah-ah-ah... some day we will find The Cities of Gold. Do-do-do-do ah-ah-ah, do-do-do-do, Cities of Gold. Do-do-do-do, Cities of Gold. Ah-ah-ah-ah-ah... some day we will find The Cities of Gold.</p>
+                    </div>
+
+                    <div class="container-example row">
+                        <p>Barnaby The Bear's my name, never call me Jack or James, I will sing my way to fame, Barnaby the Bear's my name. Birds taught me to sing, when they took me to their king, first I had to fly, in the sky so high so high, so high so high so high, so - if you want to sing this way, think of what you'd like to say, add a tune and you will see, just how easy it can be. Treacle pudding, fish and chips, fizzy drinks and liquorice, flowers, rivers, sand and sea, snowflakes and the stars are free. La la la la la, la la la la la la la, la la la la la la la, la la la la la la la la la la la la la, so - Barnaby The Bear's my name, never call me Jack or James, I will sing my way to fame, Barnaby the Bear's my name.</p>
+
+                        <figure class="fig-center">
+                            <img src="http://placehold.it/400x260">
+                            <figcaption class="txt-right">Texto à Direita</figcaption>
+                        </figure>
+
+                        <p>Children of the sun, see your time has just begun, searching for your ways, through adventures every day. Every day and night, with the condor in flight, with all your friends in tow, you search for the Cities of Gold. Ah-ah-ah-ah-ah... wishing for The Cities of Gold. Ah-ah-ah-ah-ah... some day we will find The Cities of Gold. Do-do-do-do ah-ah-ah, do-do-do-do, Cities of Gold. Do-do-do-do, Cities of Gold. Ah-ah-ah-ah-ah... some day we will find The Cities of Gold.</p>
+                    </div>
+        </section>
+        <hr class="dash-line" />
+        <section class="content gallery">
+            <h3 id="gallery">Gallery</h3>
+            <ul class="gallery count4">
+                <li class="gallery-item">
+                    <figure>
+                        <a href="http://www.flickr.com/photos/christyam/5413945027/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
+                            <img src="media/thumb-220.png" alt="" class="gallery-img">
+                            <figcaption>Image Title</figcaption>
+                        </a>
+                    </figure>
+                </li>
+                <li class="gallery-item">
+                    <figure>
+                        <a href="http://www.flickr.com/photos/christyam/9441781825/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
+                            <img src="media/thumb-220.png" alt="" class="gallery-img">
+                            <figcaption>Image Title</figcaption>
+                        </a>
+                    </figure>
+                </li>
+                <li class="gallery-item">
+                    <figure>
+                        <a href="http://www.flickr.com/photos/christyam/9445855848/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
+                            <img src="media/thumb-220.png" alt="" class="gallery-img">
+                            <figcaption>Image Title</figcaption>
+                        </a></figure>
+                </li>
+                <li class="gallery-item">
+                    <figure>
+                        <a href="http://www.flickr.com/photos/christyam/9714577671/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
+                            <img src="media/thumb-220.png" alt="" class="gallery-img">
+                            <figcaption>Image Title</figcaption>
+                        </a>
+                    </figure>
+                </li>
+                <li class="gallery-item">
+                    <figure>
+                        <a href="http://www.flickr.com/photos/christyam/9719271192/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
+                            <img src="media/thumb-220.png" alt="" class="gallery-img">
+                            <figcaption>Image Title</figcaption>
+                        </a>
+                    </figure>
+                </li>
+                <li class="gallery-item">
+                    <figure>
+                        <a href="http://www.flickr.com/photos/christyam/9445913390/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
+                            <img src="media/thumb-220.png" alt="" class="gallery-img">
+                            <figcaption>Image Title</figcaption>
+                        </a>
+                    </figure>
+                </li>
+                <li class="gallery-item">
+                    <figure>
+                        <a href="http://www.flickr.com/photos/christyam/9443121795/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
+                            <img src="media/thumb-220.png" alt="" class="gallery-img">
+                            <figcaption>Image Title</figcaption>
+                        </a>
+                    </figure>
+                </li>
+                <li class="gallery-item">
+                    <figure>
+                        <a href="http://www.flickr.com/photos/christyam/8620877994/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
+                            <img src="media/thumb-220.png" alt="" class="gallery-img">
+                            <figcaption>Image Title</figcaption>
+                        </a>
+                    </figure>
+                </li>
+                <li class="gallery-item">
+                    <figure>
+                        <a href="http://www.flickr.com/photos/christyam/8619775233/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
+                            <img src="media/thumb-220.png" alt="" class="gallery-img">
+                            <figcaption>Image Title</figcaption>
+                        </a>
+                    </figure>
+                </li>
+                <li class="gallery-item">
+                    <figure>
+                        <a href="http://www.flickr.com/photos/christyam/8619765071/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
+                            <img src="media/thumb-220.png" alt="" class="gallery-img">
+                            <figcaption>Image Title</figcaption>
+                        </a>
+                    </figure>
+                </li>
+                <li class="gallery-item">
+                    <figure>
+                        <a href="http://www.flickr.com/photos/christyam/8619761297/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
+                            <img src="media/thumb-220.png" alt="" class="gallery-img">
+                            <figcaption>Image Title</figcaption>
+                        </a>
+                    </figure>
+                </li>
+                <li class="gallery-item">
+                    <figure>
+                        <a href="http://www.flickr.com/photos/christyam/8619747899/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
+                            <img src="media/thumb-220.png" alt="" class="gallery-img">
+                            <figcaption>Image Title</figcaption>
+                        </a>
+                    </figure>
+                </li>
+                <li class="gallery-item">
+                    <figure>
+                        <a href="http://www.flickr.com/photos/christyam/9271493684/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
+                            <img src="media/thumb-220.png" alt="" class="gallery-img">
+                            <figcaption>Image Title</figcaption>
+                        </a>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="content">
+            <h3 id="notification">Notification</h3>
+            <div class="notification primary">
+                <p>This a simple notification to help your client comunicate their users about something new or remember something.</p>
+            </div>
+            
+            <div class="notification warning">
+                <p>Errors or 404 errors will be comunicated thsi way.</p>
+            </div>
+            
+            <div class="notification danger">
+                <p>With this alert you can advise your client they need do somathing to continue this way.</p>
+            </div>
+            
+            <div class="notification info">
+                <p>Long informations whit paragraphs have a new style.</p>
+                <p>Just create a better notification bars with a complete data.</p>
+            </div>
+            
+            <div class="notification success">
+                <p>Put a blink messages and give a new style to your notifications</p>
+                <p class="txt-blue">Other font colors</p>
+                <p class="txt-monospace">Other font family</p>
+                <p><strong>Other font weight</strong></p>
+                <p><em>Other font style</em></p>
+                <p><a href="#" title="This is a link demo">This is a link demo</a></p>
+            </div>
+        </section>
+        <hr class="dash-line" />
+        <section class="content">
+            <h3 id="modal">Modal</h3>
+            <p>Superbox it's a great plugin because you can format how you wanna, saw exemples bellow:</p>
+                    
+            <p><a href="http://farm4.static.flickr.com/3269/2605397024_73497a6cf5.jpg" rel="superbox[image]">Superbox picture (auto dimensions)</a></p>
+            
+            <p><a href="http://farm4.static.flickr.com/3111/2605394848_e11968abaf.jpg" rel="superbox[image][700x]">Superbox picture (defined width)</a></p>
+            
+            <p><a href="http://farm4.static.flickr.com/3031/2605388478_b8ae228aab.jpg" rel="superbox[image][x600]">Superbox picture (defined height)</a></p>
+        </section>
+        <hr class="dash-line" />
+        <section class="content">
+            <h3 id="tabs">Tabs</h3>
+            <p>jQuery HeroTabs, its easer to use and apply to your all projects.</p>
+            <div class="tabs tabs-standard tabs-example">
+                <ul class="tab-nav js-nav">
+                    <li class="tab-nav-item js-nav-item"><a href="#tab1">Item 1</a></li>
+                    <li class="tab-nav-item js-nav-item"><a href="#tab2">Item 2</a></li>
+                    <li class="tab-nav-item js-nav-item"><a href="#tab3">Item 3</a></li>
+                </ul>
+                <div class="tabs-container">
+                    <div>
+                    <div class="tab-pane js-tab" id="tab1">
+                        <p>content 1</p>
+                    </div>
+                    </div>
+                    <div class="tab-pane js-tab" id="tab2">
+                        <p>content 2</p>
+                    </div>
+                    <div class="tab-pane js-tab" id="tab3">
+                        <p>content 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs tabs-horizontal tabs-example-horizontal">
+                <ul class="tab-nav js-nav">
+                    <li class="tab-nav-item js-nav-item tab-flat-item"><a href="#tab1">Item 1</a></li>
+                    <li class="tab-nav-item js-nav-item tab-flat-item"><a href="#tab2">Item 2</a></li>
+                    <li class="tab-nav-item js-nav-item tab-flat-item"><a href="#tab3">Item 3</a></li>
+                </ul>
+                <div class="tabs-container">
+                    <div>
+                    <div class="tab-pane js-tab" id="tab1">
+                        <p>content 1</p>
+                    </div>
+                    </div>
+                    <div class="tab-pane js-tab" id="tab2">
+                        <p>content 2</p>
+                    </div>
+                    <div class="tab-pane js-tab" id="tab3">
+                        <p>content 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs tabs-vertical tabs-example-vertical">
+                <ul class="tab-nav js-nav">
+                    <li class="tab-nav-item js-nav-item tab-flat-item"><a href="#tab1">Item 1</a></li>
+                    <li class="tab-nav-item js-nav-item tab-flat-item"><a href="#tab2">Item 2</a></li>
+                    <li class="tab-nav-item js-nav-item tab-flat-item"><a href="#tab3">Item 3</a></li>
+                </ul>
+                <div class="tabs-container">
+                    <div>
+                    <div class="tab-pane js-tab" id="tab1">
+                        <p>content 1</p>
+                    </div>
+                    </div>
+                    <div class="tab-pane js-tab" id="tab2">
+                        <p>content 2</p>
+                    </div>
+                    <div class="tab-pane js-tab" id="tab3">
+                        <p>content 3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="dash-line" />
+        <section class="content">
+            <h3 id="tooltip">Tooltip</h3>
+           
+        </section>
+        <hr class="dash-line" />
+        <section class="content">
+            <h3 id="collapse">Collapse</h3>
+            
+            <div class="collapse-container collapse-left" data-collapse="accordion">
+                <p class="collapse-header">Item 1</p>
+                <div class="collapse-item">
+                    Lorem ipsum amet dolor
+                </div>
+                <p class="collapse-header open" data-collapse-summary>Item 2</p>
+                <div class="collapse-item">
+                    Lorem ipsum amet dolor
+                </div>
+                <p class="collapse-header">Item 3</p>
+                <div class="collapse-item">
+                    Lorem ipsum amet dolor
+                </div>
+            </div>
+           
+        </section>
+        <hr class="dash-line" />
+        <section class="content">
+            <h3 id="carousel">Carousel</h3>
+           
+        </section>
+        <hr class="dash-line" />
+        <section class="content">
+            <h3 id="slider">Slider</h3>
+           
+        </section>
+        <hr class="dash-line" />
+        <section class="content validation">
+            <h3 id="validation">Validation</h3>
+           
         </section>
     </div>
     <?php require('template/foot.php'); ?>

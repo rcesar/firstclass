@@ -5,16 +5,17 @@
 .nav-main {
     clear: both;
     list-style-type: none;
-    &.horizzontal-menu {
+    &.nav-horizontal {
         .nav-item {
             float: left;
+            padding: 0.5em 1em;
         }
         .nav-sub-item {
             clear: both;
             float: left;
         }
     }
-    &.vertical-menu {
+    &.nav-vertical {
         .nav-item,
         .nav-sub-item {
             clear: both;
@@ -33,6 +34,7 @@
         position: relative;
         >.nav-link {
             color: @black-70;
+            font-weight: 700;
         }
         &:hover {
             .nav-submenu {
@@ -59,5 +61,63 @@
         position: relative;
         top: auto;
         left: auto;
+    }
+}
+.nav-flat {
+    border-radius: 0.5em;
+    .box-shadow(5px 5px 0px 0px rgba(0, 0, 0, 0.2));
+    display: inline-block;
+    padding: 0;
+    &.nav-bg-first {
+        .gradient-vertical-transparent(lighten(@brand-first, 10%));
+        border: solid 1px @brand-first;
+        .nav-submenu {
+            background: lighten(@brand-first, 20%);
+            .box-shadow(5px 5px 0px 0px rgba(0, 0, 0, 0.2));
+            border-radius: 0 0 0.5em 0.5em;
+            padding: 0.5em;
+        }
+    }
+    &.nav-bg-second {
+        .gradient-vertical-transparent(lighten(@brand-second, 10%));
+        border: solid 1px @brand-second;
+        .nav-submenu {
+            background: lighten(@brand-second, 30%);
+            .box-shadow(5px 5px 0px 0px rgba(0, 0, 0, 0.2));
+            border-radius: 0 0 0.5em 0.5em;
+            padding: 0.5em;
+        }
+    }
+    &.nav-bg-third {
+        .gradient-vertical-transparent(lighten(@brand-third, 10%));
+        border: solid 1px @brand-third;
+        .nav-submenu {
+            background: lighten(@brand-third, 40%);
+            .box-shadow(5px 5px 0px 0px rgba(0, 0, 0, 0.2));
+            border-radius: 0 0 0.5em 0.5em;
+            padding: 0.5em;
+        }
+    }
+    &.nav-bg-fourth {
+        .gradient-vertical-transparent(lighten(@brand-fourth, 10%));
+        border: solid 1px @brand-fourth;
+        .nav-submenu {
+            background: lighten(@brand-fourth, 20%);
+            .box-shadow(5px 5px 0px 0px rgba(0, 0, 0, 0.2));
+            border-radius: 0 0 0.5em 0.5em;
+            padding: 0.5em;
+        }
+    }
+    .nav-link {
+        color: @white;
+    }
+    .nav-submenu {
+        width: 200%;
+    }
+    .nav-sub-link {
+        color: @black;
+        .font-size(12);
+        line-height: 2;
+        text-decoration: none;
     }
 }

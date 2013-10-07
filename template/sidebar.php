@@ -29,24 +29,24 @@
                     </ul>
                     <p class="feature-item nav-link">Components</p>
                     <ul class="nav-submenu">
-                        <li class="nav-sub-item"><a href="components.php#colors" class="nav-sub-link">Colors</a></li>
-                        <li class="nav-sub-item"><a href="components.php#buttons" class="nav-sub-link">Buttons</a></li>
-                        <li class="nav-sub-item"><a href="components.php#icons" class="nav-sub-link">WebIcons</a></li>
-                        <li class="nav-sub-item"><a href="components.php#labels" class="nav-sub-link">Labels</a></li>
-                        <li class="nav-sub-item"><a href="components.php#navigation" class="nav-sub-link">Navigation</a></li>
-                        <li class="nav-sub-item"><a href="components.php#images" class="nav-sub-link">Images</a></li>
-                        <li class="nav-sub-item"><a href="components.php#gallery" class="nav-sub-link">Gallery</a></li>
+                        <li class="nav-sub-item"><a href="#colors" class="nav-sub-link">Colors</a></li>
+                        <li class="nav-sub-item"><a href="#buttons" class="nav-sub-link">Buttons</a></li>
+                        <li class="nav-sub-item"><a href="#webicons" class="nav-sub-link">WebIcons</a></li>
+                        <li class="nav-sub-item"><a href="#labels" class="nav-sub-link">Labels</a></li>
+                        <li class="nav-sub-item"><a href="#navigation" class="nav-sub-link">Navigation</a></li>
+                        <li class="nav-sub-item"><a href="#images" class="nav-sub-link">Images</a></li>
+                        <li class="nav-sub-item"><a href="#gallery" class="nav-sub-link">Gallery</a></li>
                     </ul>
                     <p class="feature-item nav-link">Features</p>
                     <ul class="nav-submenu">
-                        <li class="nav-sub-item"><a href="features.php#notification" class="nav-sub-link">Notification</a></li>
-                        <li class="nav-sub-item"><a href="features.php#modal" class="nav-sub-link">Modal</a></li>
-                        <li class="nav-sub-item"><a href="features.php#tabs" class="nav-sub-link">Tabs</a></li>
-                        <li class="nav-sub-item"><a href="features.php#tooltip" class="nav-sub-link">Tooltip</a></li>
-                        <li class="nav-sub-item"><a href="features.php#collapse" class="nav-sub-link">Collapse</a></li>
-                        <li class="nav-sub-item"><a href="features.php#carousel" class="nav-sub-link">Carousel</a></li>
-                        <li class="nav-sub-item"><a href="features.php#slider" class="nav-sub-link">Slider</a></li>
-                        <li class="nav-sub-item"><a href="features.php#validation" class="nav-sub-link">Validation</a></li>
+                        <li class="nav-sub-item"><a href="#notification" class="nav-sub-link">Notification</a></li>
+                        <li class="nav-sub-item"><a href="#modal" class="nav-sub-link">Modal</a></li>
+                        <li class="nav-sub-item"><a href="#tabs" class="nav-sub-link">Tabs</a></li>
+                        <li class="nav-sub-item"><a href="#tooltip" class="nav-sub-link">Tooltip</a></li>
+                        <li class="nav-sub-item"><a href="#collapse" class="nav-sub-link">Collapse</a></li>
+                        <li class="nav-sub-item"><a href="#carousel" class="nav-sub-link">Carousel</a></li>
+                        <li class="nav-sub-item"><a href="#slider" class="nav-sub-link">Slider</a></li>
+                        <li class="nav-sub-item"><a href="#validation" class="nav-sub-link">Validation</a></li>
                     </ul>
                 </div>
             </nav>

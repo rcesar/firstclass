@@ -137,24 +137,6 @@ body {
             float: left;
         }
     }
-    .tab-space1 {
-        clear: both;
-        float: left;
-        margin-left: 10px;
-        width: 100%;
-    }
-    .tab-space2 {
-        clear: both;
-        float: left;
-        margin-left: 20px;
-        width: 100%;
-    }
-    .tab-space3 {
-        clear: both;
-        float: left;
-        margin-left: 30px;
-        width: 100%;
-    }
     .box-modelo {
         .box-title {
             color: @blue;
@@ -282,6 +264,25 @@ body {
                 color: transparent;
             }
         }
+    }
+    .code-nav-example {
+        .column(7);
+        margin: 3em 0;
+    }
+    .collapse-header {
+        background: @default-danger;
+        border-radius: 0.5em;
+        font-weight: bold;
+        padding: 0.4em 1.5em;
+        width: 96%;
+        a {
+            color: @white;
+            text-decoration: none;
+        }
+    }
+    .collapse-item {
+        .font-size(12);
+        line-height: 1.3;
     }
     
 }
