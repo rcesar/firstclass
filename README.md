@@ -123,6 +123,7 @@ grunt watch
 
 ## Versions
 
+- **v0.0.6** New format and finalizations.
 - **v0.0.5** jQuery OWL, jQuery HeroTabs, Collapse, SuperBox and ZeroValidate.
 - **v0.0.4** Add Grunt and prepare to features.
 - **v0.0.3** HTML and CSS basic style definition.
