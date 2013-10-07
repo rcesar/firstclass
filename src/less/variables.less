@@ -30,13 +30,13 @@
 // Accent colors
 @blue:  		#008afd;
 @green:  		#92c847;
-@red:  		#ff1e00;
+@red:  		    #ff1e00;
 @yellow:  		#ffa800;
-@orange:  	#ff6600;
+@orange:  	    #ff6600;
 @pink:  		#fc00ff;
 @purple:  		#7200ff;
 @white:  		#fff;
-@black:  		#fff;
+@black:  		#000;
 
 // Brand colors - Client colors
 @brand-first:      #008afd; // WDSIGN -> blue
@@ -87,21 +87,3 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
-// ===[ Selection Colors ]===
-::selection {
-	background: @select;
-	color: @select-color;
-}
-::-moz-selection {
-	background: @select;
-	color: @select-color;
-}
-img::selection {
-	background: transparent;
-}
-img::-moz-selection {
-	background: transparent;
-}
-body {
-	-webkit-tap-highlight-color: @select;
-}

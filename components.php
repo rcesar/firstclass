@@ -18,9 +18,9 @@
             <main class="content">
                 <h1 class="content-title">Components</h1>
                 <section id="colors">
-                    
+
                     <h2 class="content-subtitle">Colors</h2>
-                
+
                     <div class="container color-swatches">
                         <div class="color-swatch black-10"></div>
                         <div class="color-swatch black-20"></div>
@@ -32,7 +32,7 @@
                         <div class="color-swatch black-80"></div>
                         <div class="color-swatch black-90"></div>
                     </div>
-                
+
                     <div class="container color-swatches">
                         <div class="color-swatch brand-primary"></div>
                         <div class="color-swatch brand-success"></div>
@@ -40,12 +40,12 @@
                         <div class="color-swatch brand-danger"></div>
                         <div class="color-swatch brand-info"></div>
                     </div>
-                    
+
                 </section>
-                    
+
                 <section id="buttons">
                     <h2 class="content-subtitle">Buttons</h2>
-                
+
                     <div class="container buttons-block">
                         <p>Rounded Buttons</p>
                         <a href="#" class="btn btn-rounded btn-primary" aria-label="Primary button">Primary</a>
@@ -54,7 +54,7 @@
                         <a href="#" class="btn btn-rounded btn-danger" aria-label="Danger button">Danger</a>
                         <a href="#" class="btn btn-rounded btn-info" aria-label="Info button">Info</a>
                     </div>
-                
+
                     <div class="container buttons-block">
                         <p>Metro Buttons</p>
                         <a href="#" class="btn btn-metro btn-primary" aria-label="Primary button">Primary</a>
@@ -63,7 +63,7 @@
                         <a href="#" class="btn btn-metro btn-danger" aria-label="Danger button">Danger</a>
                         <a href="#" class="btn btn-metro btn-info" aria-label="Info button">Info</a>
                     </secion>
-                
+
                     <secion class="container buttons-block">
                         <p>Flat Buttons</p>
                         <a href="#" class="btn btn-flat btn-primary" aria-label="Primary button">Primary</a>
@@ -72,7 +72,7 @@
                         <a href="#" class="btn btn-flat btn-danger" aria-label="Danger button">Danger</a>
                         <a href="#" class="btn btn-flat btn-info" aria-label="Info button">Info</a>
                     </div>
-                
+
                     <div class="container buttons-block">
                         <p>Wide Buttons</p>
                         <a href="#" class="btn btn-wide btn-primary" aria-label="Primary button">Primary</a>
@@ -81,7 +81,7 @@
                         <a href="#" class="btn btn-wide btn-danger" aria-label="Danger button">Danger</a>
                         <a href="#" class="btn btn-wide btn-info" aria-label="Info button">Info</a>
                     </div>
-                
+
                     <div class="container buttons-block">
                         <p>Large Buttons</p>
                         <a href="#" class="btn btn-large btn-primary" aria-label="Primary button">Primary</a>
@@ -90,7 +90,7 @@
                         <a href="#" class="btn btn-large btn-danger" aria-label="Danger button">Danger</a>
                         <a href="#" class="btn btn-large btn-info" aria-label="Info button">Info</a>
                     </div>
-                
+
                     <div class="container buttons-block">
                         <p>Medium Buttons</p>
                         <a href="#" class="btn btn-medium btn-primary" aria-label="Primary button">Primary</a>
@@ -99,7 +99,7 @@
                         <a href="#" class="btn btn-medium btn-danger" aria-label="Danger button">Danger</a>
                         <a href="#" class="btn btn-medium btn-info" aria-label="Info button">Info</a>
                     </div>
-                
+
                     <div class="container buttons-block">
                         <p>Small Buttons</p>
                         <a href="#" class="btn btn-small btn-primary" aria-label="Primary button">Primary</a>
@@ -108,7 +108,7 @@
                         <a href="#" class="btn btn-small btn-danger" aria-label="Danger button">Danger</a>
                         <a href="#" class="btn btn-small btn-info" aria-label="Info button">Info</a>
                     </div>
-                
+
                     <div class="container buttons-block">
                         <p>Horizontal Gradient and Rounded Buttons</p>
                         <a href="#" class="btn btn-rounded btn-horz-gradient btn-primary" aria-label="Primary button">Primary</a>
@@ -117,7 +117,7 @@
                         <a href="#" class="btn btn-rounded btn-horz-gradient btn-danger" aria-label="Danger button">Danger</a>
                         <a href="#" class="btn btn-rounded btn-horz-gradient btn-info" aria-label="Info button">Info</a>
                     </div>
-                
+
                     <div class="container buttons-block">
                         <p>Vertical Gradient and Rounded Buttons</p>
                         <a href="#" class="btn btn-rounded btn-vert-gradient btn-primary" aria-label="Primary button">Primary</a>
@@ -126,12 +126,12 @@
                         <a href="#" class="btn btn-rounded btn-vert-gradient btn-danger" aria-label="Danger button">Danger</a>
                         <a href="#" class="btn btn-rounded btn-vert-gradient btn-info" aria-label="Info button">Info</a>
                     </div>
-                    
+
                 </section>
-                
+
                 <section id="icons">
                     <h2 class="content-subtitle">WebIcons</h2>
-                    
+
                     <ul class="icons-list">
                         <li><a class="webicon f500px small" href="#">500px</a></li>
                         <li><a class="webicon aboutme small" href="#">About.me</a></li>
@@ -350,24 +350,24 @@
                         <li><a class="webicon youtube large" href="#">YouTube</a></li>
                         <li><a class="webicon youversion large" href="#">YouVersion</a></li>
                         <li><a class="webicon zerply large" href="#">Zerply</a></li>
-                    </ul>    
-                    
+                    </ul>
+
                 </section>
-                
+
                 <section id="labels">
                     <h2 class="content-subtitle">Labels</h2>
-                    
+
                     <p>Lorem ipsum dolor sit amet, <span class="white-label-info">consectetur</span> adipiscing elit. Curabitur bibendum leo ut nibh placerat interdum. Sed scelerisque nisi non dolor cursus, eget cursus mauris varius. Suspendisse pharetra <span class="white-label-success">lorem aliquet placerat</span> ornare. Sed a dignissim mauris. Aenean non magna <em class="label-dark-warning">lobortis, consectetur enim quis, aliquam sem</em>. Etiam suscipit magna augue, sed volutpat orci semper id. <strong class="label-dark-danger">Etiam feugiat lorem</strong> ut vestibulum interdum. In hac habitasse platea dictumst. Phasellus id ultricies nibh. Nulla convallis metus a tempus pulvinar. Donec augue tortor, ultrices eu varius id, hendrerit quis enim. Maecenas pretium purus ut convallis hendrerit.</p>
 
                     <p>Pellentesque id risus rutrum erat vestibulum tempor eu at metus. <span class="label-danger">Pellentesque</span> habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque et mattis eros. Vivamus porttitor eu urna ut fringilla. Vestibulum vestibulum aliquam purus vitae luctus. <span class="white-label-warning">Vivamus non dolor hendrerit</span>, aliquam erat a, rhoncus odio. Sed eu ligula a odio luctus pulvinar. <strong class="label-dark-info">Fusce faucibus dui vitae neque</strong> venenatis, sit amet sagittis risus feugiat. In hac habitasse platea dictumst. Duis lacinia, enim et vehicula rutrum, orci eros dignissim felis, non sollicitudin neque dolor et sapien. In imperdiet elit fermentum sodales dapibus. <em class="label-dark-success">Phasellus vel dolor congue, aliquam mauris a</em>, hendrerit felis.</p>
-                    
+
                 </section>
-                
+
                 <section id="navigation">
                     <h2 class="content-subtitle">Navigation</h2>
-                    
+
                     <p>All your projects have many a sort of menu's type.</p>
-                    
+
                     <ul class="nav-main horizzontal-menu nav-example">
                         <li class="nav-item nav-item-active"><a href="#" class="nav-link">Active</a></li>
                         <li class="nav-item nav-dropdown">
@@ -382,129 +382,163 @@
                         </li>
                         <li class="nav-item"><a href="#" class="nav-link">Item</a></li>
                     </ul>
-                    
+
                 </section>
-                
+
                 <section id="images">
-                    
+
                     <h2 class="content-subtitle">Images</h2>
-                    
+
                     <figure class="responsive" data-media440="http://placehold.it/440x160" data-media680="http://placehold.it/680x240" data-media760="http://placehold.it/760x260" data-media980="http://placehold.it/980x280" title="A Half Brained Idea">
                         <noscript>
                             <img src="http://placehold.it/1008x360">
                         </noscript>
                         <figcaption>Check out the responsive images</figcaption>
                     </figure>
-                
+
+                    <div class="container-example row">
+                        <figure class="fig-left">
+                            <img src="http://placehold.it/400x260">
+                            <figcaption class="txt-center">Texto Central</figcaption>
+                        </figure>
+                        <p>Barnaby The Bear's my name, never call me Jack or James, I will sing my way to fame, Barnaby the Bear's my name. Birds taught me to sing, when they took me to their king, first I had to fly, in the sky so high so high, so high so high so high, so - if you want to sing this way, think of what you'd like to say, add a tune and you will see, just how easy it can be. Treacle pudding, fish and chips, fizzy drinks and liquorice, flowers, rivers, sand and sea, snowflakes and the stars are free. La la la la la, la la la la la la la, la la la la la la la, la la la la la la la la la la la la la, so - Barnaby The Bear's my name, never call me Jack or James, I will sing my way to fame, Barnaby the Bear's my name.</p>
+
+                        <p>Children of the sun, see your time has just begun, searching for your ways, through adventures every day. Every day and night, with the condor in flight, with all your friends in tow, you search for the Cities of Gold. Ah-ah-ah-ah-ah... wishing for The Cities of Gold. Ah-ah-ah-ah-ah... some day we will find The Cities of Gold. Do-do-do-do ah-ah-ah, do-do-do-do, Cities of Gold. Do-do-do-do, Cities of Gold. Ah-ah-ah-ah-ah... some day we will find The Cities of Gold.</p>
+                    </div>
+
+                    <div class="container-example row">
+                        <figure class="fig-right">
+                            <img src="http://placehold.it/400x260">
+                            <figcaption class="txt-left">Texto à Esquerda</figcaption>
+                        </figure>
+                        <p>Barnaby The Bear's my name, never call me Jack or James, I will sing my way to fame, Barnaby the Bear's my name. Birds taught me to sing, when they took me to their king, first I had to fly, in the sky so high so high, so high so high so high, so - if you want to sing this way, think of what you'd like to say, add a tune and you will see, just how easy it can be. Treacle pudding, fish and chips, fizzy drinks and liquorice, flowers, rivers, sand and sea, snowflakes and the stars are free. La la la la la, la la la la la la la, la la la la la la la, la la la la la la la la la la la la la, so - Barnaby The Bear's my name, never call me Jack or James, I will sing my way to fame, Barnaby the Bear's my name.</p>
+
+                        <p>Children of the sun, see your time has just begun, searching for your ways, through adventures every day. Every day and night, with the condor in flight, with all your friends in tow, you search for the Cities of Gold. Ah-ah-ah-ah-ah... wishing for The Cities of Gold. Ah-ah-ah-ah-ah... some day we will find The Cities of Gold. Do-do-do-do ah-ah-ah, do-do-do-do, Cities of Gold. Do-do-do-do, Cities of Gold. Ah-ah-ah-ah-ah... some day we will find The Cities of Gold.</p>
+                    </div>
+
+                    <div class="container-example row">
+                        <p>Barnaby The Bear's my name, never call me Jack or James, I will sing my way to fame, Barnaby the Bear's my name. Birds taught me to sing, when they took me to their king, first I had to fly, in the sky so high so high, so high so high so high, so - if you want to sing this way, think of what you'd like to say, add a tune and you will see, just how easy it can be. Treacle pudding, fish and chips, fizzy drinks and liquorice, flowers, rivers, sand and sea, snowflakes and the stars are free. La la la la la, la la la la la la la, la la la la la la la, la la la la la la la la la la la la la, so - Barnaby The Bear's my name, never call me Jack or James, I will sing my way to fame, Barnaby the Bear's my name.</p>
+
+                        <figure class="fig-center">
+                            <img src="http://placehold.it/400x260">
+                            <figcaption class="txt-right">Texto à Direita</figcaption>
+                        </figure>
+
+                        <p>Children of the sun, see your time has just begun, searching for your ways, through adventures every day. Every day and night, with the condor in flight, with all your friends in tow, you search for the Cities of Gold. Ah-ah-ah-ah-ah... wishing for The Cities of Gold. Ah-ah-ah-ah-ah... some day we will find The Cities of Gold. Do-do-do-do ah-ah-ah, do-do-do-do, Cities of Gold. Do-do-do-do, Cities of Gold. Ah-ah-ah-ah-ah... some day we will find The Cities of Gold.</p>
+                    </div>
+
                 </section>
-                
+
                 <section id="gallery">
-                    
+
                     <h2 class="content-subtitle">Gallery</h2>
-                    
+
                     <ul class="gallery count4">
                         <li class="gallery-item">
-                            <figcaption>
+                            <figure>
                                 <a href="http://www.flickr.com/photos/christyam/5413945027/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a>
-                            </figcaption>
+                            </figure>
                         </li>
                         <li class="gallery-item">
-                            <figcaption>
+                            <figure>
                                 <a href="http://www.flickr.com/photos/christyam/9441781825/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a>
-                            </figcaption>
+                            </figure>
                         </li>
                         <li class="gallery-item">
-                            <figcaption>
+                            <figure>
                                 <a href="http://www.flickr.com/photos/christyam/9445855848/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
-                                </a></figcaption>
+                                </a></figure>
                         </li>
                         <li class="gallery-item">
-                            <figcaption>
+                            <figure>
                                 <a href="http://www.flickr.com/photos/christyam/9714577671/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a>
-                            </figcaption>
+                            </figure>
                         </li>
                         <li class="gallery-item">
-                            <figcaption>
+                            <figure>
                                 <a href="http://www.flickr.com/photos/christyam/9719271192/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a>
-                            </figcaption>
+                            </figure>
                         </li>
                         <li class="gallery-item">
-                            <figcaption>
+                            <figure>
                                 <a href="http://www.flickr.com/photos/christyam/9445913390/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
-                                </a></figcaption>
+                                </a>
+                            </figure>
                         </li>
                         <li class="gallery-item">
-                            <figcaption>
+                            <figure>
                                 <a href="http://www.flickr.com/photos/christyam/9443121795/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
-                                </a></figcaption>
+                                </a>
+                            </figure>
                         </li>
                         <li class="gallery-item">
-                            <figcaption>
+                            <figure>
                                 <a href="http://www.flickr.com/photos/christyam/8620877994/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a>
-                            </figcaption>
+                            </figure>
                         </li>
                         <li class="gallery-item">
-                            <figcaption>
+                            <figure>
                                 <a href="http://www.flickr.com/photos/christyam/8619775233/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a>
-                            </figcaption>
+                            </figure>
                         </li>
                         <li class="gallery-item">
-                            <figcaption>
+                            <figure>
                                 <a href="http://www.flickr.com/photos/christyam/8619765071/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a>
-                            </figcaption>
+                            </figure>
                         </li>
                         <li class="gallery-item">
-                            <figcaption>
+                            <figure>
                                 <a href="http://www.flickr.com/photos/christyam/8619761297/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
-                                </a></figcaption>
+                                </a>
+                            </figure>
                         </li>
                         <li class="gallery-item">
-                            <figcaption>
+                            <figure>
                                 <a href="http://www.flickr.com/photos/christyam/8619747899/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a>
-                            </figcaption>
+                            </figure>
                         </li>
                         <li class="gallery-item">
-                            <figcaption>
+                            <figure>
                                 <a href="http://www.flickr.com/photos/christyam/9271493684/" class="gallery-link" title="Image Gallery" rel="superbox[gallery][galeria_exemplo]">
                                     <img src="media/thumb-220.png" alt="" class="gallery-img">
                                     <figcaption>Image Title</figcaption>
                                 </a>
-                            </figcaption>
+                            </figure>
                         </li>
                     </ul>
-                
+
                 </section>
 
             </main>

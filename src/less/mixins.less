@@ -125,6 +125,11 @@
     background-image: linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
 }
 
+// Transparent color
+.bg-transparent(@color: @blue, @percent: 20%){
+    background-color: fade(@color, @percent);
+}
+
 // Center-align a block level element
 .el-center {
     clear: both;
@@ -141,4 +146,18 @@
 // Right-align a block level element
 .el-right {
     float: right;
+}
+
+//Dash line
+.dash-line {
+    background: transparent;
+    clear: both;
+    height: 1px;
+    border-bottom: solid 1px @black-20;
+    margin: 2em 0;
+    width: 100%;
+}
+
+body {
+	-webkit-tap-highlight-color: @select;
 }

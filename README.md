@@ -88,7 +88,7 @@ First of all, install [Node][7]. We use [Grunt][8] to build firstClass. If you h
 npm install -g grunt-cli
 ```
 
-If you haven't done so already, clone the UIkit git repo.
+If you haven't done so already, clone the firstClass git repo.
 
 ```
 git clone git://github.com/wdsign/firstclass.git

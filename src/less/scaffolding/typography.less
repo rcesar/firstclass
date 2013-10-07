@@ -12,9 +12,10 @@
 @baseline: 100%;
 
 // Font-Size format
-@size-base:         1;
+@size-base:         16;
 .font-size( @target: @fontsize ) {
-    font-size: (@target / @size-base) + em;
+    @fsize: (@target/@size-base);
+    font-size:  ~"@{fsize}em";
 }
 
 
@@ -42,29 +43,36 @@ a {
 }
 
 // ===[ Headings ]===
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,
+.header-level1,.header-level2,.header-level3,.header-level4,.header-level5,.header-level6 {
 	color: @heading-color;
 	font-family: @head-family;
     line-height: 1;
 }
-h1 {
+h1,
+.header-level1 {
 	.font-size(24);
 }
-h2 {
+h2,
+.header-level2 {
 	.font-size(20);
 }
-h3 {
+h3,
+.header-level3 {
 	.font-size(18);
 }
-h4 {
+h4,
+.header-level4 {
 	.font-size(16);
     font-weight: 700;
 }
-h5 {
+h5,
+.header-level5 {
 	.font-size(14);
     font-weight: 700;
 }
-h6 {
+h6,
+.header-level6 {
 	.font-size(12);
     font-weight: 700;
 }

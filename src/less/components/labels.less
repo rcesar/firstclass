@@ -1,36 +1,39 @@
 // ===[ Labels Style ]===
-[class^="label-"] {
+.label {
+    display: inline-block;
     letter-spacing: 0.05em;
+    padding: 0 0.2em;
+    width: auto;
 }
-.label-warning {
-    color: @default-warning;
+.label-clean {
+    padding: 0 2px;
+    &.label-warning {
+        color: @default-warning;
+    }
+    &.label-danger {
+        color: @default-danger;
+    }
+    &.label-info {
+        color: @default-info;
+    }
+    &.label-success {
+        color: @default-success;
+    }
 }
-.label-danger {
-    color: @default-danger;
-}
-.label-info {
-    color: @default-info;
-}
-.label-success {
-    color: @default-success;
-}
-.label-dark-warning {
+.label-darken {
     background-color: @default-warning;
     color: @white;
     padding: 1px 2px;
-}
-.label-dark-danger {
-    background-color: @default-danger;
-    color: @white;
-    padding: 1px 2px;
-}
-.label-dark-info {
-    background-color: @default-info;
-    color: @white;
-    padding: 1px 2px;
-}
-.label-dark-success {
-    background-color: @default-success;
-    color: @white;
-    padding: 1px 2px;
+    &.label-warning {
+        background-color: @default-warning;
+    }
+    &.label-danger {
+        background-color: @default-danger;
+    }
+    &.label-info {
+        background-color: @default-info;
+    }
+    &.label-success {
+        background-color: @default-success;
+    }
 }

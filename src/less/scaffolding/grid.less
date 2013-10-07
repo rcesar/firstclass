@@ -21,7 +21,7 @@
 	-moz-box-sizing: @box;
 	box-sizing: @box;
 }
-/* Our row container */
+// Our row container
 .row {
 	&:extend(.clearfix all);
 
@@ -30,23 +30,24 @@
 	margin: 0 auto;
 }
 
-/* Our column container */
+// Our column container
 .column(@x, @padding:0, @columns:12){
 	&:extend(.box-sizing all);
 
-	display: inline;
-	float: left;
+	display: inline-block;
 	width: 100%*(@x / @columns);
 	padding: 0 @padding;
 }
 
-/* Push adds left padding */
+// Push adds left padding
 .push(@offset:1, @columns:@columns) {
+    float: left;
 	margin-left: 100%*(@offset / @columns);
 }
 
-/* Pull adds right padding */
+// Pull adds right padding
 .pull(@offset:1, @columns:@columns) {
+    float: right;
 	margin-right: 100%*(@offset / @columns);
 }
 .wide-container {
@@ -55,9 +56,12 @@
     padding: 1%;
 }
 .columns {
+    .box-sizing;
     float: left;
     margin-right: 1%;
-    &:last-child {
+    width: 100%;
+    &:last-child,
+    &.last {
         float: right;
         margin-right: 0;
     }
