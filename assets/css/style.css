@@ -208,7 +208,9 @@ body {
   -ms-text-stroke: 1px transparent;
   text-stroke: 1px transparent;
 }
-* {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
