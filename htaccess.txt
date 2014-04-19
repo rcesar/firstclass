@@ -7,7 +7,7 @@ AddType text/x-component .htc
 # alternatively you could only whitelist
 # your subdomains like "sub.domain.com"
 
-<FilesMatch "\.(eot|ttf|woff|otf)$">
+<FilesMatch ".(ttf|otf|eot|woff)$">
   <IfModule mod_headers.c>
     Header set Access-Control-Allow-Origin "*"
   </IfModule>

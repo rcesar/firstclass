@@ -159,31 +159,11 @@ table {
   border-spacing: 0;
 }
 /**
-	The MIT License (MIT)
-
-	Copyright (c) 2013 - WDSIGN
-
-	Permission is hereby granted, free of charge, to any person obtaining a copy
-	of this software and associated documentation files (the "Software"), to deal
-	in the Software without restriction, including without limitation the rights
-	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-	copies of the Software, and to permit persons to whom the Software is
-	furnished to do so, subject to the following conditions:
-
-	The above copyright notice and this permission notice shall be included in all
-	copies or substantial portions of the Software.
-
-	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-	SOFTWARE.
-
+ *
  * @project_name firstClass
  * @copyright    Copyright (c) 2013 WDSIGN - firstClass (http://firstclass.wdsign.com.br)
  * @author       Rick Benetti <rick@wdsign.com.br>
+ *
 **/
 .input-form-content {
   background: #ffffff;
@@ -228,6 +208,11 @@ body {
   -ms-text-stroke: 1px transparent;
   text-stroke: 1px transparent;
 }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .btn {
   -webkit-border-fit: lines;
   /* <- Safari & Google Chrome Fix */
@@ -252,8 +237,6 @@ body {
 .breakline:after,
 .row:before,
 .row:after,
-.wide-container:before,
-.wide-container:after,
 .columns.two-columns:before,
 .columns.two-columns:after,
 .columns.three-columns:before,
@@ -280,8 +263,14 @@ main section:before,
 main section:after,
 main aside:before,
 main aside:after,
+main .grid-samples:before,
+main .grid-samples:after,
+.columns.full-column:before,
+.columns.full-column:after,
 main section #containers:before,
-main section #containers:after {
+main section #containers:after,
+main .grid-samples:before,
+main .grid-samples:after {
   content: "";
   display: table;
 }
@@ -289,7 +278,6 @@ main section #containers:after {
 .limit:after,
 .breakline:after,
 .row:after,
-.wide-container:after,
 .columns.two-columns:after,
 .columns.three-columns:after,
 .columns.four-columns:after,
@@ -303,7 +291,10 @@ form ul li:after,
 main:after,
 main section:after,
 main aside:after,
-main section #containers:after {
+main .grid-samples:after,
+.columns.full-column:after,
+main section #containers:after,
+main .grid-samples:after {
   clear: both;
 }
 .align-center {
@@ -343,16 +334,14 @@ main section #containers:after {
  * @version 1.1
  */
 .row,
+.columns.full-column,
 main section #containers,
-main section #containers {
+main .grid-samples,
+.columns.full-column,
+main section #containers,
+main .grid-samples {
   display: table-row;
   float: left;
-  width: 100%;
-}
-.wide-container {
-  display: table-cell;
-  float: left;
-  padding: 0 0;
   width: 100%;
 }
 .columns {
@@ -361,6 +350,10 @@ main section #containers {
 .columns:last-child,
 .columns.last-child {
   float: right;
+}
+.columns:first-child,
+.columns.first-child {
+  clear: left;
 }
 .columns.two-columns {
   display: table-cell;
@@ -604,7 +597,7 @@ input[type="button"] {
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.svg');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -4654,8 +4647,8 @@ main section .icons-list {
 }
 main section .icons-list li {
   border-bottom: solid 1px #b9ccfd;
-  padding-bottom: 15px !important;
-  margin-bottom: 15px;
+  padding-bottom: 5px !important;
+  margin-bottom: 5px;
 }
 main section .icons-list li .icon {
   font-size: 0.8125em;
@@ -4665,4 +4658,22 @@ main aside {
   float: left;
   padding: 0 0;
   width: 20.833333333333336%;
+}
+main .grid-samples {
+  clear: both;
+  float: left;
+}
+main .grid-samples .row p,
+main .grid-samples main section #containers p {
+  float: left;
+  width: 100%;
+}
+main .grid-samples .row .columns,
+main .grid-samples main section #containers .columns {
+  background: rgba(0, 0, 0, 0.2);
+  border: solid 1em rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.main-footer {
+  margin-top: 2em;
 }

@@ -131,8 +131,8 @@ main {
 			padding: 0;
 			li {
 				border-bottom: solid 1px lighten(@color-main,20%);
-				padding-bottom: 15px !important;
-				margin-bottom: 15px;
+				padding-bottom: 5px !important;
+				margin-bottom: 5px;
 				.icon-medium[class*="icon-pre-"] {
 					&::before {
 						//top: 3px;
@@ -150,4 +150,24 @@ main {
 			&:extend(main section header all);
 		}
 	}
+
+	.grid-samples {
+		&:extend(.clearfix all, .row);
+		clear: both;
+		float: left;
+		.row {
+			p {
+				float: left;
+				width: 100%;
+			}
+			.columns {
+				background: rgba(0,0,0,0.2);
+				border: solid 1em rgba(0,0,0,0.4);
+				text-align: center;
+			}
+		}
+	}
+}
+.main-footer {
+	margin-top: 2em;
 }

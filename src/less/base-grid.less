@@ -47,14 +47,18 @@
 	float: right;
 	margin-left: @total-width*(@offset / @columns);
 }
-.wide-container {
-	.column(12);
-}
 .columns {
 	float: left;
     &:last-child,
     &.last-child {
         float: right;
+    }
+    &:first-child,
+    &.first-child {
+    	clear: left;
+    }
+    &.full-column {
+	&:extend(.row);
     }
     &.two-columns {
         .column(6);
