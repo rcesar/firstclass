@@ -1,0 +1,51 @@
+// ===[ Gallery Style ]===
+
+.gallery {
+    list-style-type: none;
+    .gallery-item {
+        &:extend(.box-sizing all);
+        float: left;
+        margin: 0.5% 2% 0.5% 0;
+        figure {
+            display: block;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 100%;
+            figcaption {
+            	position: absolute;
+            	width: 100%;
+            }
+        }
+        .figcaption-bottom {
+		figcaption {
+		  	bottom: 0;
+		  	left: 0;
+		}
+        }
+        .figcaption-top {
+		figcaption {
+		  	left: 0;
+		  	top: 0;
+		}
+        }
+        .figcaption-left(@figcaption-width: 150px) {
+		figcaption {
+		  	top: 0;
+		  	left: -@figcaption-width;
+		  	width: @figcaption-width;
+		}
+        }
+        .figcaption-right(@figcaption-width: 150px) {
+		figcaption {
+		  	top: 0;
+		  	right: -@figcaption-width;
+		  	width: @figcaption-width;
+		}
+        }
+    }
+    .gallery-link {
+        display: block;
+    }
+}
