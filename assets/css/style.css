@@ -721,6 +721,12 @@ select:focus {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   outline: 0px;
 }
+input[type="range"]:focus,
+input[type="color"]:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
 input[type="text"],
 input[type="url"],
 input[type="email"],
