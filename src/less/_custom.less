@@ -3,10 +3,10 @@ body {
 	background: lighten(@black-10, 10%);
 	color: @color-text;
 }
-@max-width: 980px;
+@max-width: 100%;
 .limit {
 	&:extend(.boxsizing all);
-	padding: 0;
+	padding: 0 2%;
 	margin: 0 auto;
 	width: @max-width;
 }
@@ -172,4 +172,14 @@ main {
 }
 .main-footer {
 	margin-top: 2em;
+}
+
+@media @desktop {
+	@max-width: 90%;
+}
+@media @tablet {
+	@size-base:         18;
+}
+@media @mobile {
+	@size-base:         14;
 }

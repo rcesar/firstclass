@@ -1,4 +1,4 @@
-/**! firstClass 1.0.0 | http://firstclass.wdsign.com.br | Rick Benetti | The MIT License (MIT) - Copyright (c) 2013 WDSIGN */
+/**! firstClass 2.0.0 | http://firstclass.wdsign.com.br | Rick Benetti | The MIT License (MIT) - Copyright (c) 2014 WDSIGN */
 article,
 aside,
 details,
@@ -227,7 +227,7 @@ body {
 }
 .limit {
   display: block;
-  max-width: 980px;
+  max-width: 100%;
   margin: 0 auto;
 }
 /* The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack */
@@ -239,16 +239,6 @@ body {
 .breakline:after,
 .row:before,
 .row:after,
-.columns.two-columns:before,
-.columns.two-columns:after,
-.columns.three-columns:before,
-.columns.three-columns:after,
-.columns.four-columns:before,
-.columns.four-columns:after,
-.columns.five-columns:before,
-.columns.five-columns:after,
-.columns.six-columns:before,
-.columns.six-columns:after,
 form ul li:before,
 form ul li:after,
 .nav-sidebar:before,
@@ -267,8 +257,6 @@ main aside:before,
 main aside:after,
 main .more-content:before,
 main .more-content:after,
-.columns.full-column:before,
-.columns.full-column:after,
 main section #containers:before,
 main section #containers:after,
 main .more-content:before,
@@ -280,11 +268,6 @@ main .more-content:after {
 .limit:after,
 .breakline:after,
 .row:after,
-.columns.two-columns:after,
-.columns.three-columns:after,
-.columns.four-columns:after,
-.columns.five-columns:after,
-.columns.six-columns:after,
 form ul li:after,
 .nav-sidebar:after,
 .notification:after,
@@ -294,7 +277,6 @@ main:after,
 main section:after,
 main aside:after,
 main .more-content:after,
-.columns.full-column:after,
 main section #containers:after,
 main .more-content:after {
   clear: both;
@@ -331,61 +313,171 @@ main .more-content:after {
  *
  * This is heavily infleuenced by the Semantic Grid http://semantic.gs
  *
- * @author Abban Dunne http://abandon.ie
- * @author James Wilson http://jimmynotjim.com
- * @version 1.1
  */
 .row,
-.columns.full-column,
 main section #containers,
 main .more-content,
-.columns.full-column,
 main section #containers,
 main .more-content {
   display: table-row;
   float: left;
   width: 100%;
 }
-.columns {
-  float: left;
+@media only screen and (min-width: 1129px) {
+  .columns {
+    float: left;
+  }
+  .columns:last-child,
+  .columns.last-child {
+    float: right;
+  }
+  .columns:first-child,
+  .columns.first-child {
+    clear: left;
+  }
+  .columns.full-column {
+    width: 100%;
+  }
+  .columns.two-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 50%;
+  }
+  .columns.three-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 33.33333333333333%;
+  }
+  .columns.four-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 25%;
+  }
+  .columns.five-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 20%;
+  }
+  .columns.six-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 16.666666666666664%;
+  }
 }
-.columns:last-child,
-.columns.last-child {
-  float: right;
+@media only screen and (min-width: 950px) and (max-width: 1128px) {
+  .columns {
+    float: left;
+  }
+  .columns:last-child,
+  .columns.last-child {
+    float: right;
+  }
+  .columns:first-child,
+  .columns.first-child {
+    clear: left;
+  }
+  .columns.full-column {
+    width: 100%;
+  }
+  .columns.two-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 50%;
+  }
+  .columns.three-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 33.33333333333333%;
+  }
+  .columns.four-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 25%;
+  }
+  .columns.five-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 20%;
+  }
+  .columns.six-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 16.666666666666664%;
+  }
 }
-.columns:first-child,
-.columns.first-child {
-  clear: left;
+@media only screen and (min-width: 530px) and (max-width: 949px) {
+  .columns.two-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 50%;
+  }
+  .columns.three-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 33.33333333333333%;
+  }
+  .columns.four-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 25%;
+  }
+  .columns.five-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 20%;
+  }
+  .columns.six-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 16.666666666666664%;
+  }
 }
-.columns.two-columns {
-  display: table-cell;
-  float: left;
-  padding: 0 0;
-  width: 50%;
-}
-.columns.three-columns {
-  display: table-cell;
-  float: left;
-  padding: 0 0;
-  width: 33.33333333333333%;
-}
-.columns.four-columns {
-  display: table-cell;
-  float: left;
-  padding: 0 0;
-  width: 25%;
-}
-.columns.five-columns {
-  display: table-cell;
-  float: left;
-  padding: 0 0;
-  width: 20%;
-}
-.columns.six-columns {
-  display: table-cell;
-  float: left;
-  padding: 0 0;
-  width: 16.666666666666664%;
+@media only screen and (max-width: 529px) {
+  .columns.two-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 50%;
+  }
+  .columns.three-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 33.33333333333333%;
+  }
+  .columns.four-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 25%;
+  }
+  .columns.five-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 20%;
+  }
+  .columns.six-columns {
+    display: table-cell;
+    float: left;
+    padding: 0 0;
+    width: 16.666666666666664%;
+  }
 }
 .box {
   float: left;
@@ -465,13 +557,13 @@ caption {
 .table > thead > tr.active > th,
 .table > tbody > tr.active > th,
 .table > tfoot > tr.active > th {
-  background-color: #f5f5f5;
+  background-color: #ededed;
 }
 .table-hover > tbody > tr > td.active:hover,
 .table-hover > tbody > tr > th.active:hover,
 .table-hover > tbody > tr.active:hover > td,
 .table-hover > tbody > tr.active:hover > th {
-  background-color: #e8e8e8;
+  background-color: #e0e0e0;
 }
 .table > thead > tr > td.success,
 .table > tbody > tr > td.success,
@@ -608,13 +700,13 @@ caption {
 .table-border > thead > tr > td {
   border-bottom-width: 2px;
 }
-.table-striped > tbody > tr:nth-child(odd) > td,
-.table-striped > tbody > tr:nth-child(odd) > th {
-  background-color: #f9f9f9;
+.table-zebra > tbody > tr:nth-child(odd) > td,
+.table-zebra > tbody > tr:nth-child(odd) > th {
+  background-color: #e0e0e0;
 }
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
-  background-color: #f5f5f5;
+  background-color: #ededed;
 }
 @media only screen and (min-width: 530px) and (max-width: 949px) {
   .table-responsive {
@@ -4745,9 +4837,9 @@ body {
   color: #4d4d4d;
 }
 .limit {
-  padding: 0;
+  padding: 0 2%;
   margin: 0 auto;
-  width: 980px;
+  width: 100%;
 }
 .main-header .limit {
   padding-top: 1em;
@@ -4900,4 +4992,13 @@ main .icons-list .columns .icon {
 }
 .main-footer {
   margin-top: 2em;
+}
+@media only screen and (min-width: 950px) and (max-width: 1128px) {
+  
+}
+@media only screen and (min-width: 530px) and (max-width: 949px) {
+  
+}
+@media only screen and (max-width: 529px) {
+  
 }

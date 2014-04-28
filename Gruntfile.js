@@ -21,16 +21,16 @@ module.exports = function(grunt) {
                         paths: ["assets/less"]
                     },
                     files: {
-                        "assets/css/style.css": ["src/less/style.less"]
+                        "assets/css/style.css": ["src/less/*.less", "!src/less/_*.less"]
                     }
                 },
-                firstClassmin: {
+                firstClassMin: {
                     options: {
                         paths: ["src/less"],
                         yuicompress: true
                     },
                     files: {
-                        "assets/css/style.min.css": ["src/less/style.less"]
+                        "assets/css/style.min.css": ["src/less/*.less", "!src/less/_*.less"]
                     }
                 }
             };
@@ -80,15 +80,9 @@ module.exports = function(grunt) {
                 },
                 src: [
                     "src/js/modernizr.js",
+                    "src/js/wdsign.pack.js",
                     "src/js/jquery.collapse.js",
-                    "src/js/jquery.collapse_cookie_storage.js",
-                    "src/js/jquery.collapse_storage.js",
-                    "src/js/jquery.magnific-popup-0.9.9.js",
-                    "src/js/jquery.herotabs.min.js",
                     "src/js/jquery.bxslider.min.js",
-                    "src/js/jquery.tooltipster.js",
-                    "src/js/zerovalidate.js",
-                    "src/js/nav.js",
                 ],
                 dest: "assets/js/plugins.js"
             }
