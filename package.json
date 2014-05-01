@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "firstclass",
   "title": "firstClass",
   "description": "A clean framework powered by LESS based on Semantic.gs, HTML5, CSS3 and jQuery, using Grunt.",
@@ -25,4 +26,33 @@
     "grunt": "~0.4.0"
   },
   "keywords": []
+=======
+    "name": "firstClass",
+    "title": "firstClass",
+    "description": "Clean framework powered by LESS based on Semantic.gs, HTML5, CSS3 and jQuery, using Grunt.",
+    "version": "2.0.0",
+    "homepage": "http://firstclass.wdsign.com.br",
+    "license": "The MIT License (MIT) - Copyright (c) 2014 WDSIGN",
+    "author": {
+        "name": "Rick Benetti",
+        "email": "rick@wdsign.com.br",
+        "url": "http://firstclass.wdsign.com.br/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@gitlab.r2bz.com.br:wdsign/firstClass.git"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "grunt-contrib-less": "~0.7.0",
+        "grunt-contrib-copy": "~0.4.1",
+        "grunt-contrib-concat": "~0.3.0",
+        "grunt-contrib-compress": "~0.5.2",
+        "grunt-contrib-uglify": "~0.2.4",
+        "grunt-contrib-watch": "~0.5.3",
+        "grunt-banner": "~0.2.0",
+        "grunt": "~0.4.2"
+    },
+    "keywords": []
+>>>>>>> 4023c845a773f2fb9a90c64aaf91da0342805fc6
 }

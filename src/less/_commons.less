@@ -1,0 +1,261 @@
+/**
+ *
+ * @project_name firstClass
+ * @copyright    Copyright (c) 2013 WDSIGN - firstClass (http://firstclass.wdsign.com.br)
+ * @author       Rick Benetti <rick@wdsign.com.br>
+ *
+**/
+// Grid options
+@gutter-width: 20px; // Your gutter width
+@columns: 12; // The amount of columns you want
+@max-width: 960px; // Set a maximum width of the site
+
+// Half the gutter for borders, margin, padding etc
+@gutter: @gutter-width*0.5;
+
+// ===[ Variables ]===
+// Grayscale
+@black-10:                 darken(#fff, 10%);
+@black-20:                 darken(#fff, 20%);
+@black-30:                 darken(#fff, 30%);
+@black-40:                 darken(#fff, 40%);
+@black-50:                 darken(#fff, 50%);
+@black-60:                 darken(#fff, 60%);
+@black-70:                 darken(#fff, 70%);
+@black-80:                 darken(#fff, 80%);
+@black-90:                 darken(#fff, 90%);
+
+// Default Colors
+@white: #fff;
+@black: #000;
+
+// Accent colors
+@blue:  #049cdb;
+@blue-dark:  	#0064cd;
+@green:  #46a546;
+@red:  #9d261d;
+@yellow:  #ffc40d;
+@orange:  #f89406;
+@pink:  #c3325f;
+@purple:  #7a43b6;
+
+// Brand colors - Client colors
+@color-main:          #5683fa; // blue
+@color-primary:    #86e896; // green
+@color-secondary:    #e4bf3f; // mostard
+@color-tertiary:    #f23737; // red
+@color-link:          #3b7bda ; // blue
+@color-text:          @black-70; // dark gray
+
+// Brand colors - Alert Boxes
+@brand-primary:           #428bca;
+@brand-success:           #5cb85c;
+@brand-warning:           #f0ad4e;
+@brand-danger:            #d9534f;
+@brand-info:              #5bc0de;
+
+// Notification Color
+@notification-primary:           #ffed8c;
+@notification-success:           #c9e8c9;
+@notification-warning:           #f8c3a8;
+@notification-danger:            #d9534f;
+@notification-info:              #bde6f2;
+
+
+@state-success-text:             #3c763d;
+@state-success-bg:               #dff0d8;
+@state-success-border:           darken(spin(@state-success-bg, -10), 5%);
+
+@state-info-text:                #31708f;
+@state-info-bg:                  #d9edf7;
+@state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+
+@state-warning-text:             #8a6d3b;
+@state-warning-bg:               #fcf8e3;
+@state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
+
+@state-danger-text:              #a94442;
+@state-danger-bg:                #f2dede;
+@state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
+
+// Scaffolding
+@body-background:         @white;
+@text-color:              @black-50;
+@heading-color: @color-main;
+
+// Links
+@link-color-hover:        darken(@color-link, 15%);
+
+// Select colors
+@select: @blue;
+@select-color: @white;
+
+
+// Forms
+@color-placeholder: lighten(@text-color, 25%);
+.input-form-content {
+	background: @white;
+	border: solid 1px @black-20;
+	color: @color-link;
+	.font-size(12);
+	.line-height(32,12);
+	padding: 5px 10px;
+}
+
+// ===[ Mixins: utilities ]===
+// Box sizing
+.box-sizing(@box-model: border-box) {
+	-webkit-box-sizing: @box-model; // Safari <= 5
+	-moz-box-sizing: @box-model; // Firefox <= 19
+	box-sizing: @box-model;
+}
+
+// Drop shadows
+.box-shadow(@shadow) {
+	-webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+	box-shadow: @shadow;
+}
+
+// Opacity
+.opacity(@opacity) {
+	opacity: @opacity;
+	@opacity-ie: @opacity * 100;
+	filter: ~"alpha(opacity=@{opacity-ie})"; // IE8
+}
+
+// Placeholder text
+.placeholder(@color: @color-main) {
+	&:-moz-placeholder            { color: @color; } // Firefox 4-18
+	&::-moz-placeholder           { color: @color; } // Firefox 19+
+	&:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+
+	&::-webkit-input-placeholder  { color: @color; } // Safari and Chrome
+}
+
+// ===[ Links ]===
+a {
+	color:@color-link;
+	text-decoration: none;
+	// Optional transition
+	-webkit-transition:all .2s linear;
+	-moz-transition:all .2s linear;
+	-o-transition:all .2s linear;
+	transition:all .2s linear;
+	&:hover, &:focus {
+		color: @link-color-hover;
+		text-decoration: none;
+	}
+}
+
+
+
+// ===[ Body Config ]===
+body {
+	background: @white;
+	color: @black-60;
+	font-family: @body-family;
+	.font-size(16);
+	font-weight: normal;
+	.line-height(28,16);
+	margin: 0;
+	overflow-x: hidden;
+	padding: 0;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+
+	-moz-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+	-ms-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+
+	-webkit-text-stroke: 1px transparent;
+	-moz-text-stroke: 1px transparent;
+	-ms-text-stroke: 1px transparent;
+	text-stroke: 1px transparent;
+}
+*, *:before, *:after {
+    .box-sizing;
+}
+// ===[ Buttons Default Config ]===
+.btn {
+	-webkit-border-fit: lines; /* <- Safari & Google Chrome Fix */
+	background: transparent;
+	border: none;
+	nowhitespace: afterproperty;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.limit {
+	&:extend(.clearfix all, .border-box);
+	display:block;
+	max-width: @max-width;
+	margin: 0 auto;
+}
+
+
+// Resize anything
+.resizable(@direction) {
+	resize: @direction; // Options: horizontal, vertical, both
+	overflow: auto; // Safari fix
+}
+
+// Optional hyphenation
+.hyphens(@mode: auto) {
+	word-wrap: break-word;
+	-webkit-hyphens: @mode;
+	-moz-hyphens: @mode;
+	-ms-hyphens: @mode;
+	-o-hyphens: @mode;
+	hyphens: @mode;
+}
+
+/* The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack */
+.clearfix {
+	&:before,
+	&:after{
+		content:"";
+		display:table;
+	}
+	&:after{
+		clear:both;
+	}
+}
+
+
+// Center-align a block level element
+.align-center {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Left-align a block level element
+.align-left {
+	float: left;
+}
+
+// Right-align a block level element
+.align-right {
+	float: right;
+}
+
+// Breakline
+.breakline {
+	&:extend(.clearfix all);
+	clear: both;
+}
+
+//Dash line
+.dash-line {
+	background: transparent;
+	clear: both;
+	height: 0;
+	border: none;
+	border-bottom: solid 1px @black-50;
+	margin: .400em 10%;
+	padding: .400em 0;
+	width: 80%;
+}

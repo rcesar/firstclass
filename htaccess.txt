@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HTC Components
 AddType text/x-component .htc
 
@@ -23,3 +24,32 @@ AddType application/x-font-woff        woff
     SetOutputFilter DEFLATE
   </FilesMatch>
 </IfModule>
+=======
+# HTC Components
+AddType text/x-component .htc
+
+# Webfont access
+
+# allow access from all domains for webfonts
+# alternatively you could only whitelist
+# your subdomains like "sub.domain.com"
+
+<FilesMatch ".(ttf|otf|eot|woff)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch>
+
+# webfont mime types
+AddType application/vnd.ms-fontobject 	.eot
+AddType application/x-font-woff        	.woff
+AddType application/x-font-ttf		.ttf
+AddType image/svg+xml			.svg
+
+# webfonts and svg:
+<IfModule mod_deflate.c>
+  <FilesMatch "\.(eot|svg)$" >
+    SetOutputFilter DEFLATE
+  </FilesMatch>
+</IfModule>
+>>>>>>> 4023c845a773f2fb9a90c64aaf91da0342805fc6

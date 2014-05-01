@@ -1,0 +1,185 @@
+// ===[ My CSS Style ]===
+body {
+	background: lighten(@black-10, 10%);
+	color: @color-text;
+}
+@max-width: 100%;
+.limit {
+	&:extend(.boxsizing all);
+	padding: 0 2%;
+	margin: 0 auto;
+	width: @max-width;
+}
+.main-header {
+	.limit {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	.logo {
+		float: left;
+		height: 10%;
+		margin-right: 1em;
+		width: 10%;
+	}
+	.description {
+		background-color: @green;
+		border-radius: .380em;
+		color: @white;
+		float: left;
+		font-weight: bold;
+		padding: .180em .5em 0;
+		margin-top: 3.7%;
+		text-transform: uppercase;
+	}
+}
+nav {
+	&.main-menu {
+		border-top: solid 1px @black-10;
+		border-bottom: solid 3px @black-10;
+		background-color: lighten(@black-10, 5%);
+	}
+	a {
+		color: @color-text;
+		display: block;
+		.font-size(16);
+		font-weight: bold;
+		.line-height(32);
+		padding: 0 10px;
+		text-align: center;
+		&:hover {
+			color: @color-link;
+		}
+	}
+	.menu {
+		list-style-type: none;
+	}
+	.menu-item {
+		display: inline-block;
+		margin-right: 10px;
+		position: relative;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	.menu-dropdown {
+		position: relative;
+		&:hover {
+			.menu-sub-container {
+				border: solid 3px @black-10;
+				border-top: 0;
+				border-radius: 0 0 .980em .980em;
+				background-color: lighten(@black-10, 5%);
+				display: block;
+				left: 0;
+				padding:  0 .8em .450em;
+				position: absolute;
+				top: 100%;
+			}
+		}
+	}
+	.menu-sub-container {
+		display: none;
+		list-style-type: none;
+		.nav-social-list {
+			padding-top: .480em;
+			width: 9em;
+		}
+	}
+}
+main {
+	&:extend(.clearfix all);
+	section {
+		.column(7.5);
+		.push(2);
+		header {
+			border-bottom: solid 1px @color-secondary;
+			clear: both;
+			float: left;
+			margin: 0 0 1em;
+			width: 100%;
+			h2 {
+				&:extend(h3);
+				font-weight: normal;
+			}
+		}
+		p {
+			float: left;
+		}
+		fieldset {
+			width: 100%;
+		}
+		hr {
+			margin-top: 1em;
+		}
+		#containers {
+			&:extend(.row all);
+			padding: 0;
+			p {
+				clear: both;
+				width: 100%;
+			}
+			div {
+				background: @black-10;
+				color: @text-color;
+				.font-size(64);
+				.line-height(64,64);
+				text-align: center;
+			}
+		}
+	}
+	aside {
+		.column(2.5);
+		header {
+			&:extend(main section header all);
+		}
+	}
+	.more-content {
+		&:extend(.clearfix all, .row);
+		float: left;
+	}
+	.grid-sample {
+		clear: both;
+		.row {
+			p {
+				float: left;
+				width: 100%;
+			}
+			.columns {
+				background: rgba(0,0,0,0.2);
+				border: solid 1em rgba(0,0,0,0.4);
+				text-align: center;
+			}
+		}
+	}
+	.icons-list {
+		margin: 0;
+		padding: 0;
+		.columns {
+			background: transparent;
+			border-bottom: solid 1px lighten(@color-main,20%);
+			padding-bottom: 5px !important;
+			margin-bottom: 5px;
+			.icon-medium[class*="icon-pre-"] {
+				&::before {
+					//top: 3px;
+				}
+			}
+			.icon {
+				.font-size(13);
+			}
+		}
+	}
+}
+.main-footer {
+	margin-top: 2em;
+}
+
+@media @desktop {
+	@max-width: 90%;
+}
+@media @tablet {
+	@size-base:         18;
+}
+@media @mobile {
+	@size-base:         14;
+}
