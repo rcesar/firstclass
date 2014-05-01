@@ -15,12 +15,12 @@
 @head-family: @family-base;
 
 // Default sizes
-@size-base:         16;
+@size-base:         10;
 .font-size(@target: @fontsize) {
 	@fsize: (@target/@size-base);
 	font-size:  ~"@{fsize}em";
 }
-.line-height(@target: @lineheight,@fsize: 16) {
+.line-height(@target: @lineheight,@fsize: 10) {
 	@lsize: (@target/@fsize);
 	line-height:  ~"@{lsize}";
 }

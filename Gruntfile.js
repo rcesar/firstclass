@@ -16,21 +16,38 @@ module.exports = function(grunt) {
         less: (function() {
 
             var lessconf = {
-                firstClass: {
+                dev: {
                     options: {
-                        paths: ["assets/less"]
+                        paths: ["src/less"]
                     },
                     files: {
                         "assets/css/style.css": ["src/less/*.less", "!src/less/_*.less"]
                     }
                 },
-                firstClassMin: {
+                prod: {
                     options: {
                         paths: ["src/less"],
-                        yuicompress: true
+                        compress: true,
+                        cleancss: true
                     },
                     files: {
-                        "assets/css/style.min.css": ["src/less/*.less", "!src/less/_*.less"]
+                        "assets/css/style.min.css": ["src/less/*.less", "!src/less/_*.less"],
+                        "assets/css/jquery.custombox.min.css": ["assets/css/jquery.custombox.css"],
+                        "assets/css/jquery.bxslider.min.css": ["assets/css/jquery.bxslider.css"]
+                    }
+                },
+                sourceMap: {
+                    options: {
+                        paths: ["src/less"],
+                        cleancss: true,
+                        // LESS source maps
+                        // To enable, set sourceMap to true and update sourceMapRootpath based on your install
+                        sourceMap: true,
+                        sourceMapFilename: 'css/style.css.map',
+                        sourceMapRootpath: 'assets/css/'
+                    },
+                    files: {
+                        "assets/css/style.css": ["src/less/*.less", "!src/less/_*.less"],
                     }
                 }
             };
@@ -53,14 +70,6 @@ module.exports = function(grunt) {
                     cwd: "src/images",
                     src: ["**"],
                     dest: "assets/images/"
-                }]
-            },
-            pluginsCss: {
-                files: [{
-                    expand: true,
-                    cwd: "src/plugins",
-                    src: ["**"],
-                    dest: "assets/css/"
                 }]
             },
             commonsJs: {
