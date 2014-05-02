@@ -1,0 +1,125 @@
+// ===[ Tabs ]===
+
+// Common tab styles
+.tabs {
+    .column(9);
+}
+.tab-nav {
+    margin: 0;
+    li {
+        margin-bottom: 5px;
+    }
+}
+.tab-pane {
+    position: relative;
+}
+.tabs {
+    .tab-info {
+        padding: 10px 10px;
+        background-color: #333;
+        background-color: rgba(0, 0, 0, .7);
+        border-radius: 5px;
+        color: #fff;
+        p {
+            margin: 0;
+        }
+        a {
+            color: inherit;
+        }
+    }
+}
+
+// Tabs horizontal
+.tabs-horizontal {
+    .tab-info {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    // Flat style
+    .tab-flat-item {
+        border-radius: 0.5em 0.5em 0 0;
+    }
+}
+.tabs-horizontal.is-active .tab-nav {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 5;
+}
+.tabs-horizontal.is-active .tab-nav-item {
+    display: inline-block;
+    margin-right: 3px;
+}
+.tabs-horizontal.is-active .tab-nav-item a {
+    background-color: #fff;
+    border: 1px solid #444;
+    border-radius: 50%;
+    text-indent: -9999px;
+    width: 15px;
+    height: 15px;
+    display: block;
+}
+.tabs-horizontal.is-active .tab-nav-current a {
+    background-color: #ff6d3a;
+}
+
+
+// Tabs vertical
+.tabs-vertical {
+    .tab-info {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+    }
+    // Flat style
+    .tab-flat-item {
+        border-radius: 0.5em 0 0 0.5em;
+    }
+}
+.tabs-vertical.is-active .tab-nav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 5;
+}
+.tabs-vertical.is-active .tab-nav-item {
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+.tabs-vertical.is-active .tab-nav-item a {
+    padding: 10px 10px;
+    text-decoration: none;
+    background-color: #333;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+}
+.tabs-vertical.is-active .tab-nav-current a {
+    background-color: #ff1d40;
+}
+
+
+// Tabs standard
+.tabs-standard .tab-pane {
+    background-color: #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.tabs-standard .tab-pane p {
+    margin: 0;
+}
+.tabs-standard.is-active .tab-nav-item {
+    display: inline-block;
+    margin: 0;
+}
+.tabs-standard.is-active .tab-nav-item a {
+    display: block;
+    background-color: #ddd;
+    padding: 5px 10px;
+}
+.tabs-standard.is-active .tab-current,
+.tabs-standard.is-active .tab-nav-current a {
+    background-color: #aaa;
+}

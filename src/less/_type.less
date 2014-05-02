@@ -1,0 +1,135 @@
+// ===[ Typography ]===
+
+// Font-Face
+@import "_fonts.less";
+
+
+// Typography
+@family-base: Arial, Helvetica, sans-serif;
+@family-icons: "FontAwesome";
+@family-serif: "Times New Roman", Times, serif;
+@family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
+@family-titles: 'Open Sans Bold';
+
+@body-family: @family-base;
+@head-family: @family-titles;
+
+// Default sizes
+@size-base:         10;
+.font-size(@target) {
+	@fsize: (@target/@size-base);
+	font-size:  ~"@{fsize}em";
+}
+.line-height(@target: @lineheight,@fsize: 10) {
+	@lsize: (@target/@fsize);
+	line-height:  ~"@{lsize}";
+}
+
+// ===[ Links ]===
+a {
+	color:@color-link;
+	&:hover, &:focus {
+		color: lighten(@color-link, 5%);
+	}
+	// Optional transition
+	-webkit-transition:all .2s linear;
+	-moz-transition:all .2s linear;
+	-o-transition:all .2s linear;
+	transition:all .2s linear;
+}
+
+// ===[ Titles ]===
+.title {
+	clear: both;
+	color: @heading-color;
+	display: inline-block;
+	font-family: @head-family;
+	margin: 0;
+}
+h1 {
+	&:extend(.title, .clearfix all);
+	.font-size(24);
+	.line-height(48,24);
+}
+h2 {
+	&:extend(.title, .clearfix all);
+	.font-size(22);
+	.line-height(40,22);
+}
+h3 {
+	&:extend(.title, .clearfix all);
+	.font-size(20);
+	.line-height(36,20);
+}
+h4 {
+	&:extend(.title, .clearfix all);
+	.font-size(16);
+	.line-height(32,16);
+}
+h5 {
+	&:extend(.title, .clearfix all);
+	.font-size(14);
+	font-weight: bold;
+	.line-height(28,14);
+}
+h6 {
+	&:extend(.title, .clearfix all);
+	.font-size(10);
+	font-weight: bold;
+	.line-height(24,10);
+}
+.title-box {
+	float: left;
+	width: 100%;
+}
+.subtitle-box {
+	float: left;
+	width: 100%;
+}
+.text-muted {
+	color: @black-40;
+	font-size: small;
+}
+
+
+// ===[ Lists ]===
+ul,ol,dl {
+	clear: both;
+	margin:0;
+	margin-bottom: 1.5em;
+}
+
+// ===[ Other elements ]===
+p { margin: 0 0 .5em; }
+blockquote {
+	font-style: italic;
+	padding: 0 5em .5em;
+}
+mark {
+	background: @select;
+	color: @select-color;
+	line-height: 1.5;
+}
+del { color:@black-30; }
+code,
+kbd,
+pre,
+samp {
+	font-family: @family-monospace;
+	line-height: 1.5;
+	margin: 0 0 0.5em;
+}
+ins,
+small { line-height: 1.5; }
+kbd,
+samp { line-height: 1.4; }
+hr {
+	background: transparent;
+	border: none;
+	border-bottom: dotted 1px @black-50;
+	clear: both;
+	float: left;
+	height: 1px;
+	margin: .4em 0;
+	width: 100%;
+}
