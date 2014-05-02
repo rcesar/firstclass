@@ -6,16 +6,31 @@
  */
 
 [class*='icon'] {
-    font-family: 'FontAwesome';
-    /* 2 */
-    font-weight: normal;
-    font-style: normal;
-    /* 4 */
-    line-height: 1;
-    position: relative;
-    /* 5 */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	font-family: 'FontAwesome'; /* 2 */
+	font-weight: normal;
+	font-style: normal; /* 4 */
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	&[class*='icon-pos-'] {
+		padding-right: 25px;
+	}
+	&::after {
+		.font-size(12);
+		.line-height(12,12);
+		height: 20px;
+		width: 20px;
+	}
+	&[class*='icon-pre-'] {
+		padding-left: 25px;
+	}
+	&::before {
+		.font-size(12);
+		.line-height(12,12);
+		height: 20px;
+		width: 20px;
+	}
 }
 // Icon position
 [class*='icon-pre-'] {
@@ -31,68 +46,6 @@
 		position: absolute;
 		right: 0;
 		top: 0;
-	}
-}
-// Icon size
-.icon-small {
-	&[class*='icon-pos-'] {
-		padding-right: 15px;
-	}
-	&::after {
-		.font-size(10);
-		.line-height(10,10);
-		height: 10px;
-		width: 10px;
-	}
-
-	&[class*='icon-pre-'] {
-		padding-left: 15px;
-	}
-	&::before {
-		.font-size(10);
-		.line-height(10,10);
-		height: 10px;
-		width: 10px;
-	}
-}
-.icon-medium {
-	&[class*='icon-pos-'] {
-		padding-right: 25px;
-	}
-	&::after {
-		.font-size(20);
-		.line-height(20,20);
-		height: 20px;
-		width: 20px;
-	}
-	&[class*='icon-pre-'] {
-		padding-left: 25px;
-	}
-	&::before {
-		.font-size(20);
-		.line-height(20,20);
-		height: 20px;
-		width: 20px;
-	}
-}
-.icon-big {
-	&[class*='icon-pos-'] {
-		padding-right: 35px;
-	}
-	&::after {
-		.font-size(30);
-		.line-height(30,30);
-		height: 30px;
-		width: 30px;
-	}
-	&[class*='icon-pre-'] {
-		padding-left: 35px;
-	}
-	&::before {
-		.font-size(30);
-		.line-height(30,30);
-		height: 30px;
-		width: 30px;
 	}
 }
 // Icon spin

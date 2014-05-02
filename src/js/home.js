@@ -1,8 +1,5 @@
 $(function() {
-
-
-    $('.tabs-example').herotabs();
-    $('.tabs-example-horizontal').herotabs();
-    $('.tabs-example-vertical').herotabs();
+    // Tabs de exemplo
+    $('.tabs-example').wdsign_tabs();
 
 });

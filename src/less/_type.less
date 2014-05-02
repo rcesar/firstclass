@@ -12,11 +12,11 @@
 @family-titles: 'Open Sans Bold';
 
 @body-family: @family-base;
-@head-family: @family-base;
+@head-family: @family-titles;
 
 // Default sizes
 @size-base:         10;
-.font-size(@target: @fontsize) {
+.font-size(@target) {
 	@fsize: (@target/@size-base);
 	font-size:  ~"@{fsize}em";
 }
@@ -47,55 +47,45 @@ a {
 	margin: 0;
 }
 h1 {
-	&:extend(.title);
+	&:extend(.title, .clearfix all);
 	.font-size(24);
 	.line-height(48,24);
 }
 h2 {
-	&:extend(.title);
-	.font-size(20);
-	.line-height(40,20);
+	&:extend(.title, .clearfix all);
+	.font-size(22);
+	.line-height(40,22);
 }
 h3 {
-	&:extend(.title);
-	.font-size(18);
-	.line-height(36,18);
+	&:extend(.title, .clearfix all);
+	.font-size(20);
+	.line-height(36,20);
 }
 h4 {
-	&:extend(.title);
+	&:extend(.title, .clearfix all);
 	.font-size(16);
 	.line-height(32,16);
 }
 h5 {
+	&:extend(.title, .clearfix all);
 	.font-size(14);
 	font-weight: bold;
 	.line-height(28,14);
 }
 h6 {
-	&:extend(.title);
-	.font-size(12);
+	&:extend(.title, .clearfix all);
+	.font-size(10);
 	font-weight: bold;
-	.line-height(24,12);
+	.line-height(24,10);
 }
-.big-title {
-	&:extend(h1);
+.title-box {
+	float: left;
+	width: 100%;
 }
-.medium-title {
-	&:extend(h2);
+.subtitle-box {
+	float: left;
+	width: 100%;
 }
-.small-title {
-	&:extend(h3);
-}
-.big-subtitle {
-	&:extend(h4);
-}
-.medium-subtitle {
-	&:extend(h5);
-}
-.small-subtitle {
-	&:extend(h6);
-}
-
 .text-muted {
 	color: @black-40;
 	font-size: small;

@@ -6,6 +6,7 @@ body {
 @max-width: 100%;
 .limit {
 	&:extend(.boxsizing all);
+	.font-size(16);
 	padding: 0 2%;
 	margin: 0 auto;
 	width: @max-width;
@@ -41,11 +42,11 @@ nav {
 	a {
 		color: @color-text;
 		display: block;
-		.font-size(16);
-		font-weight: bold;
-		.line-height(32);
+		.font-size(13);
+		.line-height(32,13);
 		padding: 0 10px;
 		text-align: center;
+		text-decoration: none;
 		&:hover {
 			color: @color-link;
 		}
@@ -89,8 +90,7 @@ nav {
 main {
 	&:extend(.clearfix all);
 	section {
-		.column(7.5);
-		.push(2);
+		.column(8);
 		header {
 			border-bottom: solid 1px @color-secondary;
 			clear: both;
@@ -98,9 +98,18 @@ main {
 			margin: 0 0 1em;
 			width: 100%;
 			h2 {
-				&:extend(h3);
 				font-weight: normal;
 			}
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			clear: both;
+			float: left;
+			width: 100%;
 		}
 		p {
 			float: left;
@@ -111,26 +120,15 @@ main {
 		hr {
 			margin-top: 1em;
 		}
-		#containers {
-			&:extend(.row all);
-			padding: 0;
-			p {
-				clear: both;
-				width: 100%;
-			}
-			div {
-				background: @black-10;
-				color: @text-color;
-				.font-size(64);
-				.line-height(64,64);
-				text-align: center;
-			}
-		}
 	}
 	aside {
-		.column(2.5);
-		header {
+		.column(3);
+		.pull(1);
+		.medium-title {
 			&:extend(main section header all);
+			h2 {
+				&:extend(.small-title all);
+			}
 		}
 	}
 	.more-content {
@@ -145,8 +143,9 @@ main {
 				width: 100%;
 			}
 			.columns {
-				background: rgba(0,0,0,0.2);
-				border: solid 1em rgba(0,0,0,0.4);
+				background: rgba(0,0,0,0.1);
+				border: dotted 1px rgba(0,0,0,0.2);
+				padding: 1em 0;
 				text-align: center;
 			}
 		}
@@ -157,15 +156,12 @@ main {
 		.columns {
 			background: transparent;
 			border-bottom: solid 1px lighten(@color-main,20%);
-			padding-bottom: 5px !important;
-			margin-bottom: 5px;
+			padding-bottom: .780em;
+			margin-bottom: .780em;
 			.icon-medium[class*="icon-pre-"] {
 				&::before {
 					//top: 3px;
 				}
-			}
-			.icon {
-				.font-size(13);
 			}
 		}
 	}
@@ -178,8 +174,20 @@ main {
 	@max-width: 90%;
 }
 @media @tablet {
-	@size-base:         18;
+	@size-base: 10;
+	body {
+		font-size: 10px;
+	}
 }
 @media @mobile {
-	@size-base:         14;
+	@size-base: 10;
+	body {
+		font-size: 10px;
+	}
+	section {
+		.row;
+	}
+	aside {
+		.row;
+	}
 }

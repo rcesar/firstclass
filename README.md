@@ -43,14 +43,14 @@ Feel like you've got an idea on how to optimize the code and want to share it? W
 
 * **Modal**
 	jQuery [Custombox][20]
-* **Collapse**
-	jQuery [Collapse][21]
 * **Carousel**
-	jQuery [bxSlider][22]
+	jQuery [bxSlider][21]
+* **Collapse**
+	jQuery [collapse][22]
 
 ## Commons
 
-* **[Normalize][26]**
+* **[Normalize][30]**
 	Our normalize it's modificated to our idea.
 * **Start**
 	LessCss help us with variables and here we add our predefinitions used.
@@ -110,6 +110,7 @@ grunt watch
 
 ## Versions
 
+- **v2.0.0** Re-structure all less files, remove jquery collapse, add jquery custombox and some media queries, reorganized gruntfile
 - **v1.0.1** Icons with font Awesome ajusted to use 'pre' and 'pos' like '::before' and '::after'
 - **v1.0.0** Start project.
 
@@ -125,9 +126,10 @@ grunt watch
 [6]: http://gruntjs.com
 
 [20]: http://dixso.github.io/custombox/
-[21]: https://github.com/danielstocks/jQuery-Collapse
-[22]: https://github.com/wandoledzep/bxslider-4
-[24]: https://github.com/simonsmith/jquery.herotabs
+[21]: https://github.com/wandoledzep/bxslider-4
+[22]: http://github.com/danielstocks/jQuery-Collapse/
+
+[30]: http://necolas.github.io/normalize.css/
 
 [90]: http://twitter.com/wdsignbr
 [91]: http://twitter.com/rickbenettibr
